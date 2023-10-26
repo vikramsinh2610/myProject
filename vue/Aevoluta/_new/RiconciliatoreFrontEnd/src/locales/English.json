@@ -1,0 +1,21 @@
+{
+    "general_report": "General Report English!!",
+    "export_all":"Export everything to Excel",
+    "sign_in":"Sign In",
+    "email":"Email",
+    "password":"Password",
+    "remember_me":"Remember me",
+    "forgot_password":"Forget Password?",
+    "login":"Login",
+    "register":"Register",
+    "signin_t1":"By signin up, you agree to our",
+    "term_&_condition":"Terms and Conditions",
+    "signin_t2":"Privacy Policy",
+    "signin_t3":"A few more clicks to",
+    "signin_t4":"sign in to your account.",
+    "signin_t5":"Manage all your e-commerce accounts in one place",
+    "signin_t6":"A few more clicks to sign in to your account. Manage all your e-commerce accounts in one place",
+    "azienda":"Agency",
+    "settings":"Settings"
+
+}

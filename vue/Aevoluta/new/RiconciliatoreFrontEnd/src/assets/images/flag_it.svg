@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>46BA0340-FE9A-4A57-BA8C-B7F4276BD4EC</title>
+    <defs>
+        <path d="M0,7.9998125 C5.41070319e-16,12.417987 3.58163806,15.999625 7.9998125,15.999625 L8.0001875,15.999625 C12.4183619,15.999625 16,12.417987 16,7.9998125 C16,3.58163806 12.4183619,1.85292978e-15 8.0001875,0 L7.9998125,0 C3.58163806,8.11605479e-16 -5.41070319e-16,3.58163806 0,7.9998125 Z" id="path-1"></path>
+    </defs>
+    <g id="Styleguide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="10.03-Icone" transform="translate(-1268.000000, -178.000000)">
+            <g id="icon-/-flag-/flag_it" transform="translate(1268.000000, 178.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#F0F0F0" fill-rule="nonzero" xlink:href="#path-1"></use>
+                <rect id="Rectangle" fill="#6DA544" fill-rule="nonzero" mask="url(#mask-2)" x="0" y="0.000140622253" width="5.33321875" height="15.9998594"></rect>
+                <rect id="Rectangle" fill="#D80027" fill-rule="nonzero" mask="url(#mask-2)" x="10.6667812" y="0.000140622253" width="5.33321875" height="15.9998594"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
