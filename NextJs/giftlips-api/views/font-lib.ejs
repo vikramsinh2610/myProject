@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Font Collection</title>
+    <style>
+        <% allFonts.forEach(function(font){ %>
+        @font-face {
+            font-family: <%- font.name %>;
+            src: url(<%- font.url %>);
+        }
+        <% }) %>
+    </style>
+</head>
+<body>
+<ul>
+    <% allFonts.forEach(function(font){ %>
+        <li><%- font.name %> | <a href="<%- font.url %>"><%- font.url %></a></li>
+    <% }) %>
+</ul>
+</body>
+</html>

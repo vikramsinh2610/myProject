@@ -1,0 +1,6 @@
+.idea
+node_modules
+.env
+/fonts/fonts.conf
+templateLib/
+.DS_Store
