@@ -1,0 +1,17 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+    <changeSet author="dawson (generated)" id="1658566086854-4">
+        <addColumn tableName="naspi">
+            <column defaultValueComputed="NULL" name="anf" type="VARCHAR(100)"/>
+            <column defaultValueComputed="NULL" name="more_works" type="VARCHAR(100)"/>
+            <column defaultValueComputed="NULL" name="payment_method" type="INT"/>
+            <column defaultValueComputed="NULL" name="activity_date" type="date"/>
+            <column defaultValueComputed="NULL" name="activity_name" type="VARCHAR(100)"/>
+            <column defaultValueComputed="NULL" name="activity_type" type="INT"/>
+            <column defaultValueComputed="NULL" name="protocol" type="VARCHAR(100)"/>
+            <column defaultValueComputed="NULL" name="protocol_date" type="date"/>
+        </addColumn>
+    </changeSet>
+</databaseChangeLog>

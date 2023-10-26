@@ -1,0 +1,24 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+    <changeSet author="dawson (generated)" id="20220910150000-1">
+        <createTable tableName="naspi_com">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="naspi_id" type="SMALLINT"/>
+            <column name="variation" type="TEXT"/>
+            <column name="contract_file" type="TEXT"/>
+            <column name="more_file" type="TEXT"/>
+            <column defaultValueComputed="current_timestamp()" name="indt" type="timestamp">
+                <constraints nullable="false"/>
+            </column>
+            <column name="inuser" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValue="0000-00-00 00:00:00" name="updt" type="timestamp"/>
+            <column name="upuser" type="VARCHAR(50)"/>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

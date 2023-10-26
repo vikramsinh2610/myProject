@@ -1,0 +1,11 @@
+admin
+api
+controllers
+mail
+models
+views
+
+web/js/bundle.min.js
+web/js/vendors.min.js
+
+web/css/style.css

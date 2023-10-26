@@ -1,0 +1,12 @@
+# prevent directory listings
+Options -Indexes
+# follow symbolic links
+Options FollowSymlinks
+
+RewriteEngine On
+RewriteCond %{REQUEST_URI} (wp-includes|wordpress|.env)
+RewriteRule ^ /403? [L,R=301]
+
+RewriteCond %{REQUEST_URI} ^/.*
+RewriteRule ^(.*)$ web/$1 [L]
+

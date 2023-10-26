@@ -1,0 +1,197 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+    <changeSet author="dawson (generated)" id="1658566086854-2">
+        <createTable tableName="client">
+            <column name="user_id" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="fiscal_code" type="VARCHAR(16)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="mobile" type="VARCHAR(25)"/>
+            <column defaultValueComputed="current_timestamp()" name="indt" type="timestamp">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueComputed="NULL" name="updt" type="timestamp"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="dawson (generated)" id="1658566086854-3">
+        <createTable tableName="message">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="naspi_id" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueNumeric="0" name="direction" type="TINYINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="content" type="VARCHAR(150)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="dawson (generated)" id="1658566086854-4">
+        <createTable tableName="naspi">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="client_id" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueNumeric="0" name="type" type="SMALLINT">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueNumeric="1" name="status" type="TINYINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="address" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="city" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="cap" type="VARCHAR(5)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="province" type="VARCHAR(2)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="home_address" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="home_city" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="home_cap" type="VARCHAR(5)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="home_province" type="VARCHAR(2)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="marital_status" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueComputed="NULL" name="marital_date" type="date"/>
+            <column name="iban" type="VARCHAR(30)"/>
+            <column defaultValueComputed="NULL" name="last_work_date" type="date"/>
+            <column name="vat" type="VARCHAR(15)"/>
+            <column defaultValueComputed="NULL" name="income" type="INT"/>
+            <column name="info" type="MEDIUMTEXT"/>
+            <column name="note" type="MEDIUMTEXT"/>
+            <column name="document_file_front" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="document_file_rear" type="VARCHAR(100)"/>
+            <column name="code_file_front" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="code_file_rear" type="VARCHAR(100)"/>
+            <column name="pay_file" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="work_file" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="more_file" type="VARCHAR(100)"/>
+            <column name="agreement_file" type="VARCHAR(100)"/>
+            <column name="privacy_file" type="VARCHAR(100)"/>
+            <column name="receipt_file" type="VARCHAR(100)"/>
+            <column defaultValueComputed="current_timestamp()" name="indt" type="timestamp">
+                <constraints nullable="false"/>
+            </column>
+            <column name="inuser" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValue="0000-00-00 00:00:00" name="updt" type="timestamp">
+                <constraints nullable="false"/>
+            </column>
+            <column name="upuser" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="dawson (generated)" id="1658566086854-5">
+        <createTable tableName="user">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="username" type="VARCHAR(50)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="name" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="surname" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="password" type="VARCHAR(64)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="email" type="VARCHAR(50)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column defaultValueNumeric="1" name="group" type="SMALLINT"/>
+            <column defaultValueNumeric="1" name="status" type="SMALLINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="auth_key" type="VARCHAR(65)">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueComputed="NULL" name="last_reset" type="datetime"/>
+            <column defaultValueNumeric="0" name="reset_count" type="SMALLINT"/>
+            <column name="password_reset_token" type="VARCHAR(45)"/>
+            <column defaultValueComputed="current_timestamp()" name="indt" type="timestamp">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueComputed="NULL" name="updt" type="timestamp"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="dawson (generated)" id="1658566086854-6">
+        <createIndex indexName="naspi_client_id_fk" tableName="naspi">
+            <column name="client_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="dawson (generated)" id="1658566086854-7">
+        <addForeignKeyConstraint baseColumnNames="client_id" baseTableName="naspi" constraintName="naspi_client_id_fk"
+                                 deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="user_id" referencedTableCatalogName="naspi"
+                                 referencedTableName="client" validate="true"/>
+    </changeSet>
+    <changeSet author="dawson (generated)" id="1658566086854-8">
+        <addForeignKeyConstraint baseColumnNames="user_id" baseTableName="client" constraintName="user_client_fk"
+                                 deferrable="false" initiallyDeferred="false" onDelete="RESTRICT" onUpdate="RESTRICT"
+                                 referencedColumnNames="id" referencedTableCatalogName="naspi"
+                                 referencedTableName="user" validate="true"/>
+    </changeSet>
+    <changeSet author="dawson (generated)" id="1658566086854-9">
+        <createView fullDefinition="false" remarks="VIEW" viewName="user_profile">select `U`.`id` AS
+            `id`,`U`.`username` AS `username`,`U`.`name` AS `name`,`U`.`surname` AS
+            `surname`,`U`.`password` AS `password`,`U`.`email` AS `email`,`C`.`mobile`
+            AS `mobile`,`U`.`group` AS `group`,`U`.`status` AS `status`,`U`.`auth_key`
+            AS `auth_key`,`U`.`last_reset` AS `last_reset`,`U`.`reset_count` AS
+            `reset_count`,`U`.`password_reset_token` AS `password_reset_token`,`U`.`indt` AS
+            `indt`,`U`.`updt` AS `updt`,`C`.`fiscal_code` AS `fiscal_code` from (`user` U
+            left join `client` `C` on (`U`.`id` = `C`.`user_id`))
+        </createView>
+    </changeSet>
+    <changeSet author="dawson (generated)" id="1658566086854-10">
+        <createView fullDefinition="false" remarks="VIEW" viewName="v_naspi">select `N`.`id` AS `id`,`N`.`client_id` AS
+            `client_id`,`U`.`name` AS `name`,`U`.`surname` AS `surname`,`U`.`email` AS `email`,`C`.`mobile` AS
+            `mobile`,`C`.`fiscal_code` AS `fiscal_code`,`N`.`address` AS `address`,`N`.`city` AS `city`,`N`.`cap` AS
+            `cap`,`N`.`province` AS `province`,`N`.`status` AS `status`,`N`.`home_address` AS
+            `home_address`,`N`.`home_city` AS `home_city`,`N`.`home_cap` AS `home_cap`,`N`.`home_province` AS
+            `home_province`,`N`.`marital_status` AS `marital_status`,`N`.`marital_date` AS `marital_date`,`N`.`iban` AS
+            `iban`,`N`.`last_work_date` AS `last_work_date`,`N`.`vat` AS `vat`,`N`.`income` AS `income`,`N`.`info` AS
+            `info`,`N`.`document_file_front` AS `document_file_front`,`N`.`document_file_rear` AS
+            `document_file_rear`,`N`.`code_file_front` AS `code_file_front`,`N`.`code_file_rear` AS
+            `code_file_rear`,`N`.`pay_file` AS `pay_file`,`N`.`work_file` AS `work_file`,`N`.`more_file` AS
+            `more_file`,`N`.`agreement_file` AS `agreement_file`,`N`.`privacy_file` AS `privacy_file`,`N`.`receipt_file`
+            AS `receipt_file`,`N`.`indt` AS `indt`,`N`.`inuser` AS `inuser`,`N`.`updt` AS `updt`,`N`.`upuser` AS
+            `upuser` from ((`naspi` `N` join `client` `C` on(`C`.`user_id` = `N`.`client_id`)) join
+            `user` `U` on(`C`.`user_id` = `U`.`id`))
+        </createView>
+    </changeSet>
+</databaseChangeLog>

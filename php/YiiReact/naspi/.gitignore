@@ -1,0 +1,13 @@
+/mysql/
+
+/web/vendor
+/web/runtime
+
+**/js/bundle*js
+**/js/vendors*js
+
+**/css/style.css*
+**/css/react-widgets.css*
+
+/react/node_modules/
+

@@ -1,0 +1,55 @@
+stages:
+  - build
+  - deploy
+
+build:
+  stage: build
+  only:
+    - develop
+    - main
+  image:
+    name: node:14-alpine
+  script:
+    - cd react
+    - npm i
+    - npm run build
+    - npm run style-scss
+    - npm run react-widgets-scss
+  artifacts:
+    paths:
+      - web/web/js/bundle.min.js
+      - web/web/js/vendors.min.js
+      - web/web/css/style.css
+      - web/web/css/react-widgets.css
+
+deploy:
+  stage: deploy
+  only:
+    - develop
+    - main
+  dependencies:
+    - build
+  image: yiisoftware/yii2-php:7.2-apache
+  before_script:
+    - rm -rf deploy
+    - apt update && apt install -y openssh-client rsync curl
+    - eval $(ssh-agent -s)
+    - echo "$SSH_PRIVATE_KEY" | ssh-add -
+    - mkdir ~/.ssh
+    - echo $'Host *\n\tStrictHostKeyChecking no' > ~/.ssh/config
+  script:
+    - cd web
+    - composer install
+    - find . -type f -exec chmod 0644 {} +
+    - find . -type d -exec chmod 0755 {} +
+    - rsync -arv --delete --exclude=.* 
+      --exclude=/*.* 
+      --exclude=ReactAsset.php 
+      --exclude=/web/index.php 
+      --exclude=/runtime 
+      --exclude=/web/assets 
+      --exclude=/config 
+      . naspi@naspi.online:/var/www-naspi
+  environment:
+    name: test
+    url: https://naspi.online
