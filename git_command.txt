@@ -1,0 +1,84 @@
+GIT CODE COMMITE
+=========================================================================================
+source Envs/mgp3.6/bin/activate
+cd MGP/djangoproject
+git
+git branch
+if branch have to chnage
+----------------------------------------------------------------------------------------
+git branch --show-current
+git checkout tarun-feature-dashboard
+----------------------------------------------------------------------------------------
+git status (Red Line)
+git add .
+git status (Green Line)
+git commit
+	-	Enter Description
+	CTR + X
+	Y
+	Enter
+if git not config
+-----------------------------------------------------------------------------------------
+git config --global user.email "tarunsengar1987@gmail.com"
+git config --global user.name "Tarun"
+git commit
+	-	Enter Description
+	CTR + X
+	Y
+	Enter
+	
+	
+	git commit --amend --author="Tarun <tarunsengar1987@gmail>" --no-edit
+git rebase --continue
+
+git push support-menu-actions66 --force
+------------------------------------------------------------------------------------------	
+git log
+git push
+
+=========================================================================================
+PG: baddest_buddy@1323
+
+
+=======================================================================================================
+how to pass array in react state
+
+https://stackoverflow.com/questions/35074365/typescript-interface-default-values
+https://stackoverflow.com/questions/55987953/how-do-i-update-states-onchange-in-an-array-of-object-in-react-hooks
+
+========================================================================================================
+ubuntu file permission
+chmod -R 777 ./
+
+==================================================================================
+ubuntu
+
+user : ubuntu
+pass : vikram1597
+
+======================================================================
+Add user name and email to git 
+
+git config --global user.name "My Name"
+git config --global user.email "myemail@example.com"
+=========================================================================
+How do I make Git ignore file mode (chmod) changes?
+
+git config core.fileMode false
+==========================================================================
+change last commited name in git
+git commit --amend --author="Author Name <email@address.com>" --no-edit
+============================================================================
+delete branch locally and remontly
+
+// delete branch locally
+git branch -d localBranchName
+
+// delete branch remotely
+
+
+user : ubuntu
+pass: vikram1597
+================================================================================
+
+

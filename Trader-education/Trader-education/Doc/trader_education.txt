@@ -1,0 +1,216 @@
+Notion invitation
+
+https://www.notion.so/invite/4fb3aeca3c24b6153bcbaeeb9c8d14f8aaeac200?channel=email
+
+=========================================================================================
+https://lumen.laravel.com/docs/9.x/installation
+
+Run project : php -S localhost:8000 -t public
+
+=========================================================================================
+swager
+
+
+=========================================================================================.
+Reference Link For JWT Token
+
+https://dev.to/ndiecodes/build-a-jwt-authenticated-api-with-lumen-2afm
+https://medium.com/rajtechnologies/laravel-lumen-authentication-jwt-auth-e6b175beaf89
+https://medium.com/rajtechnologies/laravel-lumen-authentication-jwt-auth-e6b175beaf89
+https://dev.to/ndiecodes/build-a-jwt-authenticated-api-with-lumen-2afm
+
+=========================================================================================
+php artisan make:migration create_users_table --create=users
+
+php artisan make:migration create_users_table --create=users
+
+
+php artisan make:migration create_account_table --create=account
+=================================================================================================
+https://jwt-auth.readthedocs.io/en/develop/quick-start/
+
+
+php artisan make:controller AccountController --resource --model=Account
+
+
+================================================================================================
+Websocket 
+
+https://beyondco.de/docs/laravel-websockets/getting-started/installation
+
+https://www.piesocket.com/blog/php-websocket -> working
+============================================================================================
+Install swagger
+
+composer require "darkaonline/swagger-lume:9.0.*"
+
+php artisan swagger-lume:publish
+php artisan swagger-lume:generate
+
+cp  vendor/swagger-api/swagger-ui/dist public/swagger-ui-assets
+
+
+https://sudkumar.com/blogs/api-documentation-in-laravel-and-lumen-with-swagger
+https://stackoverflow.com/questions/45211512/how-to-integrate-swagger-in-lumen-laravel-for-rest-api
+
+==============================================================================================
+Local Swager API live
+https://api.qa01.trds.pro/swagger/?urls.primaryName=mt4-streaming
+
+==============================================================================================
+Local Swager API local
+
+http://localhost:8000/api/documentation
+
+Open swager
+php -S localhost:8000 public/index.php
+
+----------------------------------------------------------------------------------------------
+command
+
+php artisan swagger-lume:generate
+php artisan swagger-lume:publish
+==============================================================================================
+https://www.piesocket.com/app/account
+
+vikramc.brainerhub@gmail.com
+vikram@1597
+===============================================================================================
+https://us04st-cf.zoom.us/web_client/6orpgrb/html/externalLinkPage.html?ref=https://www.figma.com/file/vxNjIlaEwgjwfRATLEn0Dt/Calculator-phases?node-id=0%25253A1
+=====================================================================================================
+
+Node js websocket connection
+https://www.js-tutorials.com/nodejs-tutorial/simple-websocket-example-with-nodejs/
+=====================================================================================================
+Trading Economics API
+
+http://docs.tradingeconomics.com/?php#events
+http://docs.tradingeconomics.com/?php#indicators
+
+https://tradingeconomics.com/api/
+http://docs.tradingeconomics.com/
+====================================================================================================
+
+Bitbucket Password
+email: vikramc.brainerhub@gmail.com
+user: vikramsinh_chauhan
+Password: ATBBEYJ5TWvXL9uUdsCUJVJUN6cqEE37EEB7
+
+===================================================================================================
+connect PUTTY
+Server 
+
+url : calculator.terl3.com
+host : 3.250.222.5
+ssh: ubuntu@3.250.222.5
+
+-----------------------------------------------------------------------------------------
+connect with ubuntu
+
+ssh -i trader_education/id_rsa ubuntu@3.250.222.5
+
+cd /opt/dev
+
+user : root
+password : eS9@d^o767tk
+
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'eS9@d^o767tk';
+
+
+
+/etc/nginx/sites-enabled
+==================================================================================================
+- upgrade php
+- upgrade composer
+- install mysql
+- create database trader_education_calculator
+
+
+==================================================================================
+host: trl-db.cdirqnmzbg66.eu-west-1.rds.amazonaws.com
+user: brainerhub
+pass: 8Qg8MceyPxEjnVtcU3qV
+db_name: terl_status
+
+
+
+New user register
+
+https://calculator.terl3.com/api/register?name=brainerhub&email=vikramc.brainerhub@gmail.com&password=vikram1432&device=API&brandId=fsa
+
+--------------------------------------------------------------------------------------------
+login 
+https://calculator.terl3.com/api/login
+
+pass body row json
+
+{
+    "brandId" : "fsa",
+    "device" : "API",
+    "email" : "vikramc.brainerhub@gmail.com",
+    "password" : "vikram1432"
+}
+-----------------------------------------------------------------------------------------
+Get symbols from lavatech 
+https://calculator.terl3.com/api/lavateck/get-symbols
+
+----------------------------------------------------------------------------------------
+Get Symbol rate from lavatech
+https://calculator.terl3.com/api/lavateck/get-rates?symbol=EURUSD
+
+
+
+
+
+
+pm 2
+
+pm2 stop
+
+
+localhost:5000/get-symbol-rate
+domain.com/symbols/get-symbol-rate
+
+
+
+===============================================================================================
+Add session
+
+composer require illuminate/session
+
+
+https://www.cyfervoid.com/article/how-to-enable-session-in-lumen
+
+===============================================================================================
+
+ws://calculator.terl3.com/
+
+================================================================================================
+/etc/nginx/sites-enabled
+ 
+
+
+Hello Ma'am and Sir,
+
+I am writing this email to inform you that I want to leave on 3rd November 2022(Thursday) because I need to present on the   Ramdev pir pathh and small function related to my house 
+So, please allow me to leave.
+
+ Thank you
+
+
+sudo systemctl restart nginx
+
+sudo systemctl status nginx
+
+
+error log
+/var/log/nginx
+
+====================================================================================================
+ws://localhost:5001
+ws://calculator.terl3.com:50001
+
+https://teams.microsoft.com/_#/pre-join-calling/19:meeting_YmVkODg0OTctMDY1NC00MjBhLWE2NjEtOTAzNzM1NmE5YTc5@thread.v2
+
+
+ws://calculator.terl3.com/symbols
