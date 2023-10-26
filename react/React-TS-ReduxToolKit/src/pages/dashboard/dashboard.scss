@@ -1,0 +1,182 @@
+.bg-yellow {
+    background-color: #D9B846 !important;
+}
+
+.iconBtn {
+    border-radius: 15px !important;
+    background: #EDEDED !important;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+    display: flex !important;
+    align-items: center !important;
+    height: 40px;
+    width: 40px;
+    padding: 10px !important;
+    box-sizing: border-box !important;
+}
+
+.blueBtn {
+    border-radius: 15px !important;
+    background: #106392 !important;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+    display: flex !important;
+    align-items: center !important;
+    height: 40px;
+    padding: 10px 16px !important;
+    box-sizing: border-box !important;
+}
+
+
+.selectBox {
+    border-radius: 15px !important;
+    background: #EDEDED;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.10);
+    height: 40px;
+    min-width: 108px;
+    border: none;
+    color: #3F3F3F !important;
+    font-size: 14px !important;
+    font-family: Inter !important;
+    font-style: normal;
+    font-weight: 700 !important;
+    text-align: center;
+
+    fieldset {
+        border: none;
+    }
+}
+
+.selectChangeBox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .MuiInputBase-root {
+        border-radius: 15px;
+        background: #EDEDED;
+        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.10);
+        height: 40px;
+        min-width: 108px;
+        border: none;
+        color: #3F3F3F;
+        font-size: 14px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 700;
+        text-align: center;
+
+        fieldset {
+            border: none;
+        }
+    }
+}
+
+.dashboardCard {
+    border-radius: 40px;
+    background: #FFF;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
+    padding: 25px 55px 35px;
+
+    &__head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-bottom: 32px;
+    }
+
+    &__body {
+        border-radius: 15px;
+        border: 1px solid #B7B7B7;
+        overflow: hidden;
+
+        &-item {
+            border-bottom: 1px solid #fff;
+            color: #fff;
+            background-color: #B7B7B7;
+            font-size: 14px;
+            font-family: Inter;
+            font-weight: 400;
+            padding: 6px 15px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+
+            &--done {
+                border-bottom: 1px solid #B7B7B7;
+                color: #B7B7B7;
+                background-color: #fff;
+            }
+
+            &.activeBlock {
+                padding: 10px 15px;
+            }
+
+            &:last-child {
+                border-bottom: none !important;
+            }
+        }
+    }
+
+    &__footer {
+        border-radius: 10px;
+        background: #EDEDED;
+        padding: 4px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+
+        &-items {
+            background-color: #B7B7B7;
+            padding: 8px 10px;
+            border-radius: 5px;
+            height: 30px;
+            box-sizing: border-box;
+            color: #FFF;
+            font-size: 12px;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 500;
+
+            &.finished {
+                background-color: #FFFFFF;
+            }
+
+            &.active {
+                padding: 8px 18px;
+            }
+        }
+    }
+}
+
+.dataCard {
+    border-radius: 40px;
+    background: #FFF;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
+    overflow: hidden;
+
+    &__head {
+        margin-bottom: 34px;
+    }
+
+    &__title {
+        min-width: 171px;
+        height: 40px;
+        background-color: #A2A2A2;
+        color: #FFF;
+        font-size: 14px !important;
+        font-family: Inter !important;
+        font-style: normal;
+        font-weight: 500 !important;
+        border-radius: 0 0 40px 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 30px;
+        box-sizing: border-box;
+    }
+}

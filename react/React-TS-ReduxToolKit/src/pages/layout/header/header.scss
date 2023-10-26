@@ -1,0 +1,118 @@
+.mainHeader {
+    background: #263C5C !important;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.15) !important;
+    padding: 8px 24px !important;
+
+    &__btnBox {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+    }
+
+    &__logo {
+        margin-right: 60px;
+    }
+
+    &__menu {
+        gap: 60px;
+        display: flex;
+
+        .MuiButtonBase-root {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            color: #FEFEFE;
+            font-size: 12px;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 500;
+            text-transform: capitalize !important;
+
+            svg {
+                height: 32px;
+                width: 32px;
+            }
+        }
+
+        &--mobile {
+            display: none;
+        }
+    }
+
+    .searchBox {
+        margin-right: 25px;
+    }
+}
+
+.searchBox {
+    border-radius: 12px;
+    border: 2px solid #F5F5F5;
+    padding: 4px 12px;
+    height: 35px;
+    box-sizing: border-box;
+    max-width: 215px !important;
+    display: flex;
+    align-items: center;
+
+    input {
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+        padding: 0 10px;
+        color: #F5F5F5;
+        font-size: 14px;
+        font-family: Inter;
+        font-weight: 500;
+        width: 100%;
+
+        &:focus,
+        &:focus-within {
+            border: none;
+            box-shadow: none;
+            outline: none;
+        }
+
+        &::placeholder {
+            color: #F5F5F5;
+        }
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .mainHeader {
+        &__logo {
+            margin-right: 35px;
+
+            svg {
+                width: 120px;
+            }
+        }
+
+        &__menu {
+            gap: 40px;
+        }
+
+        &__btnBox {
+            gap: 10px;
+        }
+
+        .searchBox {
+            margin-right: 10px;
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .mainHeader {
+
+        &__menu {
+            display: none;
+
+            &--mobile {
+                display: block;
+            }
+        }
+    }
+}
