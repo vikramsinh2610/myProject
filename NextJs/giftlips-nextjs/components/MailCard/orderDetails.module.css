@@ -1,0 +1,42 @@
+.orderDetailsList p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 22px;
+}
+.orderDetailsList p span {
+  font-weight: 600;
+  color: #4e2223;
+  min-width: 100px;
+  display: inline-block;
+}
+.orderDetailsList ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 20px 0;
+  list-style-type: none;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  gap: 10px;
+}
+.orderDetailsList ul p {
+  margin-bottom: 0;
+}
+.orderDetailsList ul p span {
+  min-width: 0;
+}
+.orderDetailsButtons {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-top: 60px;
+}
+
+@media only screen and (max-width: 768px) {
+  .orderDetailsList ul {
+    grid-template-columns: 1fr;
+  }
+  .orderDetailsList img {
+    margin: 0 0 35px;
+  }
+}

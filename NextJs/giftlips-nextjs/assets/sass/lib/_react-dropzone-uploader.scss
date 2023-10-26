@@ -1,0 +1,31 @@
+.dzu-dropzone {
+  overflow: auto;
+  border: 2px dashed #c7c7c7;
+
+  &.with-border {
+    border: 1.5px solid #2b2b2b;
+  }
+
+  .dzu-previewImage {
+    max-width: 96px;
+    max-height: 64px;
+  }
+
+  .dzu-inputLabelWithFiles {
+    background: $secondary;
+    border-color: transparent;
+    color: $gl-gray-1;
+  }
+
+  .dzu-previewButton {
+    &.trash-icon {
+      background-size: 24px 24px;
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .dzu-previewContainer {
+    border-bottom: 0;
+  }
+}

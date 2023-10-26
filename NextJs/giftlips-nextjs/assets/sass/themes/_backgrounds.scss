@@ -1,0 +1,35 @@
+[data-bg*="bg-vector-primary-"] {
+  background: url("../../../public/static/img/svg/background/bg-vector-primary.svg");
+  background-repeat: no-repeat;
+}
+[data-bg="bg-vector-primary-right-top"] {
+  background-size: auto;
+  background-position: right 0;
+}
+[data-bg="bg-vector-primary-right-middle"] {
+  background-size: auto;
+  background-position: right 50%;
+}
+[data-bg="bg-vector-primary-right-bottom"] {
+  background-size: auto;
+  background-position: right 100%;
+}
+[data-bg*="bg-vector-secondary-"] {
+  background: url("../../../public/static/img/svg/background/bg-vector-secondary.svg");
+  background-repeat: no-repeat;
+}
+[data-bg="bg-vector-secondary-left-top"] {
+  background-size: auto;
+  background-position: left 0;
+}
+[data-bg*="bg-vector-3-"] {
+  background: url("../../../public/static/img/svg/background/bg-vector-3.svg");
+  background-repeat: no-repeat;
+}
+[data-bg="bg-vector-3-right-bottom"] {
+  background-size: auto;
+  background-position: right 100%;
+}
+[data-bg="bg-gl-primary-linear-gradient"] {
+  background: $gl-red-linear-gradient;
+}

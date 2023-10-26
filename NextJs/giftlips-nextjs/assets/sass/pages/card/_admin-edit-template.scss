@@ -1,0 +1,13 @@
+.editAdminTemplates {
+  .nav-tabs {
+    .nav-item {
+      .nav-link {
+        color: $black;
+      }
+    }
+  }
+  .nav-link.active,
+  .nav-tabs .nav-item.show .nav-link {
+    border-bottom: 3px solid #111111 !important;
+  }
+}

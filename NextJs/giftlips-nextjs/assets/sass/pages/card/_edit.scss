@@ -1,0 +1,89 @@
+.CardEditPage {
+  background: #f9f9f9;
+  // min-height: 100vh;
+  padding: 50px 0;
+  min-height: calc(100vh - 157px);
+
+  & > div {
+    height: 100%;
+  }
+
+  .list-group {
+    --#{$prefix}list-group-color: #{$list-group-color};
+    --#{$prefix}list-group-bg: #{$list-group-bg};
+    --#{$prefix}list-group-border-color: #{$list-group-border-color};
+    --#{$prefix}list-group-border-width: #{$list-group-border-width};
+    --#{$prefix}list-group-border-radius: #{$list-group-border-radius};
+    --#{$prefix}list-group-item-padding-x: #{$list-group-item-padding-x};
+    --#{$prefix}list-group-item-padding-y: #{$list-group-item-padding-y};
+    --#{$prefix}list-group-action-color: #{$list-group-action-color};
+    --#{$prefix}list-group-action-hover-color: #{$list-group-action-hover-color};
+    --#{$prefix}list-group-action-hover-bg: #{$list-group-hover-bg};
+    --#{$prefix}list-group-action-active-color: #{$list-group-action-active-color};
+    --#{$prefix}list-group-action-active-bg: #{$list-group-action-active-bg};
+    --#{$prefix}list-group-disabled-color: #{$list-group-disabled-color};
+    --#{$prefix}list-group-disabled-bg: #{$list-group-disabled-bg};
+    --#{$prefix}list-group-active-color: #{$list-group-active-color};
+    --#{$prefix}list-group-active-bg: #{$list-group-active-bg};
+    --#{$prefix}list-group-active-border-color: #{$list-group-active-border-color};
+
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 0;
+    margin-bottom: 0;
+    @include border-radius(var(--#{$prefix}list-group-border-radius));
+  }
+  .list-group {
+    max-width: 460px;
+    margin: 3rem auto;
+  }
+  .list-group-radio .form-check-input {
+    z-index: 2;
+    margin-top: -0.5em;
+  }
+  .list-group-radio .form-check-input:checked + .list-group-item {
+    background-color: var(--bs-body);
+    border-color: var(--bs-blue);
+    box-shadow: 0 0 0 2px var(--bs-blue);
+  }
+  .list-group-radio .list-group-item {
+    cursor: pointer;
+    border-radius: 0.5rem;
+  }
+  .form-check-input {
+    width: 1em;
+    height: 1em;
+    margin-top: 0.25em;
+    vertical-align: top;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .form-check-input:checked {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+  }
+  .form-check-input[type="radio"] {
+    border-radius: 50%;
+  }
+  .list-group-item {
+    position: relative;
+    display: block;
+    padding: var(--bs-list-group-item-padding-y)
+      var(--bs-list-group-item-padding-x);
+    color: var(--bs-list-group-color);
+    text-decoration: none;
+    background-color: var(--bs-list-group-bg);
+    border: var(--bs-list-group-border-width) solid
+      var(--bs-list-group-border-color);
+  }
+}

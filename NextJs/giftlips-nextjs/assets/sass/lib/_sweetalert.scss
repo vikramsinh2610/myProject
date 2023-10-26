@@ -1,0 +1,19 @@
+.swal2-container {
+  .swal2-styled {
+    font-weight: $font-weight-semibold;
+
+    &.swal2-cancel {
+      background-color: $secondary;
+      color: $gl-gray-1;
+      font-weight: $font-weight-semibold;
+    }
+    &.swal2-confirm {
+      background: $gl-red-linear-gradient;
+      color: $white;
+
+      &:hover {
+        background: $gl-red-linear-gradient-hover !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.gl-animate-moveDown {
+  animation-name: glMoveDown;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-direction: normal;
+}
+
+.gl-animate-moveUp {
+  animation-name: glMoveUp;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-direction: normal;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+.animate__fadeInWithOpacity {
+  animation-name: fadeInWithOpacity;
+}
+.animate__fadeOutWithOpacity {
+  animation-name: fadeOutWithOpacity;
+}

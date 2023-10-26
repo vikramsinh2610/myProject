@@ -1,0 +1,73 @@
+header,
+nav {
+  .bg-gl-primary-linear-gradient {
+    svg path {
+      fill: $white;
+    }
+  }
+  .navbar-nav {
+    align-items: center;
+  }
+}
+.userDropdown {
+  margin-left: 20px;
+  .dropdown-toggle {
+    display: flex;
+    align-items: center;
+    &::after {
+      content: unset;
+    }
+  }
+  .dropdown-item {
+    color: #202020;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    &:hover,
+    &:active,
+    &:focus {
+      color: #fd3259;
+      background-color: #ccc;
+    }
+    i {
+      margin-bottom: 0;
+    }
+  }
+}
+.userBox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #202020;
+  font-size: 16px;
+  font-weight: 600;
+  &__image {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    overflow: hidden;
+  }
+}
+
+.navbar-nav .dropdown-menu {
+  position: absolute !important;
+  right: 0 !important;
+  left: auto !important;
+}
+
+@media only screen and (max-width: 991px) {
+  header .navbar-nav,
+  nav .navbar-nav {
+    flex-direction: row;
+    gap: 18px;
+  }
+  .navbar {
+    padding: 0 !important;
+  }
+  .navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: absolute !important;
+  }
+}

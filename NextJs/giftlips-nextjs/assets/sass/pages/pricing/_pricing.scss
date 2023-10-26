@@ -1,0 +1,19 @@
+.frame-base-wrapper {
+  #background {
+    .preview-wrapper,
+    .carousel .slider-wrapper.axis-vertical {
+      -webkit-border-radius: 38.6px;
+      -moz-border-radius: 38.6px;
+      border-radius: 38.6px;
+    }
+
+    .carousel.carousel-slider {
+      width: auto !important;
+    }
+
+    .no-entries-uploaded {
+      height: 631.4px !important;
+      min-height: 100% !important;
+    }
+  }
+}

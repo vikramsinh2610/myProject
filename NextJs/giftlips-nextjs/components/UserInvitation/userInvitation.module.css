@@ -1,0 +1,25 @@
+.modalwidth {
+    max-width: 640px;
+}
+.inviteMail {
+    width: calc(100% - 130px);
+}
+
+ul.memberlist {
+    margin-bottom: 10px;
+    background: #fff;
+    padding: 20px 15px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px #ddd;
+}
+ul.memberlist li {
+ display: flex;
+ justify-content: space-between;
+ margin-bottom: 15px;
+}
+.membericon {
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 6px;
+    margin-right: 8px;
+}

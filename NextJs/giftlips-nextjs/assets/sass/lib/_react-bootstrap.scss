@@ -1,0 +1,26 @@
+.accordion-button {
+  &:not(.collapsed) {
+
+  }
+
+  &::after {
+
+  }
+}
+
+.nav-link {
+  color: #333;
+}
+
+#FooterFAQ {
+  .accordion-button {
+    font-family: 'Poppins';
+    padding: 20px 25px;
+    font-weight: normal;
+  }
+
+  .accordion-button:not(.collapsed) {
+    background: white;
+    color: black;
+  }
+}

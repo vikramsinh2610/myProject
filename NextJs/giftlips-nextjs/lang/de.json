@@ -1,0 +1,12 @@
+{
+  "Index": {
+    "title": "Start",
+    "description": "Das ist die Startseite."
+  },
+  "Dashboard": {
+    "greeting": "Hallo Wereld."
+  },
+  "LocaleSwitcher": {
+    "switchLocale": "{locale, select, de {Deutsch} en {Englisch} other {Unbekannt}}"
+  }
+}

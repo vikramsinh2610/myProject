@@ -1,0 +1,325 @@
+$utilities: map-merge(
+  $utilities,
+  (
+    "font-size-gl": (
+      responsive: true,
+      rfs: true,
+      property: font-size,
+      class: fs-gl,
+      values: $font-gl-sizes,
+    ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "gl-rounded": (
+      responsive: true,
+      property: border-radius,
+      class: gl-rounded,
+      values: (
+        null: 0.0625rem,
+        0: 0,
+        2: 0.125rem,
+        4: 0.25rem,
+        6: 0.375rem,
+        8: 0.5rem,
+        10: 0.625rem,
+        12: 0.75rem,
+        14: 0.875rem,
+        16: 1rem,
+        18: 1.125rem,
+        20: 1.25rem,
+      ),
+    ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "gl-line-height": (
+      responsive: true,
+      property: line-height,
+      class: lh,
+      values: (
+        1: 1,
+        "1-1": 1.1,
+        "1-2": 1.2,
+        "1-3": 1.3,
+        "1-4": 1.4,
+        "1-5": 1.5,
+        "1-6": 1.6,
+        "1-7": 1.7,
+        "1-8": 1.8,
+        "1-9": 1.9,
+        2: 2,
+        "2-1": 2.1,
+        "2-2": 2.2,
+        "2-3": 2.3,
+        "2-4": 2.4,
+        "2-5": 2.5,
+        "2-6": 2.6,
+        "2-7": 2.7,
+        "2-8": 2.8,
+        "2-9": 2.9,
+        3: 3,
+        sm: $line-height-sm,
+        base: $line-height-base,
+        md: $line-height-md,
+        lg: $line-height-lg,
+      ),
+    ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "gl-lh-px": (
+      responsive: true,
+      property: line-height,
+      class: lh-px,
+      values: $pxToRem,
+    ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "gl-fs-px": (
+      responsive: true,
+      property: font-size,
+      class: fs-px,
+      values: $pxToRem,
+    ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "gl-p-px": (
+      responsive: true,
+      property: padding,
+      class: p-px,
+      values: $pxToRem,
+    ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "gl-py-px": (
+      responsive: true,
+      property: padding-top padding-bottom,
+      class: py-px,
+      values: $pxToRem,
+    ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "gl-px-px": (
+      responsive: true,
+      property: padding-right padding-left,
+      class: px-px,
+      values: $pxToRem,
+    ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "gl-pt-px": (
+      responsive: true,
+      property: padding-top,
+      class: pt-px,
+      values: $pxToRem,
+    ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "gl-pb-px": (
+      responsive: true,
+      property: padding-bottom,
+      class: pb-px,
+      values: $pxToRem,
+    ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "gl-ps-px": (
+      responsive: true,
+      property: padding-left,
+      class: ps-px,
+      values: $pxToRem,
+    ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "gl-pe-px": (
+      responsive: true,
+      property: padding-right,
+      class: pe-px,
+      values: $pxToRem,
+    ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "gl-m-px": (
+      responsive: true,
+      property: margin,
+      class: m-px,
+      values: $pxToRem,
+    ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "gl-my-px": (
+      responsive: true,
+      property: margin-top margin-bottom,
+      class: my-px,
+      values: $pxToRem,
+    ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "gl-mx-px": (
+      responsive: true,
+      property: margin-right margin-left,
+      class: mx-px,
+      values: $pxToRem,
+    ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "gl-mt-px": (
+      responsive: true,
+      property: margin-top,
+      class: mt-px,
+      values: $pxToRem,
+    ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "gl-mb-px": (
+      responsive: true,
+      property: margin-bottom,
+      class: mb-px,
+      values: $pxToRem,
+    ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "gl-ms-px": (
+      responsive: true,
+      property: margin-left,
+      class: ms-px,
+      values: $pxToRem,
+    ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "gl-me-px": (
+      responsive: true,
+      property: margin-right,
+      class: me-px,
+      values: $pxToRem,
+    ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "gl-width": (
+      property: width,
+      responsive: true,
+      class: gl-w,
+      values: (
+        5: 5%,
+        10: 10%,
+        15: 15%,
+        20: 20%,
+        25: 25%,
+        30: 30%,
+        35: 35%,
+        40: 40%,
+        45: 45%,
+        50: 50%,
+        55: 55%,
+        60: 60%,
+        65: 65%,
+        70: 70%,
+        75: 75%,
+        80: 80%,
+        85: 85%,
+        90: 90%,
+        95: 95%,
+        100: 100%,
+
+        "5rem": 5rem,
+        "10rem": 10rem,
+        "15rem": 15rem,
+        "20rem": 20rem,
+        "25rem": 25rem,
+        "30rem": 30rem,
+        "35rem": 35rem,
+        "40rem": 40rem,
+        "45rem": 45rem,
+        "50rem": 50rem,
+        "55rem": 55rem,
+        "60rem": 60rem,
+        "65rem": 65rem,
+        "70rem": 70rem,
+        "75rem": 75rem,
+        "80rem": 80rem,
+        "85rem": 85rem,
+        "90rem": 90rem,
+        "95rem": 95rem,
+        "100rem": 100rem,
+
+        auto: auto,
+      ),
+    ),
+  )
+);
+
+$theme-colors: map-merge($theme-colors, $custom-gl-colors);

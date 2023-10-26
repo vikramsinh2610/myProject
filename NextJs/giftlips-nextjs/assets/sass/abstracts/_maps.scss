@@ -1,0 +1,8 @@
+$utilities-text-colors: map-merge($utilities-text-colors, $custom-gl-colors);
+
+$utilities-bg-colors: map-merge($utilities-bg-colors, $custom-gl-colors);
+
+$utilities-border-colors: map-merge(
+  $utilities-border-colors,
+  $custom-gl-colors
+);

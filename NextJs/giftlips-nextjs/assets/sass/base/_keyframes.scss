@@ -1,0 +1,85 @@
+@keyframes glMoveDown {
+  from,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  from {
+    transform: translateY(-0.15em);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes glMoveUp {
+  from,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-0.15em);
+  }
+}
+
+@-webkit-keyframes fadeInWithOpacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.8;
+  }
+}
+@keyframes fadeInWithOpacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.8;
+  }
+}
+
+@-webkit-keyframes fadeOutWithOpacity {
+  from {
+    opacity: 0.8;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fadeOutWithOpacity {
+  from {
+    opacity: 0.8;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes Confetti_Vector_Group {
+  0% {
+    transform: translateX(15px) translateY(15px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px) translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes Confetti_Ellipse_Group {
+  0% {
+    transform: translateX(15px) translateY(15px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px) translateY(0px);
+    opacity: 1;
+  }
+}

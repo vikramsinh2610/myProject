@@ -1,0 +1,35 @@
+.carousel-root {
+  .carousel.carousel-slider {
+    .slider-wrapper {
+      ul.slider {
+        li.slide {
+          [id^="play_container_"] {
+            top: 49%;
+            right: 50%;
+            -webkit-transform: translate(50%, -50%);
+            -moz-transform: translate(50%, -50%);
+            -ms-transform: translate(50%, -50%);
+            -o-transform: translate(50%, -50%);
+            transform: translate(50%, -50%);
+            background-color: rgb(0, 0, 0);
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+          }
+        }
+      }
+    }
+  }
+}
+
+.carousel-wrapper,
+.carousel,
+.carousel > .slider-wrapper,
+.carousel > .slider-wrapper > .slider {
+  height: 100vh !important;
+  max-height: -webkit-fill-available !important;
+}

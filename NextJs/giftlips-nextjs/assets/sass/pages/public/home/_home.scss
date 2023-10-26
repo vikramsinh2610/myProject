@@ -1,0 +1,91 @@
+.PublicHomePage,
+.PrivateHomePage,
+.Homepage {
+  .container.categories-buttons-container {
+    button {
+      -webkit-transition: all 1s ease-in;
+      -moz-transition: all 1s ease-in;
+      -ms-transition: all 1s ease-in;
+      -o-transition: all 1s ease-in;
+      transition: all 1s ease-in;
+
+      &.active {
+        background: linear-gradient(102.25deg, #ec007f 10.96%, $gl-red 93.91%);
+        > * {
+          color: $white;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .draggable-horizontal-scroll {
+      &.active {
+        background: rgba(255, 255, 255, 0.3);
+        cursor: grabbing;
+        transform: scale(1);
+      }
+      @include on-event(true) {
+        cursor: grabbing;
+
+        &::-webkit-scrollbar-thumb {
+          background: #7b7b7b;
+          border-radius: 30px;
+        }
+      }
+      &::-webkit-scrollbar {
+        height: 4px;
+      }
+      &::-webkit-scrollbar-track {
+        border-radius: 30px;
+        background: transparent;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: transparent;
+        border-radius: 30px;
+      }
+    }
+  }
+
+  .container.categories-list {
+    .row {
+      @include media-breakpoint-up(lg) {
+        max-height: 580px;
+        overflow-y: auto;
+
+        &::-webkit-scrollbar {
+          width: 4px;
+        }
+
+        &::-webkit-scrollbar-track {
+          border-radius: 30px;
+          background: #f8f8f8;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background: #6d6d6d;
+          border-radius: 30px;
+        }
+      }
+      .card-wrapper {
+        @include media-breakpoint-up(lg) {
+          @include rfs(224px, width);
+        }
+
+        .card {
+          //-webkit-border-radius: 16px;
+          //-moz-border-radius: 16px;
+          //border-radius: 16px;
+          border-radius: 0;
+
+          .card-img-top {
+            border-radius: 0;
+            //-webkit-border-radius: 16px 16px 0 0;
+            //-moz-border-radius: 16px 16px 0 0;
+            //border-radius: 16px 16px 0 0;
+          }
+        }
+      }
+    }
+  }
+}

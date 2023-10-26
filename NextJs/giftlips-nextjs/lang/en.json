@@ -1,0 +1,15 @@
+{
+  "Index": {
+    "title": "Home",
+    "description": "This is the home page."
+  },
+  "Customize": {
+    "downloadCard": "Download Card"
+  },
+  "Dashboard": {
+    "greeting": "Hello world."
+  },
+  "LocaleSwitcher": {
+    "switchLocale": "{locale, select, de {German} en {English} other {Unknown}}"
+  }
+}

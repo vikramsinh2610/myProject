@@ -1,0 +1,9 @@
+.main-nav {
+  .gridTemplateColumns {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+header {
+  background-color: $white;
+}

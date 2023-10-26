@@ -1,0 +1,65 @@
+[class^="styles-module_Editext__main_container"] {
+  button {
+    border-radius: 5px;
+  }
+  button[editext$="-button"] {
+    width: 32px;
+    height: 32px;
+    font-size: 12px;
+    border-radius: $border-radius-pill;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 0;
+    animation: fadeIn;
+    animation-duration: 0.5s;
+    color: #fff;
+    transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+
+    &:hover {
+      animation: fadeIn;
+      animation-duration: 0.5s;
+    }
+  }
+  button[editext="edit-button"] {
+    background-color: $gl-gray-5;
+    color: $gl-gray-1;
+
+    &::before {
+      transform: rotate(100deg);
+    }
+
+    &:hover {
+      background: $gl-yellow;
+      color: $white;
+    }
+  }
+  button[editext="save-button"] {
+    background-color: $primary;
+
+    &:hover {
+      background: mix(white, $primary, 40%);
+    }
+  }
+  button[editext="cancel-button"] {
+    background-color: $gl-gray-5;
+    color: $gl-gray-1;
+
+    &:hover {
+      background: mix(white, $gl-gray-5, 10%);
+      color: mix(white, $gl-gray-1, 20%);
+    }
+  }
+  input,
+  textarea {
+    border: 1px solid #d9dee3;
+    border-radius: 0.375rem;
+    animation: fadeIn;
+    animation-duration: 0.5s;
+    color: $gray-800;
+    padding: 0.375rem 0.75rem;
+    font-weight: inherit;
+    width: 100%;
+    outline: none;
+  }
+}

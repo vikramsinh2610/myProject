@@ -1,0 +1,26 @@
+.font-primary {
+  font-family: $text-font-primary !important;
+}
+.font-secondary {
+  font-family: $text-font-secondary !important;
+}
+.text-gl-primary-linear-gradient {
+  background: -webkit-linear-gradient(#ec007f, #ff003f);
+  background: linear-gradient(#ec007f, #ff003f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+.text-gl-primary-linear-gradient-reverse {
+  background: -webkit-linear-gradient(180deg, #ff003f 0%, #ec007f 100%);
+  background: linear-gradient(180deg, #ff003f 0%, #ec007f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+.fw-275 {
+  font-weight: 275 !important;
+}
+.fw-middle {
+  font-weight: 500 !important;
+}
