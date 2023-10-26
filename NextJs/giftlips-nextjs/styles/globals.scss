@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// remove React Player's video default margin
+.slide video {
+  margin: 0 !important;
+}
+
+.slide {
+  height: 100% !important;
+}
