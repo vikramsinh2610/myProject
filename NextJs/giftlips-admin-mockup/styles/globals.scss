@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.transition {
+  transition: all 0.2s ease;
+}
+
+.table-responsive {
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    border-radius: 15px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #ffeced;
+    border-radius: 15px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #1a607c;
+    border-radius: 15px;
+  }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: #0a516d;
+    }
+}
+
+svg text:hover {
+    cursor: move;
+}
+
+.dzu-dropzone {
+    .dzu-inputLabel {
+        border: 1px dashed #bbb;
+        padding: 30px 15px;
+        text-align: center;
+        border-radius: 10px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+
+        input {
+            display: none;
+        }
+    }
+
+    .dzu-previewContainer {
+        border: 1px dashed #bbb;
+        padding: 30px 15px;
+        text-align: center;
+        border-radius: 10px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+input[type="color"] {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    height: 50px;
+    padding: 0;
+    width: 50px;
+
+    *:focus {
+        border-radius: 0;
+        outline: none;
+        border: none;
+    }
+
+    ::-webkit-color-swatch-wrapper {
+        padding: 0;
+        border: none;
+    }
+
+    ::-webkit-color-swatch {
+        border: 0;
+        border-radius: 0;
+    }
+
+    ::-moz-color-swatch,
+    ::-moz-focus-inner {
+        border: 0;
+    }
+
+    ::-moz-focus-inner {
+        padding: 0;
+    }
+}
+
+.selectBox> :nth-child(3) {
+    @apply input-bordered input px-2 h-11 w-full text-sm font-semibold normal-case text-black focus:border-textColor focus:outline-none;
+}
+
+input[type="checkbox"] {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+
+    &+label {
+        position: relative;
+        cursor: pointer;
+
+        &:before {
+            content: '';
+            -webkit-appearance: none;
+            background-color: transparent;
+            border: 2px solid #358fc6;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+            padding: 10px;
+            display: inline-block;
+            position: relative;
+            vertical-align: middle;
+            cursor: pointer;
+            margin-right: 5px;
+            border-radius: 5px;
+        }
+    }
+    
+    &:checked+label:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 3px;
+        left: 8px;
+        width: 8px;
+        height: 14px;
+        border: solid #ed1d24;
+        border-width: 0 3px 3px 0;
+        transform: rotate(45deg);
+    }
+}
