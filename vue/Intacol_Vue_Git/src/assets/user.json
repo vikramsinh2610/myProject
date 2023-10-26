@@ -1,0 +1,128 @@
+{
+  "status": true,
+  "message": "data record",
+  "total_record": 10,
+  "data": [
+    {
+      "username": "Arjun1",
+      "password": "Arjun",
+      "fullname": "Arjun singh 1",
+      "email": "Arjun1@gmail.com",
+      "profile_pic": "",
+      "type": "Administration",
+      "register_at": "Administration",
+      "activate_at": "Administration",
+      "modulos_de": "companies"
+    },
+    {
+      "username": "Arjun2",
+      "password": "Arjun",
+      "fullname": "Arjun singh 2",
+      "email": "Arjun2@gmail.com",
+      "profile_pic": "",
+      "type": "Administration",
+      "register_at": "Administration",
+      "activate_at": "Administration",
+      "modulos_de": "companies"
+    },
+    {
+      "username": "Arjun3",
+      "password": "Arjun",
+      "fullname": "Arjun singh 3",
+      "email": "Arjun3@gmail.com",
+      "profile_pic": "",
+      "type": "Administration",
+      "register_at": "Administration",
+      "activate_at": "Administration",
+      "modulos_de": "companies"
+    },
+    {
+      "username": "Arjun4",
+      "password": "Arjun",
+      "fullname": "Arjun singh 4",
+      "email": "Arjun4@gmail.com",
+      "profile_pic": "",
+      "type": "Administration",
+      "register_at": "Administration",
+      "activate_at": "Administration",
+      "modulos_de": "companies"
+    },
+    {
+      "username": "Arjun5",
+      "password": "Arjun",
+      "fullname": "Arjun singh 5",
+      "email": "Arjun5@gmail.com",
+      "profile_pic": "",
+      "type": "Administration",
+      "register_at": "Administration",
+      "activate_at": "Administration",
+      "modulos_de": "companies"
+    },
+    {
+      "username": "Arjun6",
+      "password": "Arjun",
+      "fullname": "Arjun singh 6",
+      "email": "Arjun6@gmail.com",
+      "profile_pic": "",
+      "type": "Administration",
+      "register_at": "Administration",
+      "activate_at": "Administration",
+      "modulos_de": "companies"
+    },
+    {
+      "username": "Arjun7",
+      "password": "Arjun",
+      "fullname": "Arjun singh 7",
+      "email": "Arjun7@gmail.com",
+      "profile_pic": "",
+      "type": "Administration",
+      "register_at": "Administration",
+      "activate_at": "Administration",
+      "modulos_de": "companies"
+    },
+    {
+      "username": "Arjun8",
+      "password": "Arjun",
+      "fullname": "Arjun singh 8",
+      "email": "Arjun8@gmail.com",
+      "profile_pic": "",
+      "type": "Administration",
+      "register_at": "Administration",
+      "activate_at": "Administration",
+      "modulos_de": "companies"
+    },
+    {
+      "username": "Arjun9",
+      "password": "Arjun",
+      "fullname": "Arjun singh 9",
+      "email": "Arjun9@gmail.com",
+      "profile_pic": "",
+      "type": "Administration",
+      "register_at": "Administration",
+      "activate_at": "Administration",
+      "modulos_de": "companies"
+    },
+    {
+      "username": "Arjun10",
+      "password": "Arjun",
+      "fullname": "Arjun singh 10",
+      "email": "Arjun10@gmail.com",
+      "profile_pic": "",
+      "type": "Administration",
+      "register_at": "Administration",
+      "activate_at": "Administration",
+      "modulos_de": "companies"
+    },
+    {
+      "username": "Arjun11",
+      "password": "Arjun",
+      "fullname": "Arjun singh 11",
+      "email": "Arjun11@gmail.com",
+      "profile_pic": "",
+      "type": "Administration",
+      "register_at": "Administration",
+      "activate_at": "Administration",
+      "modulos_de": "companies"
+    }
+  ]
+}
