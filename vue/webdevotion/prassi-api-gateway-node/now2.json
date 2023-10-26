@@ -1,0 +1,183 @@
+{
+  "_id": "be032d73-8d1c-4f18-9e16-1ca405c0fe76",
+  "sepa": {
+    "iban": { "iban": "it75y0200805194000104473107", "swift": "0000" },
+    "number": "BWVRA000001695",
+    "address": {
+      "city": "ROMA",
+      "route": "Via di S. Tarcisio",
+      "country": "ITALIA",
+      "province": "RM",
+      "postalCode": "00178",
+      "streetNumber": "22"
+    },
+    "customer": {
+      "id": "25177",
+      "sex": "F",
+      "vat": "14000851007",
+      "name": "Fornopiu'",
+      "uuid": "a91e0a60-ae96-4da7-9f26-3cacb9856827",
+      "email": "panificiofornopiu@gmail.com",
+      "roleId": "promoter",
+      "status": 2,
+      "address": {
+        "city": "ROMA",
+        "route": "Via di S. Tarcisio",
+        "country": "ITALIA",
+        "latitude": 41.8436756,
+        "province": "RM",
+        "longitude": 12.550274,
+        "postalCode": "00178",
+        "streetNumber": "22"
+      },
+      "surname": "",
+      "twitter": "",
+      "facebook": "",
+      "linkedIn": "",
+      "birthCity": "",
+      "birthDate": "1970-01-01T00:00:00.000Z",
+      "inherited": false,
+      "isCompany": true,
+      "birthState": "",
+      "fiscalCode": "14000851007",
+      "fixedPhone": "3473692007",
+      "birthRegion": "",
+      "companyName": "Fornopiu'",
+      "companyType": { "key": 9, "value": "Altro" },
+      "displayname": "Fornopiu' ",
+      "mobilePhone": "3473692007",
+      "nationality": "",
+      "creationDate": "2023-01-31T00:00:00.000Z",
+      "customerType": 2,
+      "legalAddress": {
+        "city": "ROMA",
+        "route": "Via di S. Tarcisio",
+        "country": "ITALIA",
+        "latitude": 41.8436756,
+        "province": "RM",
+        "longitude": 12.550274,
+        "postalCode": "00178",
+        "streetNumber": "22"
+      },
+      "promoterName": "Simone Ianzini",
+      "displayAddress": "Via di S. Tarcisio, 22, 00178 ROMA (RM)",
+      "foundationDate": "2016-01-01T00:00:00.000Z",
+      "networkHierarchy": "01 CENTRO - SUD / 04 ROMA / A / 03",
+      "displayLegalAddress": "Via di S. Tarcisio, 22, 00178 ROMA (RM)",
+      "fiscalCodeAttachmentObj": null
+    },
+    "document": {},
+    "isThirdPayer": false,
+    "hasAdvisoryFee": true
+  },
+  "type": "inv",
+  "product": {
+    "code": "UIU1",
+    "name": "Forward Quant LT",
+    "type": "SUB",
+    "company": "FWU Life Insurance Lux SA",
+    "category": "Risparmio/Investimento",
+    "companyId": "08cf661f-a1ab-9340-9c53-aa9400b15d8c",
+    "productId": "36e72fcc-5b78-4791-bdae-1fcb8f2244ea"
+  },
+  "adequacy": {
+    "score": {
+      "g13-pir": 150,
+      "g11-life": 0,
+      "g28-unic": 150,
+      "g02-pupac": 50,
+      "g04-period": 150,
+      "g05-target": 100,
+      "g18-hybrid": 50,
+      "g17-rendita": 50,
+      "g12-lifegold": 0,
+      "g23-integrapa": 10,
+      "g24-integrapu": 100,
+      "g26-portfolio": 100,
+      "g25-multinvest": 100
+    },
+    "resultId": "b735e7bb-3927-413a-9c0a-66c775e214de"
+  },
+  "promoter": {
+    "name": "Simone",
+    "email": "simone.ianzini@sheltia.com",
+    "address": {
+      "city": "roma",
+      "route": "via ennio quirino visconti",
+      "country": "italia",
+      "province": "roma",
+      "postalCode": "00193",
+      "streetNumber": "103"
+    },
+    "surname": "Ianzini",
+    "ivassCode": "E000716921",
+    "promoterId": "744f1d4f-3210-5b4c-b945-a1f3d98e56a3",
+    "mobilePhone": "+393475450352",
+    "errorMessage": { "mobilePhone": "" },
+    "ruiSignupDate": "31/10/2022"
+  },
+  "extraInfo": { "place": "ROMA", "extraInfo": "obiettivi della società in linea con il prodotto sottoscritto" },
+  "signature": {
+    "files": [
+      { "fileId": "/files/7f6097e6-a030-4f49-935b-0d29c511260c", "fileType": "afc" },
+      { "fileId": "/files/190013a6-db38-4212-bd86-501ec5958a43", "fileType": "sepa" },
+      { "fileId": "/files/285f27d5-f0b2-48df-81bd-d7508feed105", "fileType": "allegato4" },
+      { "fileId": "/files/097cb66a-3de5-4aaf-a8e8-86a492d6ebf0", "fileType": "adequacy" }
+    ],
+    "customer": {
+      "info": {
+        "id": "38aca898-207f-4dc0-8d82-31d314be995b",
+        "name": "Simone",
+        "email": "nene83@virgilio.it",
+        "surname": "Ianzini",
+        "isCompany": false,
+        "mobilePhone": "+393475450352"
+      },
+      "email": "nene83@virgilio.it",
+      "status": "done",
+      "memberId": "/members/56a2c7cf-deb7-4899-aeb1-e8728e668a9e"
+    },
+    "promoter": {
+      "info": {
+        "id": "744f1d4f-3210-5b4c-b945-a1f3d98e56a3",
+        "name": "Simone",
+        "email": "simone.ianzini@sheltia.com",
+        "surname": "Ianzini",
+        "mobilePhone": "+393475450352"
+      },
+      "email": "simone.ianzini@sheltia.com",
+      "status": "done",
+      "memberId": "/members/2265038b-bb0b-4870-9700-17a1a3d2722c"
+    },
+    "thirdPayer": {
+      "info": { "id": "", "name": "", "email": "", "surname": "", "mobilePhone": "" },
+      "status": "pending"
+    },
+    "procedureId": "/procedures/efa56e26-2aec-4592-acb5-c7a4c1150ab4",
+    "procedureCompleted": false
+  },
+  "customerId": "a91e0a60-ae96-4da7-9f26-3cacb9856827",
+  "creationDate": "2023-01-31T11:32:46.294Z",
+  "distribution": {
+    "company": { "id": "18", "name": "FWU", "type": "impresa", "ivass": "N. II.00065 – ALBO IVASS", "riskText": 1 },
+    "riskText": "Senza autorizzazione ex art. 118 Cap pagamento non liberatorio"
+  },
+  "validSections": [
+    "adequacy-survey",
+    "pick-product",
+    "proposal-number",
+    "promoter-info",
+    "promoter-address",
+    "distribution-info",
+    "sepa-debit",
+    "sepa-customer-info",
+    "sepa-iban-info",
+    "end-extra-info",
+    "sign-create-pdf",
+    "sign-promoter",
+    "sign-customer",
+    "sign-download-pdf"
+  ],
+  "proposalNumber": "SUBFQL0168",
+  "inquiryResultId": "b0599820-2a7f-42b8-bdd9-ee78ad9ee806"
+}

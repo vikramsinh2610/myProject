@@ -1,0 +1,993 @@
+{
+  "_id": "5bd59799-bdce-41f5-bdc4-a516f9918a50",
+  "codeSurveyResult": "SRV-26533",
+  "creationDate": "2023-01-25T18:42:12.515Z",
+  "type": "inquiry",
+  "idSurvey": "50ad3529-7fe2-4841-b734-9cf564f309f4",
+  "customerId": "16eaf40e-3c91-46fa-bba8-8b465a8a853a",
+  "userId": "26e140cc-bb07-9547-b756-66a07b4cc3b3",
+  "practiceId": "",
+  "dossierId": "",
+  "state": "draft",
+  "results": [
+    { "_id": "risk", "points": 0, "gap": 0, "reasons": [], "eligible": true },
+    { "_id": "investment", "points": 0, "gap": 0, "reasons": [], "eligible": true },
+    { "_id": "pension", "points": 0, "gap": 0, "reasons": [], "eligible": true },
+    {
+      "_id": "saving",
+      "points": 10,
+      "gap": 100,
+      "reasons": [{ "rank": 10, "reason": "RISPARMIO/INVESTIMENTO" }],
+      "eligible": 10
+    },
+    { "_id": "pension", "points": 0, "gap": 0, "reasons": [], "eligible": true },
+    { "_id": "protection", "points": 0, "gap": 0, "reasons": [], "eligible": true }
+  ],
+  "questions": [
+    {
+      "_id": "basic",
+      "creationDate": "2022-01-17T12:43:38.743Z",
+      "multiple": false,
+      "multipleObligatory": false,
+      "multipleQuestion": false,
+      "texts": [{ "_id": "default", "text": "Anagrafica", "description": "", "section": "user-data" }],
+      "responses": [
+        {
+          "_id": "basic",
+          "text": "basic",
+          "selected": false,
+          "type": "person",
+          "typeValue": "16eaf40e-3c91-46fa-bba8-8b465a8a853a",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        }
+      ],
+      "dontCopy": false,
+      "required": true
+    },
+    {
+      "_id": "01-00-stato-civile",
+      "creationDate": "2021-04-14T17:17:23.989Z",
+      "multiple": false,
+      "multipleObligatory": false,
+      "multipleQuestion": false,
+      "texts": [{ "_id": "default", "text": "Stato Civile", "description": "", "section": "user-detail" }],
+      "responses": [
+        {
+          "_id": "01-stato-civile",
+          "text": "Specificare:",
+          "selected": false,
+          "type": "free-text",
+          "typeValue": "Nubile/celibe",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        }
+      ],
+      "dontCopy": true,
+      "required": true
+    },
+    {
+      "_id": "04-ad-carico",
+      "creationDate": "2021-04-13T21:29:17.544Z",
+      "multiple": false,
+      "multipleObligatory": false,
+      "multipleQuestion": false,
+      "texts": [{ "_id": "default", "text": "Persone a carico ", "description": "", "section": "user-detail" }],
+      "responses": [
+        {
+          "_id": "01-persone-carico",
+          "text": "N° persone a carico (incl. Figli) ",
+          "selected": false,
+          "type": "number",
+          "typeValue": "0",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        }
+      ],
+      "dontCopy": false,
+      "required": true
+    },
+    {
+      "_id": "01-08-settore-attivita",
+      "creationDate": "2021-04-09T15:36:00.865Z",
+      "multiple": false,
+      "multipleObligatory": false,
+      "multipleQuestion": false,
+      "texts": [{ "_id": "default", "text": "Settore di Attività", "description": "", "section": "02b-ad-lavorativa" }],
+      "responses": [
+        {
+          "_id": "01-08-01-attivita-dettaglio",
+          "text": "Specificare:",
+          "selected": false,
+          "type": "free-text",
+          "typeValue": "Famiglie consumatrici dei paesi ue membri dell'um",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        }
+      ],
+      "dontCopy": false,
+      "required": true
+    },
+    {
+      "_id": "job-situation",
+      "creationDate": "2021-04-09T15:36:00.865Z",
+      "multiple": false,
+      "multipleObligatory": false,
+      "multipleQuestion": false,
+      "texts": [{ "_id": "inquiry", "text": "Stato occupazionale", "description": "", "section": "02b-ad-lavorativa" }],
+      "responses": [
+        {
+          "_id": "01-09-01-imprenditore",
+          "text": "imprenditore/lavoratore autonomo",
+          "selected": false,
+          "type": "selection",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        },
+        {
+          "_id": "01-09-02-dipendente-det",
+          "text": "dipendente con contratto a tempo determinato",
+          "selected": false,
+          "type": "selection",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        },
+        {
+          "_id": "01-09-03-dipendente-in",
+          "text": "dipendente con contratto a tempo indeterminato",
+          "selected": true,
+          "type": "selection",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        },
+        {
+          "_id": "01-09-04-pensionato",
+          "text": "pensionato/a",
+          "selected": false,
+          "type": "selection",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        },
+        {
+          "_id": "01-09-05-nonoccupato",
+          "text": "non occupato",
+          "selected": false,
+          "type": "selection",
+          "relatedUserField": null,
+          "values": [
+            { "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" },
+            { "_id": "01-multipiano", "points": 10, "reason": "", "conditionedQuestionId": "" },
+            { "_id": "02-pupac", "points": 5, "reason": "", "conditionedQuestionId": "" },
+            { "_id": "04-period", "points": 5, "reason": "", "conditionedQuestionId": "" },
+            { "_id": "05-target", "points": 5, "reason": "", "conditionedQuestionId": "" },
+            { "_id": "06-guard", "points": 50, "reason": "", "conditionedQuestionId": "" },
+            { "_id": "07-quant", "points": 50, "reason": "", "conditionedQuestionId": "" },
+            { "_id": "08-certa", "points": 5, "reason": "", "conditionedQuestionId": "" },
+            { "_id": "09-accum", "points": 5, "reason": "", "conditionedQuestionId": "" },
+            { "_id": "11-life", "points": 50, "reason": "", "conditionedQuestionId": "" },
+            { "_id": "12-lifegold", "points": 50, "reason": "", "conditionedQuestionId": "" },
+            { "_id": "13-pir", "points": 50, "reason": "", "conditionedQuestionId": "" },
+            { "_id": "14-risp", "points": 10, "reason": "", "conditionedQuestionId": "" },
+            { "_id": "15-young", "points": 10, "reason": "", "conditionedQuestionId": "" },
+            { "_id": "16-capital", "points": 10, "reason": "", "conditionedQuestionId": "" },
+            { "_id": "17-rendita", "points": 10, "reason": "", "conditionedQuestionId": "" },
+            { "_id": "18-hybrid", "points": 10, "reason": "", "conditionedQuestionId": "" },
+            { "_id": "20-protetto", "points": 10, "reason": "", "conditionedQuestionId": "" },
+            { "_id": "21-risparmio", "points": 10, "reason": "", "conditionedQuestionId": "" },
+            { "_id": "22-titutela", "points": 10, "reason": "", "conditionedQuestionId": "" },
+            { "_id": "23-integrapa", "points": 5, "reason": "", "conditionedQuestionId": "" },
+            { "_id": "24-integrapu", "points": 5, "reason": "", "conditionedQuestionId": "" },
+            { "_id": "25-multinvest", "points": 10, "reason": "", "conditionedQuestionId": "" },
+            { "_id": "26-portfolio", "points": 20, "reason": "", "conditionedQuestionId": "" },
+            { "_id": "27-progetto", "points": 5, "reason": "", "conditionedQuestionId": "" },
+            { "_id": "29-gemini", "points": 50, "reason": "", "conditionedQuestionId": "" }
+          ]
+        },
+        {
+          "_id": "01-09-06-altro",
+          "text": "altro, specificare",
+          "selected": false,
+          "type": "free-text",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        }
+      ],
+      "dontCopy": false,
+      "required": true
+    },
+    {
+      "_id": "02-10-ultimo-reddito",
+      "creationDate": "2021-04-09T15:36:00.865Z",
+      "multiple": false,
+      "multipleObligatory": false,
+      "multipleQuestion": false,
+      "texts": [
+        {
+          "_id": "inquiry",
+          "text": "Ultimo reddito annuo",
+          "description": "(da mod. 730 o UNICO anno precedente)",
+          "section": "02-internal-user-finance"
+        }
+      ],
+      "responses": [
+        {
+          "_id": "02-10-01-finoa20",
+          "text": "Fino a 20.000 euro",
+          "selected": false,
+          "type": "selection",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        },
+        {
+          "_id": "02-10-01-finoa40",
+          "text": "Da 20.001 a 40.000 euro",
+          "selected": true,
+          "type": "selection",
+          "typeText": "",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        },
+        {
+          "_id": "02-10-01-finoa60",
+          "text": "Da 40.001 a 60.000 euro",
+          "selected": false,
+          "type": "selection",
+          "typeText": "",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        },
+        {
+          "_id": "02-10-01-finoa80",
+          "text": "Da 60.001 euro a 80.000 euro",
+          "selected": false,
+          "type": "selection",
+          "typeText": "",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        },
+        {
+          "_id": "02-10-01-oltre80",
+          "text": "Oltre 80.001 euro",
+          "selected": false,
+          "type": "selection",
+          "typeText": "",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        }
+      ],
+      "dontCopy": false,
+      "required": true
+    },
+    {
+      "_id": "02-11-capacita-risparmio",
+      "creationDate": "2021-04-09T15:36:00.865Z",
+      "multiple": false,
+      "multipleObligatory": false,
+      "multipleQuestion": false,
+      "texts": [
+        {
+          "_id": "inquiry",
+          "text": "Capacità di risparmio annua in termini percentuali",
+          "description": "",
+          "section": "02-internal-user-finance"
+        }
+      ],
+      "responses": [
+        {
+          "_id": "02-11-01-fino5",
+          "text": "fino al 5%",
+          "selected": false,
+          "type": "selection",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        },
+        {
+          "_id": "02-11-02-fino25",
+          "text": "dal 5% al 25%",
+          "selected": true,
+          "type": "selection",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        },
+        {
+          "_id": "02-11-03-fino50",
+          "text": "dal 25% al 50%",
+          "selected": false,
+          "type": "selection",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        },
+        {
+          "_id": "02-11-04-oltre50",
+          "text": "oltre il 50%",
+          "selected": false,
+          "type": "selection",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        }
+      ],
+      "dontCopy": true,
+      "required": true
+    },
+    {
+      "_id": "02-12-polizze-sottoscritte",
+      "creationDate": "2021-04-09T15:36:00.865Z",
+      "multiple": false,
+      "multipleObligatory": false,
+      "multipleQuestion": false,
+      "texts": [
+        {
+          "_id": "default",
+          "text": "Polizze assicurative già sottoscritte ed in vigore",
+          "description": "",
+          "section": "02-internal-user-finance"
+        }
+      ],
+      "responses": [
+        {
+          "_id": "02-12-00-nessuna",
+          "text": "no, nessuna",
+          "selected": true,
+          "type": "selection",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        },
+        {
+          "_id": "02-12-01-options",
+          "text": "si ",
+          "selected": false,
+          "type": "selection",
+          "relatedUserField": null,
+          "values": [
+            {
+              "_id": "default",
+              "points": 0,
+              "reason": "",
+              "conditionedQuestionId": "02-12-polizze-sottoscritte-detail"
+            }
+          ]
+        }
+      ],
+      "dontCopy": true,
+      "required": true
+    },
+    {
+      "_id": "02-12-polizze-sottoscritte-detail",
+      "creationDate": "2021-04-09T15:36:00.865Z",
+      "multiple": true,
+      "multipleObligatory": false,
+      "multipleQuestion": false,
+      "texts": [{ "_id": "default", "text": "quali:", "description": "", "section": "02-internal-user-finance" }],
+      "responses": [
+        {
+          "_id": "02-12-01-vita",
+          "text": "polizze vita",
+          "selected": false,
+          "type": "selection",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        },
+        {
+          "_id": "02-12-02-vita-puro",
+          "text": "polizze vita puro rischio (es. tcm)",
+          "selected": false,
+          "type": "selection",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        },
+        {
+          "_id": "02-12-03-danni",
+          "text": "polizze danni",
+          "selected": false,
+          "type": "selection",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        },
+        {
+          "_id": "02-12-04-auto",
+          "text": "polizze rc auto",
+          "selected": false,
+          "type": "selection",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        },
+        {
+          "_id": "02-12-05-prof",
+          "text": "polizze rc professionale",
+          "selected": false,
+          "type": "selection",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        },
+        {
+          "_id": "02-12-06-prev",
+          "text": "forme di previdenza complementare",
+          "selected": false,
+          "type": "selection",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        }
+      ],
+      "dontCopy": true,
+      "required": true
+    },
+    {
+      "_id": "02-13-finanziari",
+      "creationDate": "2021-04-09T15:36:00.865Z",
+      "multiple": false,
+      "multipleObligatory": false,
+      "multipleQuestion": false,
+      "texts": [
+        {
+          "_id": "default",
+          "text": "Altri prodotti finanziari di investimento già sottoscritti e in essere",
+          "description": "",
+          "section": "02-internal-user-finance"
+        }
+      ],
+      "responses": [
+        {
+          "_id": "02-12-01-si",
+          "text": "si ",
+          "selected": true,
+          "type": "selection",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        },
+        {
+          "_id": "02-12-02-no",
+          "text": "no ",
+          "selected": false,
+          "type": "selection",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        }
+      ],
+      "dontCopy": true,
+      "required": true
+    },
+    {
+      "_id": "03-14-obiettivi",
+      "creationDate": "2021-04-09T15:36:00.865Z",
+      "multiple": true,
+      "multipleObligatory": false,
+      "multipleQuestion": false,
+      "texts": [
+        {
+          "_id": "default",
+          "text": "Obiettivi assicurativi da perseguire",
+          "description": "",
+          "section": "03-internal-user-expectation"
+        }
+      ],
+      "responses": [
+        {
+          "_id": "03-14-01-persone",
+          "text": "protezione persone",
+          "selected": false,
+          "type": "selection",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "04-16-rischio" }]
+        },
+        {
+          "_id": "03-14-02-cose",
+          "text": "protezione cose/attività",
+          "selected": false,
+          "type": "selection",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "05-17-rischio" }]
+        },
+        {
+          "_id": "03-14-03-risparmio",
+          "text": "risparmio/investimento",
+          "selected": true,
+          "type": "selection",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "06-18-patrimonio" }]
+        },
+        {
+          "_id": "03-14-04-previdenza",
+          "text": "previdenza",
+          "selected": false,
+          "type": "selection",
+          "relatedUserField": null,
+          "values": [
+            {
+              "_id": "default",
+              "points": 0,
+              "reason": "",
+              "conditionedQuestionId": "07-20-previdenza,first-pension-payment"
+            }
+          ]
+        }
+      ],
+      "dontCopy": true,
+      "required": true
+    },
+    {
+      "_id": "03-15-destinatario",
+      "creationDate": "2021-04-09T15:36:00.865Z",
+      "multiple": true,
+      "multipleObligatory": false,
+      "multipleQuestion": false,
+      "texts": [
+        {
+          "_id": "default",
+          "text": "Destinatario/i della polizza assicurativa",
+          "description": "",
+          "section": "03-internal-user-expectation"
+        }
+      ],
+      "responses": [
+        {
+          "_id": "03-15-01-se",
+          "text": "se stesso/la propria attività",
+          "selected": true,
+          "type": "selection",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        },
+        {
+          "_id": "03-15-02-nucleo",
+          "text": "nucleo familiare/persone care",
+          "selected": false,
+          "type": "selection",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        },
+        {
+          "_id": "03-15-03-collett",
+          "text": "collettività/ i propri dipendenti",
+          "selected": false,
+          "type": "selection",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        }
+      ],
+      "dontCopy": true,
+      "required": true
+    },
+    {
+      "_id": "04-16-rischio",
+      "creationDate": "2021-04-09T15:36:00.865Z",
+      "multiple": true,
+      "multipleObligatory": false,
+      "multipleQuestion": false,
+      "texts": [
+        {
+          "_id": "default",
+          "text": "Da quale rischio intende proteggersi",
+          "description": "",
+          "section": "04-internal-user-protection"
+        }
+      ],
+      "responses": [
+        {
+          "_id": "04-16-01-morte",
+          "text": "morte",
+          "selected": false,
+          "type": "selection",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        },
+        {
+          "_id": "04-16-02-invalidit",
+          "text": "invalidità/infortunio",
+          "selected": false,
+          "type": "selection",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        },
+        {
+          "_id": "04-16-03-malattia",
+          "text": "malattia",
+          "selected": false,
+          "type": "selection",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        },
+        {
+          "_id": "04-16-04-altro",
+          "text": "altro, specificare:",
+          "selected": false,
+          "type": "free-text",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        }
+      ],
+      "dontCopy": true,
+      "required": true
+    },
+    {
+      "_id": "05-17-rischio",
+      "creationDate": "2021-04-09T15:36:00.865Z",
+      "multiple": true,
+      "multipleObligatory": false,
+      "multipleQuestion": false,
+      "texts": [
+        {
+          "_id": "default",
+          "text": "Da quale rischio intende proteggersi",
+          "description": "",
+          "section": "05-internal-user-protection-things"
+        }
+      ],
+      "responses": [
+        {
+          "_id": "05-17-01-danni",
+          "text": "danni materiali causati alla casa/da membri della famiglia",
+          "selected": false,
+          "type": "selection",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        },
+        {
+          "_id": "05-17-02-rc",
+          "text": "RC / tutela legale",
+          "selected": false,
+          "type": "selection",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        },
+        {
+          "_id": "05-17-03-azienda",
+          "text": "danni materiali causati all’azienda",
+          "selected": false,
+          "type": "selection",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        },
+        {
+          "_id": "05-17-04-info",
+          "text": "rischi informatici",
+          "selected": false,
+          "type": "selection",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        },
+        {
+          "_id": "05-17-05-altro",
+          "text": "altro, specificare:",
+          "selected": false,
+          "type": "free-text",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        }
+      ],
+      "dontCopy": true,
+      "required": true
+    },
+    {
+      "_id": "06-18-patrimonio",
+      "creationDate": "2021-04-09T15:36:00.865Z",
+      "multiple": false,
+      "multipleObligatory": false,
+      "multipleQuestion": false,
+      "texts": [
+        {
+          "_id": "default",
+          "text": "Patrimonio disponibile all’investimento",
+          "description": "",
+          "section": "06-internal-user-investment"
+        }
+      ],
+      "responses": [
+        {
+          "_id": "06-18-01-5000",
+          "text": "fino a 5.000 euro",
+          "selected": true,
+          "type": "selection",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "06-19-propensione" }]
+        },
+        {
+          "_id": "06-18-02-2000",
+          "text": "da 5.001 a 19.999 euro",
+          "selected": false,
+          "type": "selection",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "06-19-propensione1" }]
+        },
+        {
+          "_id": "06-18-02-oltre",
+          "text": "oltre 20.000 euro",
+          "selected": false,
+          "type": "selection",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "06-19-propensione2" }]
+        }
+      ],
+      "dontCopy": true,
+      "required": true
+    },
+    {
+      "_id": "06-19-propensione",
+      "creationDate": "2021-04-09T15:36:00.865Z",
+      "multiple": false,
+      "multipleObligatory": false,
+      "multipleQuestion": false,
+      "texts": [
+        {
+          "_id": "default",
+          "text": "Propensione al rischio",
+          "description": "",
+          "section": "06-internal-user-investment"
+        }
+      ],
+      "responses": [
+        {
+          "_id": "06-19-01-basso",
+          "text": "basso",
+          "selected": false,
+          "type": "selection",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        },
+        {
+          "_id": "06-19-02-medio",
+          "text": "medio",
+          "selected": true,
+          "type": "selection",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        },
+        {
+          "_id": "06-19-02-alto",
+          "text": "alto",
+          "selected": false,
+          "type": "selection",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        }
+      ],
+      "dontCopy": true,
+      "required": true
+    },
+    {
+      "_id": "06-19-propensione1",
+      "creationDate": "2021-04-09T15:36:00.865Z",
+      "multiple": false,
+      "multipleObligatory": false,
+      "multipleQuestion": false,
+      "texts": [
+        {
+          "_id": "default",
+          "text": "Propensione al rischio",
+          "description": "",
+          "section": "06-internal-user-investment"
+        }
+      ],
+      "responses": [
+        {
+          "_id": "06-19-01-basso-20000",
+          "text": "basso",
+          "selected": false,
+          "type": "selection",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        },
+        {
+          "_id": "06-19-02-medio-20000",
+          "text": "medio",
+          "selected": false,
+          "type": "selection",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        },
+        {
+          "_id": "06-19-02-alto-20000",
+          "text": "alto",
+          "selected": false,
+          "type": "selection",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        }
+      ],
+      "dontCopy": true,
+      "required": true
+    },
+    {
+      "_id": "06-19-propensione2",
+      "creationDate": "2021-04-09T15:36:00.865Z",
+      "multiple": false,
+      "multipleObligatory": false,
+      "multipleQuestion": false,
+      "texts": [
+        {
+          "_id": "default",
+          "text": "Propensione al rischio",
+          "description": "",
+          "section": "06-internal-user-investment"
+        }
+      ],
+      "responses": [
+        {
+          "_id": "06-19-01-basso-oltre",
+          "text": "basso",
+          "selected": false,
+          "type": "selection",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        },
+        {
+          "_id": "06-19-02-medio-oltre",
+          "text": "medio",
+          "selected": false,
+          "type": "selection",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        },
+        {
+          "_id": "06-19-02-alto-oltre",
+          "text": "alto",
+          "selected": false,
+          "type": "selection",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        }
+      ],
+      "dontCopy": true,
+      "required": true
+    },
+    {
+      "_id": "07-20-previdenza",
+      "creationDate": "2021-04-09T15:36:00.865Z",
+      "multiple": false,
+      "multipleObligatory": false,
+      "multipleQuestion": false,
+      "texts": [
+        {
+          "_id": "default",
+          "text": "Forme di previdenza complementare già sottoscritte",
+          "description": "",
+          "section": "07-internal-user-previdence"
+        }
+      ],
+      "responses": [
+        {
+          "_id": "07-20-01-no",
+          "text": "no ",
+          "selected": false,
+          "type": "selection",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        },
+        {
+          "_id": "07-20-02-si",
+          "text": "si ",
+          "selected": false,
+          "type": "selection",
+          "relatedUserField": null,
+          "values": [
+            { "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "07-20-previdenza-detail" }
+          ]
+        }
+      ],
+      "dontCopy": true,
+      "required": true
+    },
+    {
+      "_id": "07-20-previdenza-detail",
+      "creationDate": "2021-04-09T15:36:00.865Z",
+      "multiple": true,
+      "multipleObligatory": false,
+      "multipleQuestion": false,
+      "texts": [{ "_id": "default", "text": "Quali?", "description": "", "section": "07-internal-user-previdence" }],
+      "responses": [
+        {
+          "_id": "07-20-02-pip",
+          "text": "piani individuali di previdenza (PIP)",
+          "selected": false,
+          "type": "selection",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        },
+        {
+          "_id": "07-20-03-negoz",
+          "text": "fondi pensione negoziali",
+          "selected": false,
+          "type": "selection",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        },
+        {
+          "_id": "07-20-04-aperti",
+          "text": "fondi pensione aperti",
+          "selected": false,
+          "type": "selection",
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        }
+      ],
+      "dontCopy": true,
+      "required": true
+    },
+    {
+      "_id": "first-pension-payment",
+      "creationDate": "2019-10-21T17:56:14.275Z",
+      "multiple": false,
+      "multipleObligatory": false,
+      "multipleQuestion": false,
+      "texts": [
+        { "_id": "inquiry", "text": "Data di primo versamento previdenziale", "section": "07-internal-user-previdence" }
+      ],
+      "responses": [
+        {
+          "_id": "date",
+          "text": "(gg/mm/aaaa):   ",
+          "selected": false,
+          "type": "date",
+          "typeValue": null,
+          "relatedUserField": null,
+          "values": [{ "_id": "default", "points": 0, "reason": "", "conditionedQuestionId": "" }]
+        }
+      ],
+      "dontCopy": true,
+      "required": false
+    }
+  ],
+  "pension": {
+    "sex": "M",
+    "birthDate": "1993-09-19T00:00:00.000Z",
+    "age": 352.2300564396714,
+    "firstPaymentDate": null,
+    "currentJob": "01-09-03-dipendente-in",
+    "pensionDate": "2060-12-19T00:00:00.000Z"
+  },
+  "signature": {
+    "procedureCompleted": true,
+    "procedureId": "/procedures/eb637ab1-661f-4ba4-9f58-ace1b069ef09",
+    "fileId": "/files/f7e32b25-37e4-4fc6-84c8-6cb9a54977e2",
+    "customer": {
+      "memberId": "/members/492f8918-ed80-4465-9311-064debef6acc",
+      "status": "done",
+      "email": "nicolapiccia11@yahoo.it",
+      "customerId": "16eaf40e-3c91-46fa-bba8-8b465a8a853a",
+      "info": {
+        "id": "16eaf40e-3c91-46fa-bba8-8b465a8a853a",
+        "name": "Nicola",
+        "surname": "Picciau",
+        "email": "nicolapiccia11@yahoo.it",
+        "mobilePhone": "+393341156821",
+        "isCompany": false
+      }
+    },
+    "promoter": {
+      "memberId": "/members/81bdf556-9e1a-4631-b03e-0c7838e88a3d",
+      "status": "done",
+      "email": "rafaela.satta@sheltia.com",
+      "promoterId": "26e140cc-bb07-9547-b756-66a07b4cc3b3",
+      "info": {
+        "id": "26e140cc-bb07-9547-b756-66a07b4cc3b3",
+        "name": "Rafaela",
+        "surname": "Satta",
+        "email": "rafaela.satta@sheltia.com",
+        "mobilePhone": "+393341156821"
+      }
+    },
+    "signedDate": "2023-01-25T18:47:47.156Z",
+    "documentId": "073b226c-19b3-4994-af50-2f814bdea15d"
+  },
+  "products": [
+    "f34f6028-44b1-4809-a962-cd07e1bed5f6",
+    "eaf5cc36-70c3-b543-963b-a63400d1b18c",
+    "eaee569a-69b2-4f55-8e2c-664c6fb25d6d",
+    "dabf2f4c-6ce4-480a-8733-208f688d256f",
+    "d354e826-7469-c440-81db-4c636e53f7d6",
+    "c9ea94af-03f8-6346-9222-a9f30107a057",
+    "c5f3c399-06bc-7041-a893-a63400bdb00f",
+    "b8451906-c485-4946-b664-da9a7f4250e0",
+    "af64bd17-184a-4044-a16d-fc204fa7829f",
+    "a64ab8ef-a543-5448-844d-a5bf011a3bc1",
+    "99b06b90-bbf3-4da8-b532-77f5da196291",
+    "8e0725fd-8f77-f84a-9c8a-abf00128a85a",
+    "7204c950-4854-4b38-9213-a6e17c9f3081",
+    "6dac3147-c0d9-4ebc-b0c6-c8b746c804f5",
+    "63908cb2-c53e-42d5-8d13-4a1bc5b8d2f6",
+    "36e72fcc-5b78-4791-bdae-1fcb8f2244ea",
+    "228f75ac-a57a-4836-a1f7-75ffe20460e1",
+    "1cdc86ee-9451-4940-b2f8-48e58cfec041"
+  ],
+  "categories": ["Risparmio/Investimento"],
+  "filled": true
+}

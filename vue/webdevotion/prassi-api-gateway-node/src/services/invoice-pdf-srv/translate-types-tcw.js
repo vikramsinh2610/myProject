@@ -1,0 +1,41 @@
+function translateEntryOrigin(origin) {
+  const origins = {
+    'advance+indirect': 'PR-ACQ-INDIR',
+    'advance+indirect-2021': 'PR-ACQ-INDIR',
+    'cash-in+indirect': 'PR-INC-INDIR',
+    'cash-in+indirect-2021': 'PR-INC-INDIR',
+    'purchase+indirect': 'PR-ACQ-INDIR',
+    'purchase+indirect-2021': 'PR-ACQ-INDIR',
+    'advance+direct': 'PR-ACQ-DIR',
+    'advance+direct-2021': 'PR-ACQ-DIR',
+    'cash-in+direct': 'PR-INC-DIR',
+    'cash-in+direct-2021': 'PR-INC-DIR',
+    'purchase+direct': 'PR-ACQ-DIR',
+    'purchase+direct-2021': 'PR-ACQ-DIR',
+    'gmv-guaranteed+monthly': 'GAR-MEN',
+    'gmv-guaranteed-variable': 'GAR-MEN',
+    'guaranteed+monthly': 'GAR-MEN',
+    'guaranteed-variable': 'GAR-MEN',
+    'guaranteed+one-time': 'GAR-MEN',
+    'conditioned+rappel+payment-delayed': 'RAP',
+    'conditioned+rappel-3+payment-delayed': 'RAP',
+    'conditioned+welcome-bonus+prepayment': 'GAR-MEN',
+    'conditioned+welcome-bonus+recovery': 'GAR-MEN',
+    'conditioned+guaranteed-with-bonus+payment-delayed': 'GAR-MEN',
+    'conditioned+guaranteed-with-bonus-prepaid+prepayment': 'GAR-MEN',
+    'conditioned+guaranteed-with-bonus-prepaid+recovery': 'GAR-MEN',
+    balance: 'CONG-PR-POL',
+    advance: 'ANT-PR-POL',
+    other: 'OTHER',
+    'commissioning-value': 'PR-ACQ-DIR',
+    'commissioning-cashin': 'PR-INC-DIR',
+    'rappel-quarter': 'RAP',
+    'rappel-semester': 'RAP',
+    'rappel-yearly': 'RAP',
+    'bonus-guaranteed': 'GAR-MEN',
+    'debit': 'ANT-PR-POL',
+  };
+  return origins[`${origin}`] || origin;
+}
+
+module.exports = translateEntryOrigin;

@@ -1,0 +1,108 @@
+user: sistema@sheltia.com
+passwrd: z2G9WwDa
+
+auth code : 03301380964
+
+dashboards/crm/
+
+T#@|\||< ¥0|_| 
+==========================================================================================
+Pipeline
+
+https://app.circleci.com/pipelines/github/EleverSrl
+
+https://app.circleci.com/pipelines/github/Web-Devotion/pro-terra-sancta
+============================================================================================
+Client Name : 06:30 Pm call 
+Project Name : webdevotion.net
+Developer Name : Neel Dave
+Project Skils Required : Vue Js , Node Js 
+Github & Slack Provided by client side in this email id neeldeveloper97@gmail.com
+https://github.com/EleverSrl/prassi-api-gateway-node
+https://github.com/EleverSrl/prassi-app-commissioning
+https://github.com/EleverSrl/materio-full-version-ts
+https://knexjs.org/
+
+============================================================================================
+Github
+
+neeldeveloper97@gmail.com
+Rocko925*
+=====================================================================================	
+front
+yarn install
+yarn dev
+
+back 
+
+yarn install
+yarn dev
+
+======================================================================================
+http://localhost:8080/configuration/roles
+http://localhost:8080/configuration/questions
+
+=======================================================================================
+Tickets
+https://github.com/EleverSrl/prassi-api-gateway-node/issues/861
+=======================================================================================
+ r('./promoters/getrole', '/promoters/role');
+ 
+ /promoters/role'
+
+================================================================================
+Generated pull request
+https://app.circleci.com/pipelines/github/EleverSrl
+https://github.com/EleverSrl/prassi-app-commissioning/pull/980
+https://github.com/EleverSrl/prassi-api-gateway-node/pull/1197
+
+=============================================================================================
+25-11-2022
+
+https://github.com/EleverSrl/prassi-api-gateway-node/issues/861
+
+
+
+git config --global user.name "Guarav"
+git config --global user.email "gaurav78.developer@gmail.com"
+
+
+
+==============================================================================================
+https://www.jetbrains.com/phpstorm/download/#section=windows
+
+
+
+Sengar21@
+neeldeveloper97@gmail.com
+
+
+UPDATE wp_options SET option_value = replace(option_value, 'http://localhost:8080/pilano/plinio-il-giovane-refactor/', 'http://localhost:8080/webdevotion/plinio-il-giovane-refactor') WHERE option_name = 'home' OR option_name = 'siteurl';
+
+UPDATE wp_posts SET guid = replace(guid, 'http://localhost:8080/pilano/plinio-il-giovane-refactor/','http://localhost:8080/webdevotion/plinio-il-giovane-refactor');
+
+UPDATE wp_posts SET post_content = replace(post_content, 'http://localhost:8080/pilano/plinio-il-giovane-refactor/', 'http://localhost:8080/webdevotion/plinio-il-giovane-refactor');
+
+UPDATE wp_postmeta SET meta_value = replace(meta_value,'http://localhost:8080/pilano/plinio-il-giovane-refactor/','http://localhost:8080/webdevotion/plinio-il-giovane-refactor');
+
+
+http://localhost:8080/pilano/plinio-il-giovane-refactor/http://localhost:8080/webdevotion/plinio-il-giovane-refactor
+
+
+https://stage2.plinioilgiovane.com/
+
+
+
+https://maps.googleapis.com/maps/api/js?key=AIzaSyCHH7m5EmekELt5BBF4RQ718bVENtrFIWw
+
+UPDATE wp_options SET option_value = replace(option_value, 'http://localhost:8080/webdevotion/plinio-il-giovane-refactor', 'http://localhost:8080/webdevotion/plinio/plinio-il-giovane-refactor') WHERE option_name = 'home' OR option_name = 'siteurl';
+
+UPDATE wp_posts SET guid = replace(guid, 'http://localhost:8080/webdevotion/plinio-il-giovane-refactor','http://localhost:8080/webdevotion/plinio/plinio-il-giovane-refactor');
+
+UPDATE wp_posts SET post_content = replace(post_content, 'http://localhost:8080/webdevotion/plinio-il-giovane-refactor', 'http://localhost:8080/webdevotion/plinio/plinio-il-giovane-refactor');
+
+UPDATE wp_postmeta SET meta_value = replace(meta_value,'http://localhost:8080/webdevotion/plinio-il-giovane-refactor','http://localhost:8080/webdevotion/plinio/plinio-il-giovane-refactor');
+
+
+Username: neeldave
+Password: neel@123

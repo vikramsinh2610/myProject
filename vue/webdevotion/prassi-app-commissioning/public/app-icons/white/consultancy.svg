@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="15px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">    <title>consulenza</title>
+    <defs>
+        <path d="M477.004267,851.9504 C481.014933,851.9504 483.971733,850.632 485,849.117334 L485,848.2 L480.2,848.2 L480.2,845 L473.8,845 L473.8,848.2 L469,848.2 L469,849.1088 C470.024,850.623467 472.985067,851.9504 477.004267,851.9504 Z M475.4,846.6 L478.6,846.6 L478.6,848.2 L475.4,848.2 L475.4,846.6 Z M477.797867,853.529067 C480.771733,853.401067 483.336,852.5776 485,851.340267 L485,861 L469,861 L469,851.336 C470.659733,852.5776 473.224,853.401067 476.197867,853.529067 L476.197867,854.6 L477.797867,854.6 L477.797867,853.529067 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-469.000000, -845.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="consulenza" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

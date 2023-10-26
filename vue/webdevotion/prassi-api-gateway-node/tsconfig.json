@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "forceConsistentCasingInFileNames": true,
+    "strict": false,
+    "noImplicitAny": false,
+    "module": "commonjs",
+    "rootDir": "./src",
+    "noEmit": true,
+    "pretty": true,
+    "allowJs": true,
+    "checkJs": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": false,
+    "esModuleInterop": false,
+    "typeRoots": ["./typings", "./node_modules/@types"]
+  },
+  "include": ["src/**/*.js"],
+  "exclude": ["node_modules", "src/utils/foreach.js"]
+}

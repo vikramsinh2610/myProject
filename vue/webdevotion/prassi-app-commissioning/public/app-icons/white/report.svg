@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">    <title>report</title>
+    <defs>
+        <path d="M469.802133,638.4 L471.402133,638.4 L471.402133,644.8 L469.802133,644.8 L469.802133,638.4 Z M473.002133,636.8 L474.602133,636.8 L474.602133,644.8 L473.002133,644.8 L473.002133,636.8 Z M476.202133,635.2 L477.802133,635.2 L477.802133,644.8 L476.202133,644.8 L476.202133,635.2 Z M479.402133,633.6 L481.002133,633.6 L481.002133,644.8 L479.402133,644.8 L479.402133,633.6 Z M469,646.4 L485,646.4 L485,648 L469,648 L469,646.4 Z M482.602133,632 L484.202133,632 L484.202133,644.8 L482.602133,644.8 L482.602133,632 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-469.000000, -632.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="report" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

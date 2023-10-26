@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="15px" viewBox="0 0 16 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">    <title>Hamburger</title>
+    <defs>
+        <path d="M470,823 L484,823 C484.552285,823 485,823.447715 485,824 C485,824.552285 484.552285,825 484,825 L470,825 C469.447715,825 469,824.552285 469,824 C469,823.447715 469.447715,823 470,823 Z M470,828 L484,828 C484.552285,828 485,828.447715 485,829 C485,829.552285 484.552285,830 484,830 L470,830 C469.447715,830 469,829.552285 469,829 C469,828.447715 469.447715,828 470,828 Z M470,818 L484,818 C484.552285,818 485,818.447715 485,819 C485,819.552285 484.552285,820 484,820 L470,820 C469.447715,820 469,819.552285 469,819 C469,818.447715 469.447715,818 470,818 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-469.000000, -818.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Hamburger" fill="#A9B0BB" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

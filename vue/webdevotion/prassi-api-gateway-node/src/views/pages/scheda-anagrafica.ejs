@@ -1,0 +1,334 @@
+<div class="container container-height page-spacer" style="position: relative;">
+    <%- include ('../partials/header-center.ejs') %>
+    <div class="row vh-100">
+        <div class="col-12">
+            <div class="px-5 py-3">
+                <h1 class="title-h1">SCHEDA ANAGRAFICA PER L’INSERIMENTO</h1>
+            </div>
+            <div class="px-5 py-3">
+                <div class="row  pb-3 pt-2">
+                    <div class="col-12">
+                        <div class="border-bottom-field"><%= customer.name %>   <%= customer.surname %>  &nbsp;</div>
+                        <div class="field-label">COGNOME e NOME</div>
+                    </div>
+                </div>
+                <div class="row  pb-3 pt-2">
+                    <div class="col-5">
+                        <div class="border-bottom-field"><%= customer.address.route %> <%= customer.address.streetNumber %>  &nbsp; </div>
+                        <div class="field-label" style="width: 300px;">INDIRIZZO DOMICILIO</div>
+                    </div>
+                    <div class="col-1">
+                        <div class="border-bottom-field"><%= customer.address.postalCode ? customer.address.postalCode : '&nbsp;' %> </div>
+                        <div class="field-label">CAP</div>
+                    </div>
+                    <div class="col-5">
+                        <div class="border-bottom-field"><%= customer.address.city %>  &nbsp; </div>
+                        <div class="field-label">COMUNE</div>
+                    </div>
+                    <div class="col-1">
+                        <div class="border-bottom-field"><%= customer.address.province %>  &nbsp;</div>
+                        <div class="field-label">PROVINCIA</div>
+                    </div>
+                </div>
+                <div class="row  pb-3 pt-2">
+                    <div class="col-3">
+                        <div class="border-bottom-field">
+                            <%- customer.birthDate ? moment(customer.birthDate).utcOffset('+0200').format('DD/MM/YYYY') :'' %>
+                        </div>
+                        <div class="field-label" style="width: 500px;">DATA DI NASCITA  &nbsp;</div>
+                    </div>
+                    <div class="col-8">
+                        <div class="border-bottom-field"><%= customer.birthCity %>  &nbsp;</div>
+                        <div class="field-label" style="width: 300px;">COMUNE DI NASCITA</div>
+                    </div>
+                    <div class="col-1">
+                        <div class="border-bottom-field">&nbsp;<%= customer.birthRegion %>  &nbsp;</div>
+                        <div class="field-label">PROV</div>
+                    </div>
+                </div>
+                <div class="row  pb-3 pt-2">
+                    <div class="col-4">
+                        <div class="border-bottom-field"><%= customer.fiscalCode %>  &nbsp;</div>
+                        <div class="field-label" style="width: 300px;">CODICE FISCALE</div>
+                    </div>
+                    <div class="col-6">
+                        <div class="border-bottom-field"><%= customer.personalEmail %>  &nbsp;</div>
+                        <div class="field-label" style="width: 300px;">EMAIL PERSONALE</div>
+                    </div>
+                    <div class="col-2">
+                        <div class="border-bottom-field"><%= customer.mobilePhone %>  &nbsp;</div>
+                        <div class="field-label" style="width: 300px;">N. CELLULARE</div>
+                    </div>
+                </div>
+                <div class="row  pb-3 pt-2">
+                    <div class="col-6">
+                        <div class="border-bottom-field">&nbsp;<%= customer.tax.vat %></div>
+                        <div class="field-label">P.IVA</div>
+                    </div>
+                    <div class="col-6">
+                        <div class="border-bottom-field">&nbsp;<%= onFiscalReg.typeValue ?  onFiscalReg.typeValue.value : ''%></div>
+                        <div class="field-label">REGIME FISCALE</div>
+                    </div>
+                </div>
+                <div class="row  pb-3 pt-2">
+                    <div class="col-6">
+                        <% if (onRuiBooleanNo.selected === true) { %>
+                            <div class="border-bottom-field">No</div>
+                        <% } else  { %>
+                            <div class="border-bottom-field">Si</div>
+                        <% } %>
+                        <div class="field-label" style="width: 300px;">ISCRIZIONE AL RUI</div>
+                    </div>
+                    <div class="col-6">
+
+                        <div class="border-bottom-field">&nbsp; <%= onRuiN.typeValue ? onRuiN.typeValue : '' %></div>
+                        <div class="field-label" style="width: 300px;">SEZIONE RUI E N. ISCRIZIONE</div>
+                    </div>
+                </div>
+                <div class="row  pb-3 pt-2">
+                    <div class="col-12 d-flex">
+                        <div class="field-label" style="width: 600px;">Se cancellato dal RUI indicarne la motivazione:</div>
+                        <% if (onRuiCanceledNo.selected === true) { %>
+                            <div class="border-bottom-field"></div>
+                        <% } else  { %>
+                            <div class="border-bottom-field"><%= onRuiReason.typeValue ? onRuiReason.typeValue : '' %></div>
+                        <% } %>
+                    </div>
+                </div>
+
+                <div class="row py-3">
+                    <div class="col-6">
+                        <div class="border-bottom-field">&nbsp; <%= customer.tax.iban %></div>
+                        <div class="field-label" style="width: 300px;">IBAN</div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-primary text-bold-black">Documentazione allegata obbligatoria:</p>
+                </div>
+                <div class="col-12">
+                    <div class="divTable">
+                        <div class="divTableBody">
+                            <div class="divTableRow">
+                                <div class="divTableCell">1</div>
+                                <div class="divTableCell">CV aggiornato e dettagliato (con evidenza del Titolo di studi & Autorizzazione al trattamento dei dati personali in base all'art. 13 del D. lgs. 196/2003 e all'art. 13 679/16 GDPR)</div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell">2</div>
+                                <div class="divTableCell">Copia Codice fiscale</div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell">3</div>
+                                <div class="divTableCell">Copia Documento d’identità in corso di validità (fronte e retro)</div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell">4</div>
+                                <div class="divTableCell">Modulo privacy (allegato alla scheda anagrafica)</div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell">5</div>
+                                <div class="divTableCell">Copia Permesso di soggiorno (per cittadini non UE)</div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell">6</div>
+                                <div class="divTableCell">Certificato di carichi pendenti (rilasciato nei 3 mesi antecedenti l’inserimento)</div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell">7</div>
+                                <div class="divTableCell">Certificato generale del casellario giudiziale (rilasciato nei 3 mesi antecedenti l’inserimento)</div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell">8</div>
+                                <div class="divTableCell">Copia della ricevuta versamento di euro 168,00 (per i neo iscritti al Rui e per i cancellati)</div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell">9</div>
+                                <div class="divTableCell">Copia attestati partecipazione a corsi formazione/aggiornamento (solo per soggetti già iscritti al RUI)</div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell">10</div>
+                                <div class="divTableCell">Evidenza documentale di intestazione partita iva (se da aprire, inviare al più presto)</div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell">11</div>
+                                <div class="divTableCell">Ricevuta informativa sulla sicurezza di Sheltia</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-12 pt-3">
+                    <div class="box-firma">
+                        <strong> Confermo la correttezza e validità <br>
+                            dei dati inseriti su questa scheda <br>
+                        </strong>
+
+                        <span>Firma candidato</span>
+                        <div class="border-bottom-field">&nbsp;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="page-break-after:always;"></div>
+</div>
+
+<div class="container container-height page-spacer" style="position: relative;">
+    <%- include ('../partials/header-center.ejs') %>
+  <div class="row no-gutters">
+    <div class="col">
+        <div class="px-5 py-3">
+            <h1 class="title-h1">INFORMAZIONI RIGUARDANTI IL TRATTAMENTO DEI DATI PERSONALI</h1>
+            <h2 class="title-h2 pb-4">AI SENSI DELL’ ARTICOLO 13 DEL REGOLAMENTO UE 2016/679</h2>
+        </div>
+        <p>Gentile Sig/Sig.ra,</p>
+        <p>nel rispetto dell'art. 13 del Regolamento UE 2016/679 - Regolamento Generale Protezione Dati (RGPD), la informiamo sul trattamento dei dati personali effettuato per attivare e gestire il rapporto di lavoro/collaborazione tra lei e la nostra societ&agrave; <strong>SHELTIA - SOCIETA' A RESPONSABILITA' LIMITATA </strong>in qualit&agrave; di titolare del trattamento dei suoi dati.</p>
+        <p>La raccolta ed il trattamento dei dati personali sono effettuati:</p>
+        <ul>
+            <li>per l'espletamento di tutte le pratiche connesse al rapporto di collaborazione</li>
+            <li>per lo svolgimento delle attivit&agrave; amministrative e contabili correlate al rapporto di collaborazione</li>
+            <li>per l'adempimento degli obblighi previsti dalla legge e dai contratti collettivi connessi al rapporto di collaborazione</li>
+            <li>per l'elaborazione ed il pagamento della retribuzione nei casi previsti</li>
+            <li>per la gestione di eventuali sinistri ed infortuni</li>
+            <li>per l&rsquo;espletamento ed il monitoraggio delle attivit&agrave; di formazione e aggiornamento professionale</li>
+        </ul>
+        <p>e saranno oggetto di trattamento improntato ai principi di correttezza, liceit&agrave;, trasparenza e di tutela della sua riservatezza e dei suoi diritti. I dati personali che la riguardano e quelli eventualmente riferiti anche ai suoi familiari/conviventi, acquisiti all'inizio e nel corso del rapporto, saranno trattati per tutta la durata del rapporto di lavoro e, in genere, per 10 anni dalla data della sua cessazione per l'espletamento di tutti gli adempimenti di legge.</p>
+        <p>L'azienda potr&agrave; trattare dati che l&rsquo;art. 9 del Regolamento UE 2016/679 definisce "particolari" in quanto idonei a rivelare:</p>
+        <ul>
+            <li>lo stato di salute (assenze per malattia, maternit&agrave;, infortunio), idoneit&agrave; o meno a determinate mansioni (quale esito espresso da personale medico a seguito di visite mediche preventive/periodiche). Non vengono invece trattati dati genetici o biometrici che la riguardano;</li>
+            <li>l'adesione ad un sindacato (assunzione di cariche e/o richiesta di trattenute per quote di associazione sindacale), l'adesione ad un partito politico o la titolarit&agrave; di cariche pubbliche elettive (permessi o aspettativa), convinzioni religiose.</li>
+        </ul>
+        <p><strong>Modalit&agrave; del trattamento</strong></p>
+        <p>I suoi dati saranno trattati con procedure prevalentemente informatizzate e potranno essere conosciuti da nostri dipendenti autorizzati al trattamento e/o da societ&agrave; di nostra fiducia che svolgono, per nostro conto, in qualit&agrave; di responsabili del trattamento, alcune attivit&agrave; tecniche ed organizzative, quali societ&agrave; di servizi amministrativi, contabili e fiscali o informatici. I suoi dati potranno essere inoltre comunicati, in alcuni casi, alle seguenti categorie di soggetti:</p>
+        <ul>
+            <li>amministrazioni pubbliche (Agenzia delle Entrate, INPS, INAIL, &hellip;) per l'adempimento di obblighi di legge;</li>
+            <li>medico competente in materia di salute e sicurezza sul lavoro;</li>
+            <li>banche per il pagamento delle retribuzioni;</li>
+            <li>associazioni di categoria a cui aderisce la nostra societ&agrave; e organizzazioni sindacali di appartenenza del lavoratore</li>
+            <li>Autorit&agrave; ed organi di vigilanza e controllo;</li>
+            <li>Studi legali;</li>
+            <li>Fornitori di servizi e societ&agrave; che offrono servizi di invio e-mail.</li>
+        </ul>
+        <p>Nell&rsquo;ambito del trattamento effettuato dalla nostra societ&agrave;, i suoi dati potrebbero essere trasferiti verso paesi terzi in conseguenza dell&rsquo;utilizzo di risorse di cloud computing a fini di archiviazione e conservazione dei dati. In tali casi i suoi dati saranno protetti mediante l&rsquo;utilizzo di tecniche di pseudonimizzazione e cifratura.</p>
+    </div>
+  </div>
+   <div style="page-break-after:always;"></div>
+</div>
+
+<div class="container container-height page-spacer" style="position: relative;">
+    <%- include ('../partials/header-center.ejs') %>
+    <div class="row no-gutters">
+        <div class="col">
+            <p><strong>Natura obbligatoria o facoltativa del conferimento dei dati e diritti dell'interessato</strong></p>
+            <p>Il conferimento dei suoi dati personali &egrave; necessario ed obbligatorio per l'adempimento degli obblighi contrattuali e normativi connessi al rapporto di collaborazione: il mancato rilascio, anche in parte, dei suoi dati personali precluderebbe l&rsquo;instaurazione del rapporto in quanto non ne permetterebbe la sua corretta gestione.</p>
+            <p>Il RGPD le garantisce i seguenti diritti:</p>
+            <ul>
+                <li>ottenere dal titolare del trattamento la conferma che sia o meno in corso un trattamento di dati personali che la riguardano e, in tal caso, ottenere l&rsquo;accesso ai dati personali e alle informazioni previste dall&rsquo;art. 15 del Regolamento UE 2016/679;</li>
+                <li>ottenere dal titolare del trattamento la rettifica dei dati personali inesatti che la riguardano;</li>
+                <li>ottenere la cancellazione dei dati personali che la riguardano laddove questi non siano pi&ugrave; necessari rispetto alle finalit&agrave; per le quali sono stati raccolti o altrimenti trattati, ovvero laddove ricorrano a ulteriori condizioni di cui all&rsquo;art. 17 Regolamento UE 2016/679 e sempre che non ricorrano le condizioni di cui all&rsquo;art. 17, paragrafo 3, Regolamento UE n. 679/2016;</li>
+                <li>ottenere dal titolare la limitazione del trattamento quando: a) l&rsquo;interessato contesti l&rsquo;esattezza dei dati personali, per il periodo necessario al titolare del trattamento per verificare l&rsquo;esattezza di tali dati personali; b) il trattamento risulti illecito ma l&rsquo;interessato stesso si opponga alla cancellazione e chieda invece l&rsquo;applicazione di misure di limitazione oppure chieda che il trattamento degli stessi avvenga per l&rsquo;accertamento o difesa di un suo diritto in sede giudiziaria;</li>
+                <li>ricevere in un formato strutturato, di uso comune e leggibile da dispositivo automatico i dati personali che lo riguardano; nel caso dell&rsquo;esercizio di tale diritto sar&agrave; sua facolt&agrave; chiedere che il titolare del trattamento trasmetta i suddetti dati direttamente ad un altro responsabile del trattamento;</li>
+                <li>opporsi al trattamento che si basi su un processo decisionale automatizzato relativo a persona fisica, ove questo includa anche la profilazione;</li>
+                <li>qualora il trattamento si basi sul consenso, ne sar&agrave; possibile la revoca in qualsiasi momento; in tal caso, peraltro, tutte le attivit&agrave; compiute prima della revoca rimarranno valide ed efficaci.</li>
+            </ul>
+
+            <p><strong>Titolare del trattamento</strong></p>
+            <p>SHELTIA - SOCIETA' A RESPONSABILITA' LIMITATA <br>
+            <a href="https://maps.google.com/?q=via+Ennio+Quirino+Visconti+103,+00193+Roma&amp;entry=gmail&amp;source=g">via&nbsp;Ennio&nbsp;Quirino Visconti 103, 00193 Roma</a><br>
+            Codice fiscale 13172161005 <br>
+            Partita IVA 13172161005 <br>
+            Telefono Fax E-mail <a href="mailto:sheltia-srl@pec.it">sheltia-</a><a href="mailto:srl@pec.it">srl@pec.it</a>
+            </p>
+            <p>Resta infine fermo il suo diritto di rivolgersi al Garante Privacy, anche attraverso la presentazione di un reclamo, ove ritenuto necessario, per la tutela dei suoi dati personali e dei suoi diritti.</p>
+            <p><strong>Conservazione dei dati</strong></p>
+            <p>I dati personali che lei ci fornir&agrave; saranno conservati ai fini di esecuzione del servizio pattuito e verranno conservati per il tempo necessario all&rsquo;espletamento dello stesso. La conservazione potr&agrave; avvenire mediante:</p>
+            <ul>
+                <li>memorizzazione all&rsquo;interno dei sistemi hardware del titolare del trattamento o di suoi responsabili;</li>
+                <li>archiviazione a norma del Codice dell&rsquo;Amministrazione Digitale; in tal caso il titolare ricorrer&agrave; esclusivamente a soggetti accreditati ai sensi dell&rsquo;art. 29 CAD, laddove tale attivit&agrave; non dovesse essere svolta sui nostri sistemi applicativi.</li>
+            </ul>
+            <p>Per qualsiasi questione attinente al trattamento dei suoi dati personali, pu&ograve; rivolgersi alla nostra societ&agrave;, quale titolare del trattamento, con sede in <a href="https://maps.google.com/?q=via+Ennio+Quirino+Visconti+103,+00193+Roma&amp;entry=gmail&amp;source=g">via&nbsp;Ennio&nbsp;Quirino Visconti 103, 00193 Roma</a>, E-mail privacy@sheltia.com </p>
+        </div>
+    </div>
+    <div style="page-break-after:always;"></div>
+</div>
+
+<div class="container container-height page-spacer" style="position: relative;">
+    <%- include ('../partials/header-center.ejs') %>
+    <div class="row no-gutters">
+        <div class="col">
+            <p><strong>DICHIARAZIONE DI CONSENSO AL TRATTAMENTO DEI DATI PERSONALI</strong></p>
+            <div class="row">
+                <div class="col-12 d-flex">
+                    <div class="field-label">Il/la sottoscritto/a </div>
+                    <div class="border-bottom-field"><%= customer.name %>   <%= customer.surname %></div>
+                </div>
+            </div>
+            <div class="row py-2">
+                <div class="col-7 d-flex">
+                    <div class="field-label" style="width: 100px;">nato/a a </div>
+                    <div class="border-bottom-field" style="max-width:500px;"><%= customer.birthCity %> (<%= customer.birthRegion %>) </div>
+                </div>
+                <div class="col-2 d-flex">
+                    <div class="field-label">il </div>
+                    <div class="border-bottom-field"><%- customer.birthDate ? moment(customer.birthDate).utcOffset('+0200').format('DD/MM/YYYY') :'' %></div>
+                </div>
+                <div class="col-3 d-flex">
+                    <div class="field-label">C.F. </div>
+                    <div class="border-bottom-field"><%= customer.fiscalCode %></div>
+                </div>
+            </div>
+            <p>dichiara di aver preso visione dell'informativa sopra riportata e di prestare il consenso al trattamento dei dati personali secondo le modalit&agrave; e nei limiti di cui all'informativa stessa.</p>
+            <div class="row  pb-3 pt-4">
+                <div class="col-12 py-2">
+                    In fede,
+                </div>
+                <div class="col-4">
+                    Luogo e data   <br><br><br><br><br>
+                    <div class="border-bottom-field"> <%= luogoData %></div>
+                </div>
+                <div class="col-4">
+                </div>
+                <div class="col-4">
+                    Firma dell&rsquo;interessato<br><br><br><br><br>
+
+                    <div class="border-bottom-field">&nbsp; </div>
+                </div>
+            </div>
+            <p class="p5 py-4">&nbsp;</p>
+            <hr class="separator py-4">
+            <p class="p6"><span class="s1"><strong>DICHIARAZIONE LIBERATORIA PER FOTOGRAFIE E RIPRESE AUDIOVISIVE</strong></span></p>
+            <p class="p2">&nbsp;</p>
+            <div class="row">
+                <div class="col-12 d-flex">
+                    <div class="field-label">Il/la sottoscritto/a </div>
+                    <div class="border-bottom-field"><%= customer.name %>   <%= customer.surname %></div>
+                </div>
+            </div>
+            <p>autorizza, per il periodo di validit&agrave; del rapporto di collaborazione con Sheltia Srl, la pubblicazione di eventuali foto/video effettuate durante eventi aziendali/formativi ai quali ha partecipato e che lo/la rappresentano, preso atto che l&rsquo;utilizzo di tali materiali &egrave; destinato esclusivamente ad attivit&agrave; di comunicazione/promozione svolte tramite canali web e social network ufficiali di Sheltia srl (es. sito istituzionale, social network, etc.) e che quest&rsquo;ultima si impegner&agrave; a non diffonderlo in modo improprio e a non farne uso alcuno che possa risultare lesivo per la propria dignit&agrave; e reputazione. </p>
+            <p class="p2">&nbsp;</p>
+            <p class="p4">&nbsp;</p>
+            <div class="row  pb-3 pt-4">
+                <div class="col-12 py-2">
+                    In fede,
+                </div>
+                <div class="col-4">
+                    Luogo e data   <br><br><br><br><br>
+                    <div class="border-bottom-field"> <%= luogoData %></div>
+                </div>
+                <div class="col-4">
+                </div>
+                <div class="col-4">
+                    Firma dell&rsquo;interessato<br><br><br><br><br>
+
+                    <div class="border-bottom-field">&nbsp; </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="page-break-after:always;"></div>
+</div>

@@ -1,0 +1,143 @@
+version: 2
+
+jobs:
+  qa:
+    docker:
+      - image: giona69/php-node14-aws-2
+      - image: circleci/mongo:4.0.3
+        ports:
+          - 27017:27017
+    environment:
+      ENV: sheltia
+      MONGO_URL_TESTS: mongodb://127.0.0.1:27017/prassi-test
+      MONGO_DB_TESTS: prassi-test
+      MONGO_DB_CLOUD_TESTS: sheltiaprod
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - node-v6-{{ .Branch }}-{{ checksum "yarn.lock" }}
+      - run: yarn install
+      - run: yarn list
+      - run: yarn lint
+      - run: yarn lint-ts
+      #- run: ENV=sheltia && yarn test
+      #- run: ENV=tcw && yarn test
+      - run: npm install --package-lock-only
+      - store_test_results:
+          path: test-results
+      - save_cache:
+          paths:
+            - node_modules
+            - package-lock.json
+          key: node-v6-{{ .Branch }}-{{ checksum "yarn.lock" }}
+
+  deploy-tcw-stage:
+    docker:
+      - image: giona69/php-node14-aws-2
+    steps:
+      - checkout
+      #- run: find .platform/hooks/ -exec chmod +x {} \;
+      - run: eb deploy tcw-api-stage
+
+  deploy-demo-stage:
+    docker:
+      - image: giona69/php-node14-aws-2
+    steps:
+      - checkout
+      #- run: find .platform/hooks/ -exec chmod +x {} \;
+      - run: eb deploy demo-api-stage
+
+  deploy-sheltia-stage:
+    docker:
+      - image: giona69/php-node14-aws-2
+    steps:
+      - checkout
+      #- run: find .platform/hooks/ -exec chmod +x {} \;
+      - run: eb deploy sheltia-api-stage
+
+  deploy-sheltia-stage2:
+    docker:
+      - image: giona69/php-node14-aws-2
+    steps:
+      - checkout
+      #- run: find .platform/hooks/ -exec chmod +x {} \;
+      - run: eb deploy sheltia-api-stage-2
+
+  deploy-tcw-prod:
+    docker:
+      - image: giona69/php-node14-aws-2
+    steps:
+      - checkout
+      #- run: find .platform/hooks/ -exec chmod +x {} \;
+      - run: eb deploy tcw-api-prod-cron
+
+  deploy-tcw-node-prod:
+    docker:
+      - image: giona69/php-node14-aws-2
+    steps:
+      - checkout
+      #- run: find .platform/hooks/ -exec chmod +x {} \;
+      - run: eb deploy tcw-api-prod-2
+
+  deploy-sheltia-prod:
+    docker:
+      - image: giona69/php-node14-aws-2
+    steps:
+      - checkout
+      #- run: find .platform/hooks/ -exec chmod +x {} \;
+      - run: eb deploy sheltia-api-prod-cron
+
+  deploy-sheltia-node-prod:
+    docker:
+      - image: giona69/php-node14-aws-2
+    steps:
+      - checkout
+      #- run: find .platform/hooks/ -exec chmod +x {} \;
+      - run: eb deploy sheltia-api-prod-2
+
+workflows:
+  version: 2
+  prassi:
+    jobs:
+      - qa
+      - deploy-tcw-stage:
+          requires:
+            - qa
+          filters:
+            branches:
+              only: /^feature.*/
+      - deploy-demo-stage:
+          requires:
+            - qa
+          filters:
+            branches:
+              only: /^feature.*/
+      - deploy-tcw-prod:
+          filters:
+            branches:
+              only: master
+      - deploy-tcw-node-prod:
+          filters:
+            branches:
+              only: master
+      - deploy-sheltia-stage:
+          requires:
+            - qa
+          filters:
+            branches:
+              only: /^feature.*/
+      - deploy-sheltia-stage2:
+          requires:
+            - qa
+          filters:
+            branches:
+              only: /^feat2.*/
+      - deploy-sheltia-node-prod:
+          filters:
+            branches:
+              only: master
+      - deploy-sheltia-prod:
+          filters:
+            branches:
+              only: master

@@ -1,0 +1,295 @@
+<div id="cover-page" class="container container-height page-spacer" style="position: relative;">
+    <%- include ('../partials/header.ejs') %>
+    <div class="row vh-100">
+        <div class="col-12">
+            <div class="relative">
+                <% if (type === 'inquiry') { %>
+                    <h1 class="cover-title">Analisi dei bisogni</h1>
+                <% } else { %>
+                        <h1 class="cover-title">
+                            Questionario di adeguatezza
+                            <% if (customer.physicalPerson) { %>
+                                - Persona fisica
+                            <% } else { %>
+                                - Persona giuridica
+                            <% } %>
+                        </h1>
+                <% } %>
+                <img class="d-block m-auto w-100" src="/static/images/cover-background.png" alt="survey-logo">
+            </div>
+        </div>
+        <div class="col-12">
+            <p class="cover-text">
+                <% if (type === 'inquiry') { %>
+                Questionario finalizzato alla valutazione delle richieste ed esigenze del cliente per determinare la coerenza delle stesse rispetto al prodotto assicurativo che si intende offrire, secondo quanto Previsto dal Codice delle Assicurazioni Private (d.lgs. 209/2005) e dal Regolamento IVASS n.40/2018 e s.m.i.
+                <% } else { %>
+                Questionario finalizzato a verificare che il prodotto offerto sia adeguato al profilo assicurativo, economico e finanziario del contraente secondo quanto previsto dal Codice delle Assicurazioni Private (d.lgs. 209/2005) e dal Regolamento IVASS n.40/2018 e s.m.i.
+                <% } %>
+            </p>
+            <div class="row">
+                <div class="col-6">
+                    <p class="text-primary text-bold-black">BRANCH</p>
+                    <strong> <%= networkBranch %></strong>
+                    <br>
+                    _______________________________________________
+                </div>
+                <div class="col-6">
+                    <p class="text-primary text-bold-black">CONSULENTE</p>
+                    <strong> <%= promoter %></strong>
+                    <br>
+                    _______________________________________________
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container-name">
+            <span class="name">PERSONA PROTETTA</span>
+            <span id="page-1" class="num-page">Pag: 1</span>
+        </div>
+        <span class="year">2019</span>
+    </div>
+    <div style="page-break-after:always;"></div>
+</div>
+
+<div id="sections-page" class="container container-height page-spacer" style="position: relative;">
+    <%- include ('../partials/header.ejs') %>
+  <div class="row no-gutters">
+    <div class="col">
+      <div id='sections-page-content' class="p-2">
+        <% sections.forEach(function(section, index){ %>
+              <% var sezioneNumber = index + 1 %>
+                <% section.questions.forEach(function(question, i){ %>
+                    <div class="break-elem">
+                        <% if (i === 0) { %>
+                            <div class="header-section mt-5  pt-2 mb-2 break-elem"> <%= sezioneNumber %>. <%- section.description %></div>
+                        <% } %>
+                        <% if (index === 0  && i === 0) { %>
+                                <% if (customer.physicalPerson) { %>
+                                    <div class="px-5 py-3">
+                                        <div class="row py-3">
+                                            <div class="col-6 d-flex">
+                                                <div class="field-label">Nome</div>
+                                                <div class="border-bottom-field"><%= customer.name %></div>
+                                            </div>
+                                            <div class="col-6 d-flex">
+                                                <div class="field-label">Cognome</div>
+                                                <div class="border-bottom-field"><%= customer.surname %></div>
+                                            </div>
+                                        </div>
+                                        <div class="row py-3">
+                                            <div class="col-5 d-flex">
+                                                <div class="field-label" style="width: 300px;">Comune di nascita</div>
+                                                <div class="border-bottom-field"><%= customer.birthCity %></div>
+                                            </div>
+                                            <div class="col-3 d-flex">
+                                                <div class="field-label">Prov.</div>
+                                                <div class="border-bottom-field"><%= customer.birthRegion %></div>
+                                            </div>
+                                            <div class="col-4 d-flex">
+                                                <div class="field-label" style="width: 300px;">Stato di nascita</div>
+                                                <div class="border-bottom-field"><%= customer.birthState %></div>
+                                            </div>
+                                        </div>
+                                        <div class="row py-3">
+                                            <div class="col-8 d-flex">
+                                                <div class="field-label" style="width: 500px;">Data di nascita (gg/mm/aaaa)</div>
+                                                <div class="border-bottom-field">
+                                                    <%- customer.birthDate ? moment(customer.birthDate).utcOffset('+0200').format('DD/MM/YYYY') :'' %>
+                                                </div>
+                                            </div>
+                                            <div class="col-4 d-flex">
+                                                <div class="field-label">Sesso</div>
+                                                <div class="border-bottom-field"><%= customer.sex %></div>
+                                            </div>
+                                        </div>
+                                        <div class="row py-3">
+                                            <div class="col-12 d-flex">
+                                                <div class="field-label" style="width: 300px;">Codice Fiscale</div>
+                                                <div class="border-bottom-field"><%= customer.fiscalCode %></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <% } else { %>
+                                    <div class="px-5 py-3">
+                                            <div class="row py-3">
+                                                <div class="col-12 d-flex">
+                                                    <div class="field-label" style="width: 300px">Denominazione</div>
+                                                    <div class="border-bottom-field"><%= customer.name %></div>
+                                                </div>
+                                            </div>
+                                            <div class="row py-3">
+                                                <div class="col-12 d-flex">
+                                                    <div class="field-label" style="width: 300px">Partita Iva</div>
+                                                    <div class="border-bottom-field"><%= customer.vat %></div>
+                                                </div>
+                                            </div>
+                                            <div class="row py-3">
+                                                <div class="col-12 d-flex">
+                                                    <div class="field-label" style="width: 300px">Sede legale</div>
+                                                    <div class="border-bottom-field">
+                                                        <%- customer.legalAddress ? `${customer.legalAddress.route} ${customer.legalAddress.streetNumber} ${customer.legalAddress.city}` :'' %>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                <% } %>
+                        <% } %>
+                        <div class="row">
+                            <div class="col-12 mt-3">
+                          <div class="py-3 text-bold-black"><%- question.text %></div>
+                            <div class="row">
+                          <% question.responses.forEach(function(response){ %>
+                                  <% if (response.type === 'date') { %>
+                                    <div class="col-12 py-1">
+                                      <div class="text-answer"><%- response.text %></div>
+                                      <div class="text-answer line-answer border-bottom-field">
+                                          <%- response.typeValue ? moment(response.typeValue).utcOffset('+0200').format('DD/MM/YYYY') :'' %>
+                                      </div>
+                                    </div>
+                                  <% } else if (response.type === 'selection') { %>
+                                      <% var classCol = 'col-4' %>
+                                      <% if (response.values[0].conditionedQuestionId !== '' && response.subQuestion) { %>
+                                          <%  classCol = 'col-12' %>
+                                      <% } %>
+                                      <div class="<%= classCol %>  py-1 row">
+                                          <div class="col-12">
+                                              <div class="media">
+                                                  <div class="square <% if (response.selected) { %> square-x <% } %>"></div>
+                                                  <div class="media-body pl-2 text-answer">
+                                                      <%- response.text %>
+                                                  </div>
+                                                  <% if (response.selected && response.typeValue) { %>
+                                                    <div class="media-body pl-2 text-answer">
+                                                        <%- response.typeValue %>
+                                                    </div>
+                                                  <% } %>
+                                              </div>
+                                          </div>
+                                          <% if (response.values[0].conditionedQuestionId !== '' && response.subQuestion) { %>
+                                                  <div class="col-12 mb-3 ml-4">
+                                                      <div class="py-3 text-bold-black"><%- response.subQuestion.texts[0].text %></div>
+                                                      <div class="row no-gutters">
+                                                          <% response.subQuestion.responses.forEach(function(res){ %>
+                                                              <% if (res.type === 'date') { %>
+                                                                  <div class="col-12 py-1">
+                                                                      <div class="text-answer"><%- res.text %></div>
+                                                                      <div class="text-answer line-answer border-bottom-field">
+                                                                          <%- res.typeValue ? moment(res.typeValue).utcOffset('+0200').format('DD/MM/YYYY') :'' %>
+                                                                      </div>
+                                                                  </div>
+                                                              <% } else if (res.type === 'selection') { %>
+                                                                  <div class="col-4 py-1 row no-gutters">
+                                                                      <div class="media">
+                                                                          <div class="square <% if (res.selected) { %> square-x <% } %>"></div>
+                                                                          <div class="media-body pl-2 text-answer">
+                                                                              <%- res.text %>
+                                                                          </div>
+                                                                      </div>
+                                                                  </div>
+                                                                      <% if (res.values[0].conditionedQuestionId !== '' && res.subQuestion) { %>
+                                                                          <div class="col-12 mb-3 ml-4">
+                                                                              <div class="py-3 text-bold-black"><%- res.subQuestion.texts[0].text %></div>
+                                                                              <div class="row no-gutters">
+                                                                                  <% res.subQuestion.responses.forEach(function(r){ %>
+                                                                                      <% if (res.type === 'date') { %>
+                                                                                          <div class="col-12 py-1">
+                                                                                              <div class="text-answer"><%- res.text %></div>
+                                                                                              <div class="text-answer line-answer border-bottom-field">
+                                                                                                  <%- r.typeValue ? moment(res.typeValue).utcOffset('+0200').format('DD/MM/YYYY') :'' %>
+                                                                                              </div>
+                                                                                          </div>
+                                                                                      <% } else if (res.type === 'selection') { %>
+                                                                                          <div class="col-4 py-1 row no-gutters">
+                                                                                              <div class="media">
+                                                                                                  <div class="square <% if (r.selected) { %> square-x <% } %>"></div>
+                                                                                                  <div class="media-body pl-2 text-answer">
+                                                                                                      <%- r.text %>
+                                                                                                  </div>
+                                                                                              </div>
+                                                                                          </div>
+                                                                                      <% } else{ %>
+                                                                                          <div class="col-12 py-1">
+                                                                                              <div class="text-answer"><%- r.text %></div>
+                                                                                              <div class="text-answer line-answer border-bottom-field"><%- r.typeValue %></div>
+                                                                                          </div>
+                                                                                      <% } %>
+                                                                                  <% }); %>
+                                                                              </div>
+                                                                          </div>
+                                                                      <% } %>
+                                                              <% } else{ %>
+                                                                  <div class="col-12 py-1">
+                                                                      <div class="text-answer"><%- res.text %></div>
+                                                                      <div class="text-answer line-answer border-bottom-field"><%= res.typeValue ? res.typeValue : '' %></div>
+                                                                  </div>
+                                                              <% } %>
+                                                          <% }); %>
+                                                      </div>
+                                                  </div>
+                                          <% } %>
+                                      </div>
+                                  <% } else if (response.type === 'person') { %>
+                                  <% } else{ %>
+                                    <div class="col-12 py-1">
+                                          <div class="text-answer"><%- response.text %></div>
+                                        <div class="text-answer line-answer border-bottom-field"><%= response.typeValue ? response.typeValue : '' %></div>
+                                    </div>
+                                  <% } %>
+                          <% }); %>
+                            </div>
+                      </div>
+                        </div>
+                    </div>
+            <% }); %>
+             <% }); %>
+
+          <% if (type === 'inquiry') { %>
+          <div class="break-elem">
+              <div class="text-block row py-3">
+                  <div class="col-12">
+                      <p>Data del presunto pensionamento: (gg/mm/aaaa)
+                          <% if (surveyResult.pension) { %>
+                              <div class="border-bottom-field">
+                                <%- surveyResult.pension.pensionDate ? moment(surveyResult.pension.pensionDate).utcOffset('+0200').format('DD/MM/YYYY') :'' %>
+                                </div>
+                          <% } else{ %>
+                              ____/_____/_______
+                          <% } %>
+                          <br>
+                      Secondo le richieste ed esigenze del cliente raccolte tramite il Questionario, possiamo proporti le seguenti tipologie di polizze:
+                      <% buckets0314.forEach(function(reason, index){ %>
+                          <strong><%- reason %> </strong>
+                      <% }) %>
+                      nel rispetto delle tue capacita’ economiche e finanziarie. </p>
+                  </div>
+              </div>
+              <div class="row no-gutters">
+                  <div class="col">
+                      <%- include ('../partials/coerenza-endtext.ejs') %>
+                  </div>
+              </div>
+          </div>
+          <% } else { %>
+            <div class="break-elem mt-5">
+                <div class="row no-gutters">
+                    <div class="col">
+                        <%- include ('../partials/coerenza-endtext.ejs') %>
+                    </div>
+                </div>
+            </div>
+          <% } %>
+      </div>
+    </div>
+  </div>
+    <div class="footer">
+        <div class="container-name">
+            <span class="name">PERSONA PROTETTA</span>
+            <span class="num-page">Pag: 2</span>
+        </div>
+        <span class="year">2019</span>
+    </div>
+   <div style="page-break-after:always;"></div>
+</div>
+
+<script src="/static/js/default.min.js"></script>

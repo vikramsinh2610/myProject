@@ -1,0 +1,145 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Acquittance should have JSON Schema 1`] = `
+Object {
+  "properties": Object {
+    "_id": Object {
+      "description": "Payment ID",
+      "type": "string",
+    },
+    "companyName": Object {
+      "description": "Company name",
+      "type": "string",
+    },
+    "didConfirmedDate": Object {
+      "description": "Confirmed date",
+      "pattern": "^((19|20)[0-9]{2})-(1[0-2]|0[1-9])-(3[01]|0[1-9]|[12][0-9])T(2[0-3]|[01][0-9]):([0-5][0-9]):([0-5][0-9])([.])([0-9]{3})Z",
+      "type": "string",
+    },
+    "didCreatedDate": Object {
+      "description": "Created date",
+      "pattern": "^((19|20)[0-9]{2})-(1[0-2]|0[1-9])-(3[01]|0[1-9]|[12][0-9])T(2[0-3]|[01][0-9]):([0-5][0-9]):([0-5][0-9])([.])([0-9]{3})Z",
+      "type": "string",
+    },
+    "payments": Object {
+      "items": Object {
+        "properties": Object {
+          "_id": Object {
+            "description": "ID of payment",
+            "type": "string",
+          },
+          "alreadyConfirmed": Object {
+            "description": "Is payment ok?",
+            "type": "boolean",
+          },
+          "alreadyPaid": Object {
+            "description": "Is payment ok?",
+            "type": "boolean",
+          },
+          "calculatedPayin": Object {
+            "description": "Calculated payin of installment",
+            "type": "integer",
+          },
+          "contractId": Object {
+            "description": "ID of contract",
+            "type": "string",
+          },
+          "errorPayin": Object {
+            "description": "Is payment ok?",
+            "type": "boolean",
+          },
+          "incomePracticeId": Object {
+            "description": "Linked income practice id",
+            "type": "string",
+          },
+          "installment": Object {
+            "description": "Installment number",
+            "type": "integer",
+          },
+          "installmentDate": Object {
+            "description": "Date of payment",
+            "type": "string",
+          },
+          "manuallyModified": Object {
+            "description": "Is payment ok?",
+            "type": "boolean",
+          },
+          "notFoundBase": Object {
+            "description": "Is payment ok?",
+            "type": "boolean",
+          },
+          "notFoundPractice": Object {
+            "description": "Is payment ok?",
+            "type": "boolean",
+          },
+          "ok": Object {
+            "description": "Is payment ok?",
+            "type": "boolean",
+          },
+          "oldCalculatedPayin": Object {
+            "description": "Calculated payin of installment",
+            "type": "integer",
+          },
+          "oldPayin": Object {
+            "description": "Payment payin",
+            "type": "integer",
+          },
+          "payin": Object {
+            "description": "Payment payin",
+            "type": "integer",
+          },
+          "practiceId": Object {
+            "description": "ID of practice",
+            "type": "string",
+          },
+          "premiumGross": Object {
+            "description": "Practice gross premium",
+            "type": "integer",
+          },
+          "premiumNet": Object {
+            "description": "Practice net premium",
+            "type": "integer",
+          },
+          "productivePeriodMonth": Object {
+            "description": "Productive period month of installment",
+            "type": "integer",
+          },
+          "productivePeriodYear": Object {
+            "description": "Productive period year of installment",
+            "type": "integer",
+          },
+          "select": Object {
+            "type": "string",
+          },
+          "status": Object {
+            "description": "Status description",
+            "type": "string",
+          },
+          "type": Object {
+            "description": "Type of payment",
+            "enum": Array [
+              "subscription",
+              "income",
+              "additional-income",
+            ],
+            "type": "string",
+          },
+        },
+        "type": "object",
+      },
+      "type": "array",
+    },
+    "status": Object {
+      "description": "Status",
+      "type": "string",
+    },
+  },
+  "required": Array [
+    "_id",
+    "status",
+    "didCreatedDate",
+    "companyName",
+  ],
+  "type": "object",
+}
+`;

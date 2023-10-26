@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Language" content="it-IT"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Elle.it registrazione</title>
+
+    <base href="/">
+    <link rel="stylesheet" href="https://elle-login-cloud.appspot.com/stylesheets/fonts.css" media="all">
+
+    <script src="https://elle-login-cloud.appspot.com/bower_components/webcomponentsjs/webcomponents-loader.js"></script>
+
+    <link rel="import" href="https://elle-login-cloud.appspot.com/src/elle-login-dati-utente.html">
+    <link rel="import" href="https://elle-login-cloud.appspot.com/src/elle-login-header.html">
+    <link rel="import" href="https://elle-login-cloud.appspot.com/src/elle-login-footer.html">
+
+</head>
+
+<body>
+
+    <elle-login-header></elle-login-header>
+
+    <elle-login-dati-utente nome="{{=it.nome}}"
+                            cognome="{{=it.cognome}}">
+        caricamento ...
+    </elle-login-dati-utente>
+
+    <elle-login-footer></elle-login-footer>
+
+</body>
+</html>
+

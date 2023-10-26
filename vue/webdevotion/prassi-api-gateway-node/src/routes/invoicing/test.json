@@ -1,0 +1,658 @@
+{
+  "content": [
+    {
+      "style": {
+        "fontSize": 10
+      },
+      "table": {
+        "widths": [300, "*"],
+        "body": [
+          [
+            {
+              "columns": [
+                [
+                  {
+                    "style": "title",
+                    "text": "Francesco D'innocenzo"
+                  },
+                  {
+                    "text": "Vicolo Della Montagnola, 1"
+                  },
+                  {
+                    "text": "64100 - Teramo (TE)"
+                  },
+                  {
+                    "style": "addressLast",
+                    "text": "Italia"
+                  },
+                  {
+                    "text": "C.F. DNNFNC70L09L103X"
+                  },
+                  {
+                    "text": "P.IVA 01450890676"
+                  }
+                ]
+              ]
+            },
+            {
+              "text": " "
+            }
+          ]
+        ]
+      },
+      "layout": "noBorders"
+    },
+    {
+      "table": {
+        "widths": ["*", 300],
+        "body": [
+          [
+            {
+              "text": " "
+            },
+            {
+              "textAlign": "right",
+              "alignment": "right",
+              "columns": [
+                [
+                  {
+                    "marginTop": 40,
+                    "text": "Spett.le"
+                  },
+                  {
+                    "style": "titleRecipient",
+                    "text": "Sheltia s.r.l."
+                  },
+                  {
+                    "text": "Via Ennio Quirino Visconti, 103"
+                  },
+                  {
+                    "text": "00193 - Roma (RM)"
+                  },
+                  {
+                    "style": "addressLast",
+                    "text": "Italia"
+                  },
+                  {
+                    "text": "P.IVA 13172161005"
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      },
+      "layout": "noBorders"
+    },
+    {
+      "style": "invoice",
+      "text": "Fattura n. SH1/2020 del 21/09/2020"
+    },
+    {
+      "style": "description",
+      "text": "Il seguente documento viene emesso in nome e per conto del sig. Francesco D'innocenzo giusta lettera di affidamento del 25/05/2017"
+    },
+    {
+      "table": {
+        "widths": ["*", 30, "auto"],
+        "body": [
+          [
+            {
+              "border": [false, false, false, false],
+              "text": "Provvigioni di fascia ",
+              "alignment": "left",
+              "marginLeft": 5
+            },
+            {
+              "border": [false, false, false, false],
+              "text": "Euro",
+              "alignment": "left",
+              "textAlign": "left",
+              "lineHeight": 0.8
+            },
+            {
+              "border": [false, false, false, false],
+              "text": "41,04",
+              "alignment": "right",
+              "textAlign": "right",
+              "lineHeight": 0.8
+            }
+          ],
+          [
+            {
+              "border": [false, false, false, false],
+              "text": "Provvigioni di incasso dirette - 7 / 2020",
+              "alignment": "left",
+              "marginLeft": 5
+            },
+            {
+              "border": [false, false, false, false],
+              "text": "Euro",
+              "alignment": "left",
+              "textAlign": "left",
+              "lineHeight": 0.8
+            },
+            {
+              "border": [false, false, false, false],
+              "text": "1,26",
+              "alignment": "right",
+              "textAlign": "right",
+              "lineHeight": 0.8
+            }
+          ],
+          [
+            {
+              "border": [false, false, false, false],
+              "text": "Management fee - 6 / 2020",
+              "alignment": "left",
+              "marginLeft": 5
+            },
+            {
+              "border": [false, false, false, false],
+              "text": "Euro",
+              "alignment": "left",
+              "textAlign": "left",
+              "lineHeight": 0.8
+            },
+            {
+              "border": [false, false, false, false],
+              "text": "0,49",
+              "alignment": "right",
+              "textAlign": "right",
+              "lineHeight": 0.8
+            }
+          ],
+          [
+            {
+              "border": [false, false, false, false],
+              "text": "Management fee - 3 / 2020",
+              "alignment": "left",
+              "marginLeft": 5
+            },
+            {
+              "border": [false, false, false, false],
+              "text": "Euro",
+              "alignment": "left",
+              "textAlign": "left",
+              "lineHeight": 0.8
+            },
+            {
+              "border": [false, false, false, false],
+              "text": "0,26",
+              "alignment": "right",
+              "textAlign": "right",
+              "lineHeight": 0.8
+            }
+          ],
+          [
+            {
+              "border": [false, false, false, false],
+              "text": "Provvigioni di fascia ",
+              "alignment": "left",
+              "marginLeft": 5
+            },
+            {
+              "border": [false, false, false, false],
+              "text": "Euro",
+              "alignment": "left",
+              "textAlign": "left",
+              "lineHeight": 0.8
+            },
+            {
+              "border": [false, false, false, false],
+              "text": "20,61",
+              "alignment": "right",
+              "textAlign": "right",
+              "lineHeight": 0.8
+            }
+          ],
+          [
+            {
+              "border": [false, false, false, false],
+              "text": "Provvigioni di incasso dirette - 11 / 2019",
+              "alignment": "left",
+              "marginLeft": 5
+            },
+            {
+              "border": [false, false, false, false],
+              "text": "Euro",
+              "alignment": "left",
+              "textAlign": "left",
+              "lineHeight": 0.8
+            },
+            {
+              "border": [false, false, false, false],
+              "text": "1,26",
+              "alignment": "right",
+              "textAlign": "right",
+              "lineHeight": 0.8
+            }
+          ],
+          [
+            {
+              "border": [false, false, false, false],
+              "text": "Management fee - 10 / 2019",
+              "alignment": "left",
+              "marginLeft": 5
+            },
+            {
+              "border": [false, false, false, false],
+              "text": "Euro",
+              "alignment": "left",
+              "textAlign": "left",
+              "lineHeight": 0.8
+            },
+            {
+              "border": [false, false, false, false],
+              "text": "0,49",
+              "alignment": "right",
+              "textAlign": "right",
+              "lineHeight": 0.8
+            }
+          ],
+          [
+            {
+              "border": [false, false, false, false],
+              "text": "Management fee - 6 / 2019",
+              "alignment": "left",
+              "marginLeft": 5
+            },
+            {
+              "border": [false, false, false, false],
+              "text": "Euro",
+              "alignment": "left",
+              "textAlign": "left",
+              "lineHeight": 0.8
+            },
+            {
+              "border": [false, false, false, false],
+              "text": "0,49",
+              "alignment": "right",
+              "textAlign": "right",
+              "lineHeight": 0.8
+            }
+          ],
+          [
+            {
+              "border": [false, false, false, false],
+              "text": "Provvigioni di fascia ",
+              "alignment": "left",
+              "marginLeft": 5
+            },
+            {
+              "border": [false, false, false, false],
+              "text": "Euro",
+              "alignment": "left",
+              "textAlign": "left",
+              "lineHeight": 0.8
+            },
+            {
+              "border": [false, false, false, false],
+              "text": "41,04",
+              "alignment": "right",
+              "textAlign": "right",
+              "lineHeight": 0.8
+            }
+          ],
+          [
+            {
+              "border": [false, false, false, false],
+              "text": "Provvigioni di incasso dirette - 4 / 2019",
+              "alignment": "left",
+              "marginLeft": 5
+            },
+            {
+              "border": [false, false, false, false],
+              "text": "Euro",
+              "alignment": "left",
+              "textAlign": "left",
+              "lineHeight": 0.8
+            },
+            {
+              "border": [false, false, false, false],
+              "text": "2,94",
+              "alignment": "right",
+              "textAlign": "right",
+              "lineHeight": 0.8
+            }
+          ],
+          [
+            {
+              "border": [false, false, false, false],
+              "text": "Provvigioni di fascia ",
+              "alignment": "left",
+              "marginLeft": 5
+            },
+            {
+              "border": [false, false, false, false],
+              "text": "Euro",
+              "alignment": "left",
+              "textAlign": "left",
+              "lineHeight": 0.8
+            },
+            {
+              "border": [false, false, false, false],
+              "text": "18,86",
+              "alignment": "right",
+              "textAlign": "right",
+              "lineHeight": 0.8
+            }
+          ],
+          [
+            {
+              "border": [false, false, false, false],
+              "text": "Management fee - 3 / 2019",
+              "alignment": "left",
+              "marginLeft": 5
+            },
+            {
+              "border": [false, false, false, false],
+              "text": "Euro",
+              "alignment": "left",
+              "textAlign": "left",
+              "lineHeight": 0.8
+            },
+            {
+              "border": [false, false, false, false],
+              "text": "0,25",
+              "alignment": "right",
+              "textAlign": "right",
+              "lineHeight": 0.8
+            }
+          ],
+          [
+            {
+              "border": [false, false, false, false],
+              "text": "Provvigioni di incasso dirette - 3 / 2019",
+              "alignment": "left",
+              "marginLeft": 5
+            },
+            {
+              "border": [false, false, false, false],
+              "text": "Euro",
+              "alignment": "left",
+              "textAlign": "left",
+              "lineHeight": 0.8
+            },
+            {
+              "border": [false, false, false, false],
+              "text": "8,36",
+              "alignment": "right",
+              "textAlign": "right",
+              "lineHeight": 0.8
+            }
+          ],
+          [
+            {
+              "border": [false, false, false, false],
+              "text": "Provvigioni di incasso dirette - 2 / 2019",
+              "alignment": "left",
+              "marginLeft": 5
+            },
+            {
+              "border": [false, false, false, false],
+              "text": "Euro",
+              "alignment": "left",
+              "textAlign": "left",
+              "lineHeight": 0.8
+            },
+            {
+              "border": [false, false, false, false],
+              "text": "0,84",
+              "alignment": "right",
+              "textAlign": "right",
+              "lineHeight": 0.8
+            }
+          ],
+          [
+            {
+              "border": [false, false, false, false],
+              "text": "Provvigioni di fascia ",
+              "alignment": "left",
+              "marginLeft": 5
+            },
+            {
+              "border": [false, false, false, false],
+              "text": "Euro",
+              "alignment": "left",
+              "textAlign": "left",
+              "lineHeight": 0.8
+            },
+            {
+              "border": [false, false, false, false],
+              "text": "23,58",
+              "alignment": "right",
+              "textAlign": "right",
+              "lineHeight": 0.8
+            }
+          ],
+          [
+            {
+              "border": [false, false, false, false],
+              "text": "Storno Provv. per polizze Metlife insolventi e annullate ",
+              "alignment": "left",
+              "marginLeft": 5
+            },
+            {
+              "border": [false, false, false, true],
+              "text": "Euro",
+              "alignment": "left",
+              "textAlign": "left",
+              "lineHeight": 0.8
+            },
+            {
+              "border": [false, false, false, true],
+              "text": "-161,77",
+              "alignment": "right",
+              "textAlign": "right",
+              "lineHeight": 0.8
+            }
+          ],
+          [
+            {
+              "border": [false, false, false, false],
+              "text": "Totale corrispettivi lordi ",
+              "alignment": "left",
+              "marginLeft": 5
+            },
+            {
+              "border": [false, false, false, false],
+              "text": "Euro",
+              "alignment": "left",
+              "textAlign": "left",
+              "lineHeight": 0.8
+            },
+            {
+              "border": [false, false, false, false],
+              "text": "0,00",
+              "alignment": "right",
+              "textAlign": "right",
+              "lineHeight": 0.8
+            }
+          ],
+          [
+            {
+              "border": [false, false, false, false],
+              "text": ""
+            },
+            {
+              "border": [false, false, false, false],
+              "text": ""
+            },
+            {
+              "border": [false, false, false, false],
+              "text": ""
+            }
+          ],
+          [
+            {
+              "border": [false, false, false, false],
+              "text": ""
+            },
+            {
+              "border": [false, false, false, false],
+              "text": ""
+            },
+            {
+              "border": [false, false, false, false],
+              "text": ""
+            }
+          ],
+          [
+            {
+              "border": [false, false],
+              "bold": true,
+              "text": "Totale fattura",
+              "alignment": "left",
+              "marginLeft": 5
+            },
+            {
+              "border": [false, false, false, false],
+              "bold": true,
+              "alignment": "left",
+              "textAlign": "left",
+              "text": "Euro"
+            },
+            {
+              "border": [false, false, false, false],
+              "bold": true,
+              "text": "0,00",
+              "alignment": "right",
+              "textAlign": "right"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "style": "sep",
+      "text": ""
+    },
+    {
+      "fontSize": 11,
+      "lineHeight": 1.4,
+      "letterSpacing": 2.1,
+      "text": [
+        {
+          "text": "Fattura esente IVA ex articolo 10, comma 1, n. 18, del D.P.R. n. 633 del 1972\nOperazione effettuata ai sensi dell’art. 1, commi da 54 a 89 della Legge n. 190/2014 –Regime forfettario\nIl compenso non è soggetto a ritenute d’acconto ex articolo 1, comma 67, della Legge n. 190 del 2014\n"
+        }
+      ]
+    },
+    {
+      "style": "sep",
+      "text": ""
+    },
+    {
+      "fontSize": 11,
+      "letterSpacing": 1.5,
+      "lineHeight": 1.3,
+      "text": "Condizioni di pagamento: pagamento a vista"
+    },
+    {
+      "fontSize": 11,
+      "letterSpacing": 1.5,
+      "lineHeight": 1.3,
+      "text": "Codice IBAN: IT07X0567617295IB0000121805"
+    },
+    {
+      "text": " "
+    },
+    {
+      "bold": true,
+      "letterSpacing": 1.65,
+      "fontSize": 11,
+      "text": "Scadenza fattura:  22/09/2020"
+    },
+    {
+      "text": "",
+      "pageOrientation": "landscape",
+      "pageBreak": "before"
+    },
+    [
+      {
+        "style": "invoice",
+        "text": "Pratiche collegate:"
+      },
+      {
+        "style": "invoice",
+        "text": "Totale IV: 2.280,00"
+      }
+    ],
+    {
+      "table": {
+        "headerRows": 1,
+        "body": [
+          ["Tipo", "Prodotto", "Dir.", "Cliente", "Contratto", "Pratica", "Rata", "IV"],
+          ["SO", "Mutua Tre Esse Gold", "Si", "Roberto Di Francesco", "8001007761", "SUB8001007761", 3, "2.280,00"],
+          ["SO", "Assigeco RC-(Tecnici)", "Si", null, "A118C311375", "SUB30000147", 2, "1.145,00"]
+        ]
+      },
+      "layout": "lightHorizontalLines"
+    }
+  ],
+  "styles": {
+    "title": {
+      "bold": true,
+      "fontSize": 10,
+      "fontWeight": 900,
+      "marginBottom": 6
+    },
+    "titleRecipient": {
+      "bold": true,
+      "fontSize": 12,
+      "fontWeight": 900
+    },
+    "addressLast": {
+      "marginBottom": 5
+    },
+    "regime": {
+      "fontSize": 13,
+      "bold": true,
+      "color": "red",
+      "fontWeight": 900,
+      "marginTop": 30,
+      "marginBottom": 15
+    },
+    "redText": {
+      "fontSize": 12,
+      "color": "red",
+      "bold": true,
+      "letterSpacing": 1.5
+    },
+    "left": {
+      "fontSize": 11
+    },
+    "right": {
+      "fontSize": 11,
+      "alignment": "right",
+      "textAlign": "right"
+    },
+    "center": {
+      "fontSize": 11,
+      "alignment": "center",
+      "textAlign": "center",
+      "marginTop": 10,
+      "marginBottom": 10
+    },
+    "invoice": {
+      "fontSize": 15,
+      "fontWeight": 900,
+      "marginBottom": 15,
+      "marginTop": 15,
+      "bold": true
+    },
+    "description": {
+      "marginBottom": 40
+    },
+    "boldText": {
+      "fontWeight": 900
+    },
+    "sep": {
+      "marginBottom": 30
+    },
+    "cell": {
+      "marginBottom": 15
+    }
+  },
+  "pageMargins": [56, 26, 56, 26]
+}

@@ -1,0 +1,1125 @@
+db.BasePraticaApprovable.update(
+  { "_id": BinData(3, "wsheaooN2UmjkqvqAOYRvA==") },
+  {
+    "$set": {
+      "_t": "PraticaSottoscrizione",
+      "Enabled": true,
+      "CreatedOn": ISODate("2020-06-30T15:57:39.400+02:00"),
+      "ModifiedOn": ISODate("2020-07-24T12:34:01.487+02:00"),
+      "Disabled": false,
+      "DisabledOn": null,
+      "CreatedByIdentifier": null,
+      "ExpiresOn": ISODate("0001-01-01T00:49:56.000+00:45"),
+      "IsSync": false,
+      "NodeHistory": null,
+      "DatiBase": {
+        "TipoPremio": {
+          "value": "Premio ricorrente",
+          "key": NumberInt(2)
+        },
+        "RateizzazionePremio": {
+          "value": "Semestrale",
+          "key": NumberInt(5)
+        },
+        "NumeroPratica": "SUB40000014920",
+        "NumeroContratto": "2000013592",
+        "NumeroProposta": "40000014920",
+        "NomeContraente": "GIANLUCA CORDA",
+        "ClienteIdentifier": BinData(3, "yqoi5F08Qiu8UthIIStnDw=="),
+        "ApplicaIvPromotore": true,
+        "NomeCliente": "GIANLUCA CORDA",
+        "ImportoIncassato": NumberLong(1428200),
+        "PremioUnico": NumberLong(0),
+        "PremioRicorrente": NumberLong(2756300),
+        "IndicatoreDiValore": NumberLong(3310000),
+        "NumeroMandato": null,
+        "PrivacyIdentifier": BinData(3, "h5ciYEKmCkqSGLOst2DvGg=="),
+        "CommissionSacrifice": "0"
+      },
+      "DatiProdotto": {
+        "ProdottoIdentifier": BinData(3, "u+KEsUwlUka7D6kpAMuUZg=="),
+        "NomeProdotto": "CF Pensiamoci Insieme",
+        "CompagniaIdentifier": BinData(3, "06/jfT69fUytsakNAMPYtQ=="),
+        "NomeCompagnia": "CF LIFE"
+      },
+      "DatePratica": {
+        "DataPrimoInvio": ISODate("2020-06-30T16:02:25.541+02:00"),
+        "Approvazione": ISODate("2020-07-24T12:34:01.487+02:00"),
+        "Decorrenza": ISODate("2020-06-26T00:00:00.000+02:00"),
+        "Firma": ISODate("2020-06-26T00:00:00.000+02:00"),
+        "DisposizioneBonifico": null,
+        "UltimoMesePagato": ISODate("2020-06-26T00:00:00.000+02:00"),
+        "Emissione": ISODate("2020-07-16T00:00:00.000+02:00")
+      },
+      "CommissioniPassiveRete": {
+        "PeriodoPagamento": null,
+        "CommissionePromotore": {
+          "CommissionBase": "0",
+          "CommissionFascia": "0",
+          "CommissionTarget": "0"
+        },
+        "CommissioneTM": {
+          "CommissionBase": "0",
+          "CommissionFascia": "0",
+          "CommissionTarget": "0"
+        },
+        "CommissioneBM": {
+          "CommissionBase": "0",
+          "CommissionFascia": "0",
+          "CommissionTarget": "0"
+        },
+        "CommissioneDM": {
+          "CommissionBase": "0",
+          "CommissionFascia": "0",
+          "CommissionTarget": "0"
+        }
+      },
+      "StatoHistory": [
+        {
+          "Stato": {
+            "value": "Bozza",
+            "key": NumberInt(1)
+          },
+          "PeriodoProduttivo": {
+            "Data": ISODate("2020-06-30T15:57:39.400+02:00"),
+            "Anno": NumberInt(2020),
+            "Mese": NumberInt(6)
+          }
+        },
+        {
+          "Stato": {
+            "value": "Inviata",
+            "key": NumberInt(2)
+          },
+          "PeriodoProduttivo": {
+            "Data": ISODate("2020-06-30T16:02:25.541+02:00"),
+            "Anno": NumberInt(2020),
+            "Mese": NumberInt(6)
+          }
+        },
+        {
+          "Stato": {
+            "value": "Incompleta",
+            "key": NumberInt(8)
+          },
+          "PeriodoProduttivo": {
+            "Data": ISODate("2020-07-24T11:00:59.177+02:00"),
+            "Anno": NumberInt(2020),
+            "Mese": NumberInt(7)
+          }
+        },
+        {
+          "Stato": {
+            "value": "Inviata",
+            "key": NumberInt(2)
+          },
+          "PeriodoProduttivo": {
+            "Data": ISODate("2020-07-24T11:15:35.249+02:00"),
+            "Anno": NumberInt(2020),
+            "Mese": NumberInt(7)
+          }
+        },
+        {
+          "Stato": {
+            "value": "Approvata",
+            "key": NumberInt(3)
+          },
+          "PeriodoProduttivo": {
+            "Data": ISODate("2020-07-24T12:34:01.487+02:00"),
+            "Anno": NumberInt(2020),
+            "Mese": NumberInt(7)
+          }
+        },
+        {
+          "Stato": {
+            "value": "In vigore",
+            "key": NumberInt(6)
+          },
+          "PeriodoProduttivo": {
+            "Data": ISODate("2020-06-26T00:00:00.000+02:00"),
+            "Anno": NumberInt(2020),
+            "Mese": NumberInt(6)
+          }
+        }
+      ],
+      "StatoAdeguatezza": null,
+      "StatoPostVigore": null,
+      "Allegati": [
+        {
+          "AttachmentIdentifier": BinData(3, "JV9yY8ujnEumVg/oRqiMiQ=="),
+          "Tipo": "Proposta",
+          "Descrizione": "PROPOSTA 40000014920 CORDA GIAN LUCA.pdf",
+          "DataScadenza": null,
+          "ModifiedOn": null,
+          "CheckDirezione": null,
+          "NomeFile": "PROPOSTA 40000014920 CORDA GIAN LUCA.pdf",
+          "DataEmissioneDocumento": null,
+          "NumeroDocumento": null,
+          "TipoDocumento": null,
+          "ClienteIdentifier": null
+        },
+        {
+          "AttachmentIdentifier": BinData(3, "FG/SCDbJdkG+D915LKKjMw=="),
+          "Tipo": "Coerenza",
+          "Descrizione": "PROPOSTA 40000014920 CORDA GIAN LUCA.pdf",
+          "DataScadenza": null,
+          "ModifiedOn": null,
+          "CheckDirezione": null,
+          "NomeFile": "PROPOSTA 40000014920 CORDA GIAN LUCA.pdf",
+          "DataEmissioneDocumento": null,
+          "NumeroDocumento": null,
+          "TipoDocumento": null,
+          "ClienteIdentifier": null
+        },
+        {
+          "AttachmentIdentifier": BinData(3, "Qof14ijd/EmVILMY3zlJfQ=="),
+          "Tipo": "Distinta bonifico",
+          "Descrizione": "BONIFICO.docx",
+          "DataScadenza": null,
+          "ModifiedOn": null,
+          "CheckDirezione": null,
+          "NomeFile": "BONIFICO.docx",
+          "DataEmissioneDocumento": null,
+          "NumeroDocumento": null,
+          "TipoDocumento": null,
+          "ClienteIdentifier": null
+        },
+        {
+          "AttachmentIdentifier": BinData(3, "rhuUivMu+U+Jr0iqARFu/A=="),
+          "Tipo": "ALL. 4 e RICEVUTA",
+          "Descrizione": "ALLEG 3 4 PROPOSTA 40000014920 CORDA GIAN LUCA.pdf",
+          "DataScadenza": null,
+          "ModifiedOn": null,
+          "CheckDirezione": null,
+          "NomeFile": "ALLEG 3 4 PROPOSTA 40000014920 CORDA GIAN LUCA.pdf",
+          "DataEmissioneDocumento": null,
+          "NumeroDocumento": null,
+          "TipoDocumento": null,
+          "ClienteIdentifier": null
+        },
+        {
+          "AttachmentIdentifier": BinData(3, "IyR8M30awEmwGZKKu336Zg=="),
+          "Tipo": "Sepa",
+          "Descrizione": "SDD PROPOSTA 40000014920 CORDA GIAN LUCA.pdf",
+          "DataScadenza": null,
+          "ModifiedOn": null,
+          "CheckDirezione": null,
+          "NomeFile": "SDD PROPOSTA 40000014920 CORDA GIAN LUCA.pdf",
+          "DataEmissioneDocumento": null,
+          "NumeroDocumento": null,
+          "TipoDocumento": null,
+          "ClienteIdentifier": null
+        },
+        {
+          "AttachmentIdentifier": BinData(3, "2KCIdwR79UCeMDqU0n/gSg=="),
+          "Tipo": "Distinta bonifico",
+          "Descrizione": "bonifico tcm corda.pdf",
+          "DataScadenza": null,
+          "ModifiedOn": null,
+          "CheckDirezione": null,
+          "NomeFile": "bonifico tcm corda.pdf",
+          "DataEmissioneDocumento": null,
+          "NumeroDocumento": null,
+          "TipoDocumento": null,
+          "ClienteIdentifier": null
+        },
+        {
+          "AttachmentIdentifier": BinData(3, "7k5j9m0SHEWz8Zqd8H7z6g=="),
+          "Tipo": "Contratto",
+          "Descrizione": "Corda.pdf",
+          "DataScadenza": null,
+          "ModifiedOn": null,
+          "CheckDirezione": null,
+          "NomeFile": "Corda.pdf",
+          "DataEmissioneDocumento": null,
+          "NumeroDocumento": null,
+          "TipoDocumento": null,
+          "ClienteIdentifier": null
+        }
+      ],
+      "CommissioniAttive": {
+        "PeriodoProduttivo": {
+          "Data": ISODate("2020-07-10T02:00:00.000+02:00"),
+          "Anno": NumberInt(2020),
+          "Mese": NumberInt(7)
+        },
+        "Standard": "0",
+        "ManagementFees": []
+      },
+      "StatoCorrente": {
+        "Stato": {
+          "value": "In vigore",
+          "key": NumberInt(6)
+        },
+        "PeriodoProduttivo": {
+          "Data": ISODate("2020-06-26T00:00:00.000+02:00"),
+          "Anno": NumberInt(2020),
+          "Mese": NumberInt(6)
+        }
+      },
+      "TipoPratica": {
+        "value": "Sottoscrizione",
+        "key": NumberInt(5)
+      },
+      "DettaglioApprovazione": {
+        "ApprovazioneIntermediaHistory": [
+          {
+            "ApprovedByIdentifier": null,
+            "StatoApprovazione": {
+              "value": "Da approvare",
+              "key": NumberInt(1)
+            },
+            "Data": ISODate("2020-06-30T16:02:25.541+02:00"),
+            "NomeApprovatore": null,
+            "RuoloApprovazione": null,
+            "Motivazione": null
+          },
+          {
+            "ApprovedByIdentifier": null,
+            "StatoApprovazione": {
+              "value": "Da approvare",
+              "key": NumberInt(1)
+            },
+            "Data": ISODate("2020-07-24T11:15:35.249+02:00"),
+            "NomeApprovatore": null,
+            "RuoloApprovazione": null,
+            "Motivazione": null
+          }
+        ],
+        "ApprovazioneHistory": [
+          {
+            "ApprovedByIdentifier": null,
+            "StatoApprovazione": {
+              "value": "Da approvare",
+              "key": NumberInt(1)
+            },
+            "Data": ISODate("2020-06-30T16:02:25.541+02:00"),
+            "NomeApprovatore": null,
+            "RuoloApprovazione": null,
+            "Motivazione": null
+          },
+          {
+            "ApprovedByIdentifier": BinData(3, "bAmjoFjXOU6Dg/L3zLrDbw=="),
+            "StatoApprovazione": {
+              "value": "Incompleto",
+              "key": NumberInt(4)
+            },
+            "Data": ISODate("2020-07-24T11:00:59.177+02:00"),
+            "NomeApprovatore": "00000000 Elisa Scutumella",
+            "RuoloApprovazione": {
+              "value": "Direzione",
+              "key": NumberInt(7)
+            },
+            "Motivazione": "MANCA PAGAMENTO"
+          },
+          {
+            "ApprovedByIdentifier": null,
+            "StatoApprovazione": {
+              "value": "Da approvare",
+              "key": NumberInt(1)
+            },
+            "Data": ISODate("2020-07-24T11:15:35.249+02:00"),
+            "NomeApprovatore": null,
+            "RuoloApprovazione": null,
+            "Motivazione": null
+          },
+          {
+            "ApprovedByIdentifier": BinData(3, "bAmjoFjXOU6Dg/L3zLrDbw=="),
+            "StatoApprovazione": {
+              "value": "Approvato",
+              "key": NumberInt(2)
+            },
+            "Data": ISODate("2020-07-24T12:34:01.472+02:00"),
+            "NomeApprovatore": "00000000 Elisa Scutumella",
+            "RuoloApprovazione": {
+              "value": "Direzione",
+              "key": NumberInt(7)
+            },
+            "Motivazione": null
+          }
+        ],
+        "VisionatoTm": false,
+        "DataVisioneTm": null,
+        "ApprovazioneCorrente": {
+          "ApprovedByIdentifier": BinData(3, "bAmjoFjXOU6Dg/L3zLrDbw=="),
+          "StatoApprovazione": {
+            "value": "Approvato",
+            "key": NumberInt(2)
+          },
+          "Data": ISODate("2020-07-24T12:34:01.472+02:00"),
+          "NomeApprovatore": "00000000 Elisa Scutumella",
+          "RuoloApprovazione": {
+            "value": "Direzione",
+            "key": NumberInt(7)
+          },
+          "Motivazione": null
+        },
+        "ApprovazioneIntermediaCorrente": {
+          "ApprovedByIdentifier": null,
+          "StatoApprovazione": {
+            "value": "Da approvare",
+            "key": NumberInt(1)
+          },
+          "Data": ISODate("2020-07-24T11:15:35.249+02:00"),
+          "NomeApprovatore": null,
+          "RuoloApprovazione": null,
+          "Motivazione": null
+        }
+      },
+      "IdentificativoFileTrasmissione": null,
+      "NoteAggiuntive": null,
+      "StoricoNote": null,
+      "PropostaIdentifier": BinData(3, "AAAAAAAAAAAAAAAAAAAAAA=="),
+      "ContrattoIdentifier": null,
+      "DettaglioPratica": {
+        "PropostaIdentifier": BinData(3, "wsheaooN2UmjkqvqAOYRvA=="),
+        "CodiceProdotto": "V.008.2014.PI",
+        "CodiceSocieta": "CF LIFE",
+        "CompanyConfigurationIdentifier": BinData(3, "AAAAAAAAAAAAAAAAAAAAAA=="),
+        "NumeroProposta": "40000014920",
+        "ProductIdentifier": BinData(3, "AAAAAAAAAAAAAAAAAAAAAA=="),
+        "Quote": "331",
+        "TitoloProdotto": "CF Pensiamoci Insieme",
+        "StatoPubblicazione": {
+          "value": "Inviata",
+          "key": NumberInt(2)
+        },
+        "Contraenti": [
+          {
+            "Identifier": BinData(3, "yqoi5F08Qiu8UthIIStnDw=="),
+            "CodiceFiscale": "CRDGLC79E16A115C",
+            "Nome": "GIANLUCA",
+            "Cognome": "CORDA",
+            "DataNascita": ISODate("0001-01-01T00:54:52.000+00:45"),
+            "IsPersonaFisica": true,
+            "IsMaschio": false,
+            "LuogoNascita": {
+              "ComuneDiNascita": null,
+              "ProvinciaDiNascita": null,
+              "StatoDiNascita": null
+            },
+            "Nazionalita": null,
+            "Documento": {
+              "DataEmissioneDocumento": ISODate("2010-03-02T00:00:00.000+01:00"),
+              "DataScadenzaDocumento": ISODate("0001-01-01T00:49:56.000+00:45"),
+              "EnteEmissioneDocumento": "",
+              "NumeroDocumento": "AR3771741",
+              "NazioneEmissione": "",
+              "ProvinciaEmissione": "",
+              "ComuneEmissione": "",
+              "DataScadenza": ISODate("2020-08-31T00:00:00.000+02:00"),
+              "TipoDocumento": {
+                "value": "Carta d’identità",
+                "key": NumberInt(1)
+              }
+            },
+            "IndirizzoResidenza": {
+              "TypedAddress": "",
+              "StreetNumber": "",
+              "Route": "",
+              "Locality": "",
+              "Province": "",
+              "Region": "",
+              "Country": "",
+              "PostalCode": "",
+              "Latitude": "0",
+              "Longitude": "0"
+            },
+            "IndirizzoDomicilio": {
+              "TypedAddress": "",
+              "StreetNumber": "",
+              "Route": "",
+              "Locality": "",
+              "Province": "",
+              "Region": "",
+              "Country": "",
+              "PostalCode": "",
+              "Latitude": "0",
+              "Longitude": "0"
+            },
+            "PartitaIva": null,
+            "RagioneSociale": "",
+            "FormaGiuridica": null,
+            "Email": "",
+            "GradoParentelaAssicurato": null,
+            "IsSocietaQuotata": false,
+            "DatiMedico": {
+              "PartitaIva": "",
+              "IscrittoAlboDi": "",
+              "AnnoIscrizioneAlbo": NumberInt(0),
+              "AnnoInizioAttivita": NumberInt(0),
+              "AttivitaSvolta": "",
+              "RegimeAttivita": []
+            },
+            "TitoloDiStudio": null,
+            "Professione": "",
+            "StatoOccupazionale": null,
+            "TipologiaFumatore": null,
+            "IPSIDarta": "",
+            "IndirizzoCorrispondenza": {
+              "TypedAddress": "",
+              "StreetNumber": "",
+              "Route": "",
+              "Locality": "",
+              "Province": "",
+              "Region": "",
+              "Country": "",
+              "PostalCode": "",
+              "Latitude": "0",
+              "Longitude": "0"
+            },
+            "TipologiaAmministrazione": null,
+            "TipologiaBeneficiario": null,
+            "DatiAggiuntivi": {
+              "IsPoliticamenteEsposta": false,
+              "OrigineDeiFondi": "",
+              "ContraenteSoggettoFatca": false,
+              "USTin": "",
+              "Professione": null,
+              "SettoreAttivitaEconomica": null,
+              "Ateco": null,
+              "DisponibilitaFinanziaria": null,
+              "USEIn": "",
+              "RientraFlussiFinanziari": false,
+              "CIG": "",
+              "CUP": ""
+            },
+            "DatiAggiuntiviPip": {
+              "TipologiaAderente": null,
+              "TipologiaAderenteItaliana": null,
+              "CcnlRiferimento": "",
+              "TipologiaAderenteItalianaAltro": "",
+              "PrevidenzaObbligatoria": null,
+              "PeriodoIscrizionePrevidenzaComplementare": null,
+              "AnnoAccessoPrestazionePensionistica": NumberInt(0)
+            }
+          }
+        ],
+        "LegaleRappresentante": {
+          "Identifier": BinData(3, "AAAAAAAAAAAAAAAAAAAAAA=="),
+          "CodiceFiscale": "",
+          "Nome": "",
+          "Cognome": "",
+          "DataNascita": ISODate("0001-01-01T00:49:56.000+00:45"),
+          "IsPersonaFisica": true,
+          "IsMaschio": false,
+          "LuogoNascita": {
+            "ComuneDiNascita": "",
+            "ProvinciaDiNascita": "",
+            "StatoDiNascita": ""
+          },
+          "Nazionalita": "",
+          "Documento": {
+            "DataEmissioneDocumento": ISODate("0001-01-01T00:49:56.000+00:45"),
+            "DataScadenzaDocumento": ISODate("0001-01-01T00:49:56.000+00:45"),
+            "EnteEmissioneDocumento": "",
+            "NumeroDocumento": "",
+            "NazioneEmissione": "",
+            "ProvinciaEmissione": "",
+            "ComuneEmissione": "",
+            "DataScadenza": ISODate("0001-01-01T00:49:56.000+00:45"),
+            "TipoDocumento": null
+          },
+          "IndirizzoResidenza": {
+            "TypedAddress": "",
+            "StreetNumber": "",
+            "Route": "",
+            "Locality": "",
+            "Province": "",
+            "Region": "",
+            "Country": "",
+            "PostalCode": "",
+            "Latitude": "0",
+            "Longitude": "0"
+          },
+          "IndirizzoDomicilio": {
+            "TypedAddress": "",
+            "StreetNumber": "",
+            "Route": "",
+            "Locality": "",
+            "Province": "",
+            "Region": "",
+            "Country": "",
+            "PostalCode": "",
+            "Latitude": "0",
+            "Longitude": "0"
+          },
+          "PartitaIva": "",
+          "RagioneSociale": "",
+          "FormaGiuridica": null,
+          "Email": "",
+          "GradoParentelaAssicurato": null,
+          "IsSocietaQuotata": false,
+          "DatiMedico": {
+            "PartitaIva": "",
+            "IscrittoAlboDi": "",
+            "AnnoIscrizioneAlbo": NumberInt(0),
+            "AnnoInizioAttivita": NumberInt(0),
+            "AttivitaSvolta": "",
+            "RegimeAttivita": []
+          },
+          "TitoloDiStudio": null,
+          "Professione": "",
+          "StatoOccupazionale": null,
+          "TipologiaFumatore": null,
+          "IPSIDarta": "",
+          "IndirizzoCorrispondenza": {
+            "TypedAddress": "",
+            "StreetNumber": "",
+            "Route": "",
+            "Locality": "",
+            "Province": "",
+            "Region": "",
+            "Country": "",
+            "PostalCode": "",
+            "Latitude": "0",
+            "Longitude": "0"
+          },
+          "TipologiaAmministrazione": null,
+          "TipologiaBeneficiario": null,
+          "DatiAggiuntivi": {
+            "IsPoliticamenteEsposta": false,
+            "OrigineDeiFondi": "",
+            "ContraenteSoggettoFatca": false,
+            "USTin": "",
+            "Professione": null,
+            "SettoreAttivitaEconomica": null,
+            "Ateco": null,
+            "DisponibilitaFinanziaria": null,
+            "USEIn": "",
+            "RientraFlussiFinanziari": false,
+            "CIG": "",
+            "CUP": ""
+          },
+          "DatiAggiuntiviPip": {
+            "TipologiaAderente": null,
+            "TipologiaAderenteItaliana": null,
+            "CcnlRiferimento": "",
+            "TipologiaAderenteItalianaAltro": "",
+            "PrevidenzaObbligatoria": null,
+            "PeriodoIscrizionePrevidenzaComplementare": null,
+            "AnnoAccessoPrestazionePensionistica": NumberInt(0)
+          },
+          "LegameDelegatoContraente": null,
+          "LegameDelegatoAltro": "",
+          "IndirizzoCorrispondenzaLegale": {
+            "TypedAddress": "",
+            "StreetNumber": "",
+            "Route": "",
+            "Locality": "",
+            "Province": "",
+            "Region": "",
+            "Country": "",
+            "PostalCode": "",
+            "Latitude": "0",
+            "Longitude": "0"
+          }
+        },
+        "TitolareEffettivo": {
+          "Identifier": BinData(3, "AAAAAAAAAAAAAAAAAAAAAA=="),
+          "CodiceFiscale": "",
+          "Nome": "",
+          "Cognome": "",
+          "DataNascita": ISODate("0001-01-01T00:49:56.000+00:45"),
+          "IsPersonaFisica": true,
+          "IsMaschio": false,
+          "LuogoNascita": {
+            "ComuneDiNascita": "",
+            "ProvinciaDiNascita": "",
+            "StatoDiNascita": ""
+          },
+          "Nazionalita": "",
+          "Documento": {
+            "DataEmissioneDocumento": ISODate("0001-01-01T00:49:56.000+00:45"),
+            "DataScadenzaDocumento": ISODate("0001-01-01T00:49:56.000+00:45"),
+            "EnteEmissioneDocumento": "",
+            "NumeroDocumento": "",
+            "NazioneEmissione": "",
+            "ProvinciaEmissione": "",
+            "ComuneEmissione": "",
+            "DataScadenza": ISODate("0001-01-01T00:49:56.000+00:45"),
+            "TipoDocumento": null
+          },
+          "IndirizzoResidenza": {
+            "TypedAddress": "",
+            "StreetNumber": "",
+            "Route": "",
+            "Locality": "",
+            "Province": "",
+            "Region": "",
+            "Country": "",
+            "PostalCode": "",
+            "Latitude": "0",
+            "Longitude": "0"
+          },
+          "IndirizzoDomicilio": {
+            "TypedAddress": "",
+            "StreetNumber": "",
+            "Route": "",
+            "Locality": "",
+            "Province": "",
+            "Region": "",
+            "Country": "",
+            "PostalCode": "",
+            "Latitude": "0",
+            "Longitude": "0"
+          },
+          "PartitaIva": "",
+          "RagioneSociale": "",
+          "FormaGiuridica": null,
+          "Email": "",
+          "GradoParentelaAssicurato": null,
+          "IsSocietaQuotata": false,
+          "DatiMedico": {
+            "PartitaIva": "",
+            "IscrittoAlboDi": "",
+            "AnnoIscrizioneAlbo": NumberInt(0),
+            "AnnoInizioAttivita": NumberInt(0),
+            "AttivitaSvolta": "",
+            "RegimeAttivita": []
+          },
+          "TitoloDiStudio": null,
+          "Professione": "",
+          "StatoOccupazionale": null,
+          "TipologiaFumatore": null,
+          "IPSIDarta": "",
+          "IndirizzoCorrispondenza": {
+            "TypedAddress": "",
+            "StreetNumber": "",
+            "Route": "",
+            "Locality": "",
+            "Province": "",
+            "Region": "",
+            "Country": "",
+            "PostalCode": "",
+            "Latitude": "0",
+            "Longitude": "0"
+          },
+          "TipologiaAmministrazione": null,
+          "TipologiaBeneficiario": null,
+          "DatiAggiuntivi": {
+            "IsPoliticamenteEsposta": false,
+            "OrigineDeiFondi": "",
+            "ContraenteSoggettoFatca": false,
+            "USTin": "",
+            "Professione": null,
+            "SettoreAttivitaEconomica": null,
+            "Ateco": null,
+            "DisponibilitaFinanziaria": null,
+            "USEIn": "",
+            "RientraFlussiFinanziari": false,
+            "CIG": "",
+            "CUP": ""
+          },
+          "DatiAggiuntiviPip": {
+            "TipologiaAderente": null,
+            "TipologiaAderenteItaliana": null,
+            "CcnlRiferimento": "",
+            "TipologiaAderenteItalianaAltro": "",
+            "PrevidenzaObbligatoria": null,
+            "PeriodoIscrizionePrevidenzaComplementare": null,
+            "AnnoAccessoPrestazionePensionistica": NumberInt(0)
+          }
+        },
+        "Procuratori": [],
+        "Assicurati": [],
+        "GaranziaPrincipale": {
+          "ConsensoDatiSensibili": false,
+          "ConsensoDatiPersonali": false,
+          "ConsensoComunicazioneTerzi": false,
+          "NumeroProposta": "",
+          "DataFirmaProposta": ISODate("2020-06-26T00:00:00.000+02:00"),
+          "LuogoFirmaProposta": "ALA' DEI SARDI",
+          "Decorrenza": ISODate("0001-01-01T00:49:56.000+00:45"),
+          "Scadenza": ISODate("0001-01-01T00:49:56.000+00:45"),
+          "PrimaScadenzaSuccessiva": ISODate("0001-01-01T00:49:56.000+00:45"),
+          "DurataInGiorni": NumberInt(0),
+          "TipoProroga": null,
+          "AnniTacitoRinnovo": NumberInt(0),
+          "CombinazioneOperanteMini": null,
+          "CombinazioneOperanteBig": null,
+          "TipoDichiarazioneSommeAssicurate": null,
+          "OpzioneProfessionale": null,
+          "TipologiaInvaliditaPermanente": null,
+          "SceltaAssicurato": null,
+          "SceltaFormaDaAssicurare": null,
+          "IdentificativoSegnalatore": BinData(3, "AAAAAAAAAAAAAAAAAAAAAA=="),
+          "DescrizioneOggettoAssicurato": null,
+          "UbicazioneImmobile": null,
+          "Piano": null,
+          "Interno": null,
+          "TipoFabbricato": null,
+          "ClasseFabbricato": null,
+          "AltraPolizzaSulFabbricato": false,
+          "NumeroPolizzaEsterno": null,
+          "IpotecaSulFabbricatoAssicurato": false,
+          "IpotecaMutuoConcessoDa": null,
+          "AttoRogitoNotaio": null,
+          "RepN": null,
+          "AltrePolizzeCoperturaStessiRischi": false,
+          "AltrePolizzeCoperturaCompagnie": null,
+          "DurataAlternativaAnni": null,
+          "DurataDaInputAnni": NumberInt(20),
+          "DurataFissaAnni": NumberInt(0),
+          "Caricamenti": "0",
+          "TipoPremio": {
+            "value": "Premio ricorrente",
+            "key": NumberInt(2)
+          },
+          "RateizzazionePremio": {
+            "value": "Semestrale",
+            "key": NumberInt(5)
+          },
+          "PremioLordo": "0",
+          "PremioUnico": "0",
+          "PremioRicorrente": "275.63",
+          "PremioNettoUnico": "0",
+          "PremioNettoRicorrente": "265.63",
+          "CapitaleAssicurato": "0",
+          "OpzioneLiquidity": false,
+          "TipoCapitale": null,
+          "Decrescenza": null,
+          "DurataPagamentoPremi": NumberInt(20),
+          "ForzaDurataPagamentoPremi": false,
+          "ForzaDurataPagamentoPremiValore": NumberInt(0),
+          "RenditaAssicurataAnnuaIniziale": "0",
+          "TipologiaDiRendita": null,
+          "FrazionamentoRendita": null,
+          "PercentualeReversibilita": NumberInt(0),
+          "AnniRenditaCerta": NumberInt(0),
+          "ImportoVersato": "142.82",
+          "SpeseCostiFissi": "0",
+          "Imponibile": "0",
+          "Tasse": "0",
+          "Totale": "0",
+          "DatiAggiuntiviPip": {
+            "ModalitaVersamentoContributi": [],
+            "ContributoAnnualeAderente": "0",
+            "ContributoPercentualeRedditoAderente": "0",
+            "ContributoAggiuntivoAdesione": "0",
+            "ContributoDatoreDiLavoro": "0",
+            "ContributoPercentualeDatoreDiLavoro": "0",
+            "ConferimentoTFRPercentuale": "0",
+            "RagioneSociale": "",
+            "PIva": "",
+            "SedeLegale": {
+              "TypedAddress": "",
+              "StreetNumber": "",
+              "Route": "",
+              "Locality": "",
+              "Province": "",
+              "Region": "",
+              "Country": "",
+              "PostalCode": "",
+              "Latitude": "0",
+              "Longitude": "0"
+            },
+            "SettoreAttivitaEconomica": null,
+            "Riferimento": "",
+            "Telefono": "",
+            "IndirizzoEmail": "",
+            "IsTrasferimentoPensione": false,
+            "DenominazioFormaPensionistica": "",
+            "EstremiPosizioneIndividuale": "",
+            "AnzianitaContributivaComplementare": "",
+            "NumeroIscrizioneCovip": ""
+          },
+          "DatiMedico": {
+            "IsColpaGrave": false,
+            "Massimale": "0",
+            "RetroAttivita": null,
+            "AnniRetroAttivita": NumberInt(0)
+          },
+          "OpzioneContrattualeMultinvest": "",
+          "SpecializzazioneMedica": "",
+          "TipologiaResponsabilitaCivile": null
+        },
+        "BeneficiariGaranziaPrincipale": {
+          "TipologiaBeneficiario": null,
+          "Beneficiari": [],
+          "TipologiaBeneficiarioCasoMorte": null,
+          "TestoLiberoCasoMorte": null,
+          "TipologiaBeneficiarioCasoVita": null,
+          "TestoLiberoCasoVita": null
+        },
+        "BeneficiariGaranzieComplementari": [],
+        "GaranzieComplementari": [],
+        "GaranzieAssicurate": {
+          "Artigiano": {
+            "NumeroAutomezzi": NumberInt(0),
+            "TargheAutomezzi": [],
+            "Incendio": {
+              "Fabbricato": "0",
+              "Contenuto": "0",
+              "RischioLocativo": "0",
+              "RicorsoTerzi": "0",
+              "CoseParticolari": "0",
+              "DanniElettrici": "0",
+              "MerciRefrigerazione": "0",
+              "AumentoTemporaneoMerciMassimaCoperturaGiorni": "0"
+            },
+            "Furto": {
+              "Contenuto": "0",
+              "Valori": "0",
+              "TrasportoValori": "0",
+              "BeniAllAperto": "0"
+            },
+            "Elettronica": {
+              "ApparecchiatureElettroniche": "0",
+              "ProgrammiApplicativi": "0",
+              "SupportiDati": "0",
+              "AppImpiegoMobile": "0",
+              "MaggioriCostiGiornalieri": "0",
+              "OpzioneMensile": null
+            },
+            "Cristalli": {
+              "MassimaleAnnuo": "0",
+              "IndennizzoLastra": null
+            },
+            "ResponsabilitaCivile": {
+              "MassimaleRctRco": null,
+              "MassimaleLibero": "0",
+              "NumeroAddetti": NumberInt(0)
+            },
+            "TutelaLegale": {
+              "GaranziaBase": null,
+              "NumeroAddetti": NumberInt(0),
+              "MassimalePerSinistro": "0"
+            },
+            "HasScontoPersonalizzazione": false,
+            "ScontoPersonalizzazionePercentuale": "0",
+            "SovrappremioPercentuale": "0",
+            "PremioLordoDiRataMaggiorato": "0",
+            "ScontoExtraPercentuale": "0",
+            "PremioLordoDiRataScontato": "0"
+          },
+          "Commerciante": {
+            "Incendio": {
+              "Fabbricato": "0",
+              "Contenuto": "0",
+              "RischioLocativo": "0",
+              "RicorsoTerzi": "0",
+              "CoseParticolari": "0",
+              "DanniElettrici": "0",
+              "MerciRefrigerazione": "0",
+              "AumentoTemporaneoMerciMassimaCoperturaGiorni": "0",
+              "Nota": "",
+              "AumentoTemporaneoMerci": {
+                "Periodo1Dal": null,
+                "Periodo1Al": null,
+                "SommaAssicurata1": "0",
+                "Periodo2Dal": null,
+                "Periodo2Al": null,
+                "SommaAssicurata2": "0",
+                "Periodo3Dal": null,
+                "Periodo3Al": null,
+                "SommaAssicurata3": "0",
+                "CoseTrasportate": null,
+                "Nota": null
+              }
+            },
+            "Furto": {
+              "Contenuto": "0",
+              "Valori": "0",
+              "TrasportoValori": "0",
+              "BeniAllAperto": "0",
+              "ContenutoAbitazione": "0",
+              "AumentoTemporaneoMerci": {
+                "Periodo1Dal": null,
+                "Periodo1Al": null,
+                "SommaAssicurata1": "0",
+                "Periodo2Dal": null,
+                "Periodo2Al": null,
+                "SommaAssicurata2": "0",
+                "Periodo3Dal": null,
+                "Periodo3Al": null,
+                "SommaAssicurata3": "0",
+                "CoseTrasportate": null,
+                "Nota": null
+              }
+            },
+            "Elettronica": {
+              "ApparecchiatureElettroniche": "0",
+              "ProgrammiApplicativi": "0",
+              "SupportiDati": "0",
+              "AppImpiegoMobile": "0",
+              "MaggioriCostiGiornalieri": "0",
+              "OpzioneMensile": null
+            },
+            "Cristalli": {
+              "MassimaleAnnuo": "0",
+              "IndennizzoLastra": null
+            },
+            "ResponsabilitaCivile": {
+              "MassimaleRctRco": null,
+              "MassimaleLibero": "0",
+              "NumeroAddetti": NumberInt(0)
+            },
+            "ResponsabilitaCivileRctRco": {
+              "MassimaleRctRco": null,
+              "MassimaleLibero": "0",
+              "NumeroAddetti": NumberInt(0)
+            },
+            "TutelaLegale": {
+              "NumeroAddetti": NumberInt(0),
+              "MassimalePerSinistro": "0",
+              "LimiteCasiAssicurati": null
+            },
+            "HasScontoPersonalizzazione": false,
+            "ScontoPersonalizzazionePercentuale": "0",
+            "SovrappremioPercentuale": "0",
+            "PremioLordoDiRataMaggiorato": "0",
+            "ScontoExtraPercentuale": "0",
+            "PremioLordoDiRataScontato": "0"
+          },
+          "StudioEAttivita": {
+            "Incendio": {
+              "Fabbricato": "0",
+              "Contenuto": "0",
+              "RischioLocativo": "0",
+              "RicorsoTerzi": "0",
+              "CoseParticolari": "0",
+              "DanniElettrici": "0",
+              "MerciRefrigerazione": "0",
+              "AumentoTemporaneoMerciMassimaCoperturaGiorni": "0",
+              "ArchiviEDocumenti": "0"
+            },
+            "Furto": {
+              "Contenuto": "0",
+              "Valori": "0",
+              "TrasportoValori": "0",
+              "BeniAllAperto": "0",
+              "ContenutoAbitazione": "0",
+              "AumentoTemporaneoMerci": {
+                "Periodo1Dal": null,
+                "Periodo1Al": null,
+                "SommaAssicurata1": "0",
+                "Periodo2Dal": null,
+                "Periodo2Al": null,
+                "SommaAssicurata2": "0",
+                "Periodo3Dal": null,
+                "Periodo3Al": null,
+                "SommaAssicurata3": "0",
+                "CoseTrasportate": null,
+                "Nota": null
+              }
+            },
+            "Elettronica": {
+              "ApparecchiatureElettroniche": "0",
+              "ProgrammiApplicativi": "0",
+              "SupportiDati": "0",
+              "AppImpiegoMobile": "0",
+              "MaggioriCostiGiornalieri": "0",
+              "OpzioneMensile": null
+            },
+            "Cristalli": {
+              "MassimaleAnnuo": "0",
+              "IndennizzoLastra": null
+            },
+            "ResponsabilitaCivile": {
+              "NumeroAddettiRct": NumberInt(0),
+              "MassimaleRct": null,
+              "MassimaleLiberoRct": "0",
+              "NumeroAddettiRctRco": NumberInt(0),
+              "MassimaleRctRco": null,
+              "MassimaleLiberoRctRco": "0",
+              "RcSolaProprieta": null,
+              "MassimaleLiberoSolaProprieta": "0"
+            },
+            "TutelaLegale": {
+              "NumeroAddettiBase": NumberInt(0),
+              "MassimalePerSinistroAnnoBase": "0",
+              "NumeroAddettiControversie": NumberInt(0),
+              "MassimalePerSinistroAnnoControversie": "0"
+            },
+            "HasScontoPersonalizzazione": false,
+            "ScontoPersonalizzazionePercentuale": "0",
+            "SovrappremioPercentuale": "0",
+            "PremioLordoDiRataMaggiorato": "0",
+            "ScontoExtraPercentuale": "0",
+            "PremioLordoDiRataScontato": "0",
+            "ImportoDiritti": "0"
+          },
+          "FirstProtection": {
+            "FasciaSommaAssicurata": null,
+            "PianoAbitazioneAssicurata": "",
+            "InteraCostruzione": false,
+            "InCondominio": false,
+            "Indirizzo": "",
+            "GaranziaRct": false,
+            "MassimalePerSinistro": ""
+          }
+        },
+        "PianoInvestimento": {
+          "PercentualeGestioneSeparata": NumberInt(0),
+          "IsSwitchAutomaticoDarta": false,
+          "PercentualiInvestimentoFondiInterni": [],
+          "PercentualiInvestimentoFondiInterniRicorrente": [],
+          "PercentualiInvestimentoFondiInterniAlternativi": [],
+          "PercentualiInvestimentoFondiInterniRicorrenteAlternativi": [],
+          "DenominazioneStrategia": {
+            "DenominazioneStrategia": "",
+            "CodiceStrategia": ""
+          },
+          "ProfiloDiRischio": null,
+          "DatiAggiuntiviPip": {
+            "CompartiPresceltoTFR": [],
+            "CompartoPresceltoAltreTipologieContributo": []
+          }
+        },
+        "Corrispondenza": {
+          "Nome": "",
+          "Cognome": "",
+          "RagioneSociale": "",
+          "Indirizzo": {
+            "TypedAddress": "",
+            "StreetNumber": "",
+            "Route": "",
+            "Locality": "",
+            "Province": "",
+            "Region": "",
+            "Country": "",
+            "PostalCode": "",
+            "Latitude": "0",
+            "Longitude": "0"
+          },
+          "NumeroTelefono": "",
+          "Email": "",
+          "Fax": "",
+          "Pec": ""
+        },
+        "ModalitaPagamento": {
+          "ModalitaPagamento": {
+            "value": "Addebito diretto su conto corrente",
+            "key": NumberInt(2)
+          },
+          "DatiBancari": {
+            "IntestatarioCC": "",
+            "Filiale": "",
+            "Banca": "",
+            "SwiftBic": "",
+            "Iban": "",
+            "DatiEuropeAssistance": {
+              "CodiceFiscaleIntestatarioCC": null,
+              "UsoImposta": NumberInt(0)
+            }
+          }
+        },
+        "Adeguatezza": null,
+        "RisultatoQuestionario": {
+          "StatoPubblicazione": {
+            "value": "Bozza",
+            "key": NumberInt(1)
+          },
+          "Punteggio": NumberInt(0),
+          "Motivazioni": [],
+          "RisposteQuestionario": [],
+          "IsAdeguato": false
+        },
+        "IsInviabile": true,
+        "IsSolaLettura": true
+      },
+      "DettaglioInvestimenti": []
+    }
+  }
+)

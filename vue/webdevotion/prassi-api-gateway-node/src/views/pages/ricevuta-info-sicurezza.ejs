@@ -1,0 +1,68 @@
+<div id="anag-cover" class="container container-height page-spacer" style="position: relative;">
+    <%- include ('../partials/header-center.ejs') %>
+    <div class="row">
+        <div class="col-12">
+            <div class="px-5 py-3">
+                <h1 class="title-h1">RICEVUTA DI PRESA VISIONE INFORMATIVA SULLA SICUREZZA SHELTIA</h1>
+            </div>
+            <div class="px-5 py-3">
+                <div class="col-12 d-flex py-4">
+                    <div class="field-label">Il sottoscritto</div>
+                    <div class="border-bottom-field" style="max-width: 400px;"><%= customer.name %>   <%= customer.surname %></div>
+                </div>
+                <div class="col-12 d-flex py-4">
+                    <div class="field-label">con sede di lavoro a</div>
+                    <div class="border-bottom-field" style="max-width: 600px;">&nbsp;<%= cityResponse.typeValue %> <%= addressResponse.typeValue %></div>
+                </div>
+                <div class="col-12">
+                    <p class="p4"><span class="s1">dichiara di avere ricevuto e preso visione delle seguenti informative:</span></p>
+                </div>
+                <div class="col-12 py-2">
+                    <div class="media">
+                        <div class="square <% if (checkList.guida.selected) { %> square-x <% } %>"></div>
+                        <div class="media-body pl-2 text-answer">
+                            Guida sicura degli autoveicoli Sheltia (solo per i ruoli TM, BM e DM)
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 py-2">
+                    <div class="media">
+                        <div class="square <% if (checkList.norme.selected) { %> square-x <% } %>"></div>
+                        <div class="media-body pl-2 text-answer">
+                            Norme di comportamento a salvaguardia della sicurezza in Sheltia
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 py-2">
+                    <div class="media">
+                        <div class="square <% if (checkList.video.selected) { %> square-x <% } %>"></div>
+                        <div class="media-body pl-2 text-answer">
+                            Informativa per videoterminalisti Inoltre, mi impegno ad osservarle.
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 py-4 row">
+                    <div class="col-12 py-2">
+                        In fede,
+                    </div>
+                    <div class="col-4">
+                        Data e luogo  <br><br><br><br><br>
+                        <div class="border-bottom-field"> <%= luogoData %></div>
+                    </div>
+                    <div class="col-4">
+                    </div>
+                    <div class="col-4">
+                        Firma<br><br><br><br><br>
+
+                        <div class="border-bottom-field">&nbsp; </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="page-break-after:always;"></div>
+</div>
+

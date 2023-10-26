@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Excel Upload</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+</head>
+
+<body>
+  <h1>Excel upload</h1>
+
+  <h2>Aggiorna pratiche da Excel</h2>
+  <form target="_blank" action="/v1/excel-upload/dossiers" enctype="multipart/form-data" method="post" class="container">
+    <input type="file" name="excel" accept="application/xlsx" required>
+    <button type="submit">Esegui</button>
+  </form>
+
+  <h2>Aggiorna stato pratiche da Excel</h2>
+  <form target="_blank" action="/v1/excel-upload/dossier-statuses" enctype="multipart/form-data" method="post" class="container">
+    <input type="file" name="excel" accept="application/xlsx" required>
+    <button type="submit">Esegui</button>
+  </form>
+</body>
+
+</html>

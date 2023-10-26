@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`KPI should return it s JSON Schema 1`] = `
+Object {
+  "properties": Object {
+    "_id": Object {
+      "type": "string",
+    },
+    "options": Object {
+      "additionalProperties": true,
+      "type": "object",
+    },
+    "type": Object {
+      "enum": Array [
+        "number",
+        "currency",
+        "percentage",
+      ],
+      "type": "string",
+    },
+    "value": Object {
+      "type": "integer",
+    },
+  },
+  "required": Array [
+    "_id",
+  ],
+  "type": "object",
+}
+`;

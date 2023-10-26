@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Agreement should return it s JSON Schema 1`] = `
+Object {
+  "properties": Object {
+    "agree": Object {
+      "type": "boolean",
+    },
+    "content": Object {
+      "type": "string",
+    },
+    "name": Object {
+      "type": "string",
+    },
+  },
+  "required": Array [
+    "name",
+    "content",
+    "agree",
+  ],
+  "type": "object",
+}
+`;

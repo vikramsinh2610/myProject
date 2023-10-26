@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Bonus should return it s JSON Schema 1`] = `
+Object {
+  "description": "Bonus",
+  "properties": Object {
+    "amount": Object {
+      "type": "integer",
+    },
+    "paymentTime": Object {
+      "enum": Array [
+        "prepayment",
+        "payment-delayed",
+      ],
+      "type": "string",
+    },
+    "type": Object {
+      "enum": Array [
+        "guaranteed",
+        "conditioned",
+      ],
+      "type": "string",
+    },
+  },
+  "required": Array [
+    "amount",
+    "type",
+    "paymentTime",
+  ],
+  "type": "object",
+}
+`;

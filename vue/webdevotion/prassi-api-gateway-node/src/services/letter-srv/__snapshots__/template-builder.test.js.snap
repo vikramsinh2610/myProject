@@ -1,0 +1,338 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Letter Template Builder should create GUARANTEED template 1`] = `
+BonusLetter {
+  "_id": "01-2020",
+  "attachmentIds": Array [
+    "a",
+    "b",
+  ],
+  "conditionedBonuses": Array [],
+  "cumulateConditionedBonuses": true,
+  "description": "Bla bla bla",
+  "didActiveDate": null,
+  "didCreateDate": 2018-08-01T00:00:00.000Z,
+  "didDeleteDate": null,
+  "didExpireDate": null,
+  "fromProductivePeriodMonth": 9,
+  "fromProductivePeriodYear": 2018,
+  "guaranteedBonuses": Array [
+    GuaranteedBonus {
+      "absorbability": Absorbability {
+        "directProductionPercentage": 0,
+        "indirectProductionPercentage": 0,
+      },
+      "amount": 0,
+      "paymentTime": "payment-delayed",
+      "type": "guaranteed",
+    },
+  ],
+  "guaranteedVariableBonuses": Array [],
+  "invoiceDescription": null,
+  "paymentFrequency": "monthly",
+  "promoterDisplayName": "Pippo De Peppis",
+  "promoterId": "f34g3df-f3c3x2ed-d232r4g5h5-d21s",
+  "promoterSerialNumber": "AZ123456",
+  "signatureDate": 2018-08-01T00:00:00.000Z,
+  "status": "wip",
+  "toProductivePeriodMonth": 10,
+  "toProductivePeriodYear": 2018,
+  "type": "guaranteed",
+  "willExpireDate": 2018-10-01T00:00:00.000Z,
+}
+`;
+
+exports[`Letter Template Builder should create GUARANTEED_WITH_BONUS template 1`] = `
+BonusLetter {
+  "_id": "01-2020",
+  "attachmentIds": Array [
+    "a",
+    "b",
+  ],
+  "conditionedBonuses": Array [
+    ConditionedBonus {
+      "amount": 0,
+      "conditions": Array [
+        Condition {
+          "targets": Array [],
+        },
+      ],
+      "maxRecoveryPercentage": 10000,
+      "paymentTime": "payment-delayed",
+      "productivePeriodPaymentDelay": 0,
+      "type": "conditioned",
+    },
+  ],
+  "cumulateConditionedBonuses": true,
+  "description": "Bla bla bla",
+  "didActiveDate": null,
+  "didCreateDate": 2018-08-01T00:00:00.000Z,
+  "didDeleteDate": null,
+  "didExpireDate": null,
+  "fromProductivePeriodMonth": 9,
+  "fromProductivePeriodYear": 2018,
+  "guaranteedBonuses": Array [
+    GuaranteedBonus {
+      "absorbability": Absorbability {
+        "directProductionPercentage": 0,
+        "indirectProductionPercentage": 0,
+      },
+      "amount": 0,
+      "paymentTime": "payment-delayed",
+      "type": "guaranteed",
+    },
+  ],
+  "guaranteedVariableBonuses": Array [],
+  "invoiceDescription": null,
+  "paymentFrequency": "monthly",
+  "promoterDisplayName": "Pippo De Peppis",
+  "promoterId": "f34g3df-f3c3x2ed-d232r4g5h5-d21s",
+  "promoterSerialNumber": "AZ123456",
+  "signatureDate": 2018-08-01T00:00:00.000Z,
+  "status": "wip",
+  "toProductivePeriodMonth": 10,
+  "toProductivePeriodYear": 2018,
+  "type": "guaranteed-with-bonus",
+  "willExpireDate": 2018-10-01T00:00:00.000Z,
+}
+`;
+
+exports[`Letter Template Builder should create GUARANTEED_WITH_BONUS_PREPAYD template 1`] = `
+BonusLetter {
+  "_id": "01-2020",
+  "attachmentIds": Array [
+    "a",
+    "b",
+  ],
+  "conditionedBonuses": Array [
+    ConditionedBonus {
+      "amount": 0,
+      "conditions": Array [
+        Condition {
+          "targets": Array [],
+        },
+      ],
+      "maxRecoveryPercentage": 10000,
+      "paymentTime": "prepayment",
+      "productivePeriodPaymentDelay": 0,
+      "type": "conditioned",
+    },
+  ],
+  "cumulateConditionedBonuses": true,
+  "description": "Bla bla bla",
+  "didActiveDate": null,
+  "didCreateDate": 2018-08-01T00:00:00.000Z,
+  "didDeleteDate": null,
+  "didExpireDate": null,
+  "fromProductivePeriodMonth": 9,
+  "fromProductivePeriodYear": 2018,
+  "guaranteedBonuses": Array [
+    GuaranteedBonus {
+      "absorbability": Absorbability {
+        "directProductionPercentage": 0,
+        "indirectProductionPercentage": 0,
+      },
+      "amount": 0,
+      "paymentTime": "payment-delayed",
+      "type": "guaranteed",
+    },
+  ],
+  "guaranteedVariableBonuses": Array [],
+  "invoiceDescription": null,
+  "paymentFrequency": "monthly",
+  "promoterDisplayName": "Pippo De Peppis",
+  "promoterId": "f34g3df-f3c3x2ed-d232r4g5h5-d21s",
+  "promoterSerialNumber": "AZ123456",
+  "signatureDate": 2018-08-01T00:00:00.000Z,
+  "status": "wip",
+  "toProductivePeriodMonth": 10,
+  "toProductivePeriodYear": 2018,
+  "type": "guaranteed-with-bonus-prepaid",
+  "willExpireDate": 2018-10-01T00:00:00.000Z,
+}
+`;
+
+exports[`Letter Template Builder should create JOB template 1`] = `
+JobLetter {
+  "_id": "01-2020",
+  "attachmentIds": Array [
+    "a",
+    "b",
+  ],
+  "description": "Bla bla bla",
+  "didActiveDate": null,
+  "didCreateDate": 2018-08-01T00:00:00.000Z,
+  "didDeleteDate": null,
+  "didExpireDate": null,
+  "fromProductivePeriodMonth": 9,
+  "fromProductivePeriodYear": 2018,
+  "job": Job {
+    "roleId": "promoter",
+  },
+  "jobs": Array [],
+  "promoterDisplayName": "Pippo De Peppis",
+  "promoterId": "f34g3df-f3c3x2ed-d232r4g5h5-d21s",
+  "promoterSerialNumber": "AZ123456",
+  "signatureDate": 2018-08-01T00:00:00.000Z,
+  "status": "wip",
+  "type": "job",
+  "willExpireDate": 2099-01-01T00:00:00.000Z,
+}
+`;
+
+exports[`Letter Template Builder should create MANAGEMENT_FEE template 1`] = `
+ManagementFeeLetter {
+  "_id": "01-2020",
+  "attachmentIds": Array [
+    "a",
+    "b",
+  ],
+  "description": "Bla bla bla",
+  "didActiveDate": null,
+  "didCreateDate": 2018-08-01T00:00:00.000Z,
+  "didDeleteDate": null,
+  "didExpireDate": null,
+  "fromProductivePeriodMonth": 9,
+  "fromProductivePeriodYear": 2018,
+  "paymentDelayMonths": 0,
+  "promoterDisplayName": "Pippo De Peppis",
+  "promoterId": "f34g3df-f3c3x2ed-d232r4g5h5-d21s",
+  "promoterSerialNumber": "AZ123456",
+  "signatureDate": 2018-08-01T00:00:00.000Z,
+  "status": "wip",
+  "thresholdAmount": 0,
+  "toProductivePeriodMonth": 10,
+  "toProductivePeriodYear": 2018,
+  "type": "management-fee",
+  "willExpireDate": 2018-10-01T00:00:00.000Z,
+}
+`;
+
+exports[`Letter Template Builder should create PRIVACY template 1`] = `
+PrivacyLetter {
+  "_id": "01-2020",
+  "agreements": Array [
+    Agreement {
+      "agree": false,
+      "content": "Hey, this is a long story",
+      "name": "Test Agreement #1",
+    },
+    Agreement {
+      "agree": false,
+      "content": "Hey, this is a long story",
+      "name": "Test Agreement #2",
+    },
+    Agreement {
+      "agree": false,
+      "content": "Hey, this is a long story",
+      "name": "Test Agreement #3",
+    },
+  ],
+  "attachmentIds": Array [
+    "a",
+    "b",
+  ],
+  "description": "Bla bla bla",
+  "didActiveDate": null,
+  "didCreateDate": 2018-08-01T00:00:00.000Z,
+  "didDeleteDate": null,
+  "didExpireDate": null,
+  "promoterDisplayName": "Pippo De Peppis",
+  "promoterId": "f34g3df-f3c3x2ed-d232r4g5h5-d21s",
+  "promoterSerialNumber": "AZ123456",
+  "signatureDate": 2018-08-01T00:00:00.000Z,
+  "status": "wip",
+  "type": "privacy",
+  "willExpireDate": 2099-01-01T00:00:00.000Z,
+}
+`;
+
+exports[`Letter Template Builder should create RAPPEL template 1`] = `
+BonusLetter {
+  "_id": "01-2020",
+  "attachmentIds": Array [
+    "a",
+    "b",
+  ],
+  "conditionedBonuses": Array [
+    ConditionedBonus {
+      "amount": 0,
+      "conditions": Array [
+        Condition {
+          "targets": Array [],
+        },
+      ],
+      "maxRecoveryPercentage": 10000,
+      "paymentTime": "payment-delayed",
+      "productivePeriodPaymentDelay": 0,
+      "type": "conditioned",
+    },
+  ],
+  "cumulateConditionedBonuses": true,
+  "description": "Bla bla bla",
+  "didActiveDate": null,
+  "didCreateDate": 2018-08-01T00:00:00.000Z,
+  "didDeleteDate": null,
+  "didExpireDate": null,
+  "fromProductivePeriodMonth": 9,
+  "fromProductivePeriodYear": 2018,
+  "guaranteedBonuses": Array [],
+  "guaranteedVariableBonuses": Array [],
+  "invoiceDescription": null,
+  "paymentFrequency": "one-time",
+  "promoterDisplayName": "Pippo De Peppis",
+  "promoterId": "f34g3df-f3c3x2ed-d232r4g5h5-d21s",
+  "promoterSerialNumber": "AZ123456",
+  "signatureDate": 2018-08-01T00:00:00.000Z,
+  "status": "wip",
+  "toProductivePeriodMonth": 10,
+  "toProductivePeriodYear": 2018,
+  "type": "rappel",
+  "willExpireDate": 2018-10-01T00:00:00.000Z,
+}
+`;
+
+exports[`Letter Template Builder should create WELCOME_BONUS template 1`] = `
+BonusLetter {
+  "_id": "01-2020",
+  "attachmentIds": Array [
+    "a",
+    "b",
+  ],
+  "conditionedBonuses": Array [
+    ConditionedBonus {
+      "amount": 0,
+      "conditions": Array [
+        Condition {
+          "targets": Array [],
+        },
+      ],
+      "maxRecoveryPercentage": 10000,
+      "paymentTime": "prepayment",
+      "productivePeriodPaymentDelay": 0,
+      "type": "conditioned",
+    },
+  ],
+  "cumulateConditionedBonuses": true,
+  "description": "Bla bla bla",
+  "didActiveDate": null,
+  "didCreateDate": 2018-08-01T00:00:00.000Z,
+  "didDeleteDate": null,
+  "didExpireDate": null,
+  "fromProductivePeriodMonth": 9,
+  "fromProductivePeriodYear": 2018,
+  "guaranteedBonuses": Array [],
+  "guaranteedVariableBonuses": Array [],
+  "invoiceDescription": null,
+  "paymentFrequency": "one-time",
+  "promoterDisplayName": "Pippo De Peppis",
+  "promoterId": "f34g3df-f3c3x2ed-d232r4g5h5-d21s",
+  "promoterSerialNumber": "AZ123456",
+  "signatureDate": 2018-08-01T00:00:00.000Z,
+  "status": "wip",
+  "toProductivePeriodMonth": 10,
+  "toProductivePeriodYear": 2018,
+  "type": "welcome-bonus",
+  "willExpireDate": 2018-10-01T00:00:00.000Z,
+}
+`;

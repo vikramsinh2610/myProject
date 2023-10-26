@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GuaranteedBonus should return it s JSON Schema 1`] = `
+Object {
+  "description": "Guaranteed Bonus",
+  "properties": Object {
+    "absorbability": Object {
+      "properties": Object {
+        "directProductionPercentage": Object {
+          "description": "Direct production percentage, with 2 decimals as integer",
+          "maximum": 10000,
+          "minimum": 0,
+          "type": "integer",
+        },
+        "indirectProductionPercentage": Object {
+          "description": "Indirect production percentage, with 2 decimals as integer",
+          "maximum": 10000,
+          "minimum": 0,
+          "type": "integer",
+        },
+      },
+      "required": Array [
+        "directProductionPercentage",
+        "indirectProductionPercentage",
+      ],
+      "type": "object",
+    },
+    "amount": Object {
+      "type": "integer",
+    },
+    "paymentTime": Object {
+      "enum": Array [
+        "prepayment",
+        "payment-delayed",
+      ],
+      "type": "string",
+    },
+    "type": Object {
+      "enum": Array [
+        "guaranteed",
+      ],
+      "type": "string",
+    },
+  },
+  "required": Array [
+    "amount",
+    "type",
+    "paymentTime",
+    "absorbability",
+  ],
+  "type": "object",
+}
+`;

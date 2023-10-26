@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">    <title>Approvazioni</title>
+    <defs>
+        <path d="M469,770.4 L477,770.4 L477,772 L469,772 L469,770.4 Z M477.145067,762.2208 L485,770.062933 L483.865067,771.202133 L476.010133,763.355733 L474.888,764.482133 L475.446933,765.045333 L474.312,766.171733 L469.7936,761.653333 L470.92,760.5184 L471.487467,761.085867 L474.879467,757.693867 L474.312,757.1264 L475.446933,756 L479.9696,760.5184 L478.838933,761.653333 L478.28,761.0944 L477.145067,762.2208 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-469.000000, -756.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Approvazioni" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

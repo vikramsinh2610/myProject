@@ -1,0 +1,253 @@
+const Mongo = require('mongodb');
+const Boom = require('boom');
+const dateRegex = require('../../../utils/iso-6801-date');
+const InvoiceService = require('../../../services/invoice-srv');
+const PromoterJobService = require('../../../services/promoter-job-srv');
+const PromoterService = require('../../../services/promoter-srv');
+const NetworkService = require('../../../services/network-srv');
+const errorHandler = require('../../../utils/error-handler');
+
+module.exports = (fastify, opts, next) => {
+  const options = {
+    preHandler: [fastify.auth.authorization.level7],
+    schema: {
+      summary: 'Invoice Create',
+      description: 'Create an invoice',
+      tags: ['invoice'],
+      params: {
+        type: 'object',
+        properties: {
+          promoterId: {
+            type: 'string',
+            description: 'Promoter ID',
+          },
+        },
+      },
+      body: {
+        type: 'object',
+        required: ['productivePeriodMonth', 'productivePeriodYear', 'issueDate', 'dueDate'],
+        additionalProperties: false,
+        properties: {
+          productivePeriodMonth: {
+            type: 'integer',
+            description: 'Productive period month',
+            minimum: 1,
+            maximum: 12,
+          },
+          productivePeriodYear: {
+            type: 'integer',
+            description: 'Productive period year',
+            minimum: 2010,
+            maximum: 2099,
+          },
+          issueDate: {
+            type: 'string',
+            pattern: dateRegex,
+            description: 'The creation date of the invoice',
+          },
+          dueDate: {
+            type: 'string',
+            pattern: dateRegex,
+            description: 'The creation date of the invoice',
+          },
+        },
+      },
+      response: {
+        200: {
+          type: 'object',
+          required: ['_meta', 'item'],
+          properties: {
+            _meta: {
+              type: 'object',
+            },
+            item: {
+              type: 'object',
+              required: [
+                '_id',
+                'promoterId',
+                'promoterDisplayName',
+                'promoterRoleId',
+                'promoterNetworkPath',
+                'productivePeriodMonth',
+                'productivePeriodYear',
+                'number',
+                'createDate',
+                'issued',
+                'accountingNotes',
+              ],
+              properties: {
+                _id: {
+                  type: 'string',
+                  description: 'Invoice ID',
+                },
+                promoterId: {
+                  type: 'string',
+                  description: 'Promoter ID',
+                },
+                promoterDisplayName: {
+                  type: 'string',
+                  description: 'Disaplay name of promoter',
+                },
+                promoterRoleId: {
+                  type: 'string',
+                  description: 'Promoter role ID',
+                },
+                promoterNetworkPath: {
+                  type: 'string',
+                  description: 'Network position of promover',
+                },
+                productivePeriodMonth: {
+                  type: 'integer',
+                  description: 'Productive period month',
+                  minimum: 1,
+                  maximum: 12,
+                },
+                productivePeriodYear: {
+                  type: 'integer',
+                  description: 'Productive period year',
+                  minimum: 2010,
+                  maximum: 2099,
+                },
+                number: {
+                  type: 'string',
+                  description: 'The progressive number of invoice',
+                },
+                createDate: {
+                  type: 'string',
+                  pattern: dateRegex,
+                  description: 'The creation date of the invoice',
+                },
+                issued: {
+                  type: 'boolean',
+                  description: 'Is invoice issued',
+                },
+                documentId: {
+                  type: 'string',
+                  description: 'Document ID',
+                },
+                grossAmount: {
+                  type: 'integer',
+                  description: 'Gross amount of invoice',
+                },
+                directCommissionsAmount: {
+                  type: 'integer',
+                  default: 0,
+                },
+                indirectCommissionsAmount: {
+                  type: 'integer',
+                  default: 0,
+                },
+                otherAmount: {
+                  type: 'integer',
+                  default: 0,
+                },
+                accountingNotes: {
+                  type: 'array',
+                  items: {
+                    type: 'object',
+                    required: [
+                      '_id',
+                      'createDate',
+                      'productivePeriodYear',
+                      'productivePeriodMonth',
+                      'amount',
+                      'origin',
+                      'type',
+                      'additionalData',
+                      'invoiceAmount',
+                    ],
+                    properties: {
+                      _id: {
+                        type: 'string',
+                        description: 'ID of accounting note',
+                      },
+                      productivePeriodYear: {
+                        type: 'integer',
+                        description: 'Productive period year of accounting note',
+                      },
+                      productivePeriodMonth: {
+                        type: 'integer',
+                        description: 'Productive period month of accounting note',
+                      },
+                      amount: {
+                        type: 'integer',
+                        default: 0,
+                        description: 'Amount of accounting note',
+                      },
+                      origin: {
+                        type: 'string',
+                        description: 'Origin ID',
+                      },
+                      type: {
+                        type: 'string',
+                        description: 'Type',
+                      },
+                      additionalData: {
+                        type: 'object',
+                        additionalProperties: true,
+                      },
+                      description: {
+                        type: 'string',
+                        description: 'Optional description of accounting note',
+                      },
+                      invoiceAmount: {
+                        type: 'integer',
+                        description: 'Amount in invoice',
+                      },
+                    },
+                  },
+                },
+              },
+            },
+          },
+        },
+      },
+    },
+  };
+
+  fastify.post('/', options, errorHandler(async (request, reply) => {
+    /** @type {Mongo.Db} */
+    // eslint-disable-next-line prefer-destructuring
+    const db = fastify.mongo.db;
+    const invoiceService = new InvoiceService(db);
+    const promoterJobService = new PromoterJobService(db);
+    const promoterService = new PromoterService(db);
+    const networkService = new NetworkService(fastify.mongo.db);
+    const nodeList = await networkService.getNetworkListFlat(request.identity.roleId, request.identity._id);
+
+    const promoter = await promoterService.getPromoterById(request.params.promoterId);
+    const promoterJob = await promoterJobService.getPromoterJob(
+      request.params.promoterId,
+      request.body.productivePeriodYear,
+      request.body.productivePeriodMonth,
+    );
+    if (!promoterJob) {
+      reply.send(Boom.badRequest(`Promoter Job not found for ${request.params.promoterId}`));
+      return;
+    }
+
+    const { displayHierarchy } = nodeList.find((item) => item.promoterId === request.params.promoterId) || {
+      displayHierarchy: 'NON IN RETE',
+    };
+
+    fastify.log.info('PROMOTER JOB');
+    fastify.log.info(promoterJob);
+
+    // eslint-disable-next-line consistent-return
+    return invoiceService
+      .generateInvoice(
+        request.body.productivePeriodYear,
+        request.body.productivePeriodMonth,
+        new Date(request.body.issueDate),
+        new Date(request.body.dueDate),
+        promoter,
+        displayHierarchy,
+        promoterJob,
+        false,
+        0,
+      )
+      .then((invoice) => reply.send({ _meta: {}, item: invoice }))
+      .catch((error) => reply.send(Boom.badRequest(error.message)));
+  }));
+  next();
+};

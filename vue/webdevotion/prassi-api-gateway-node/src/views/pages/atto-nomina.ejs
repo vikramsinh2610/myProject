@@ -1,0 +1,713 @@
+<div class="container container-height page-spacer" style="position: relative;">
+    <%- include ('../partials/header-center.ejs') %>
+
+    <div class="row">
+        <div class="col-12 row">
+            <div class="col-12 py-4">
+                <div class="d-block" style="float: right;">
+                    Gentile <%= titleName %> <br>
+                    <p class="text-uppercase text-bold-black">
+                    <%= customer.surname %>  <%= customer.name %><br>
+                    <%= customer.address.route %> <%= customer.address.streetNumber %><br>
+                    <%= customer.address.postalCode %> <%= customer.address.city %> (<%= customer.address.province %>)<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <p class="text-center">
+                <strong><u>ATTO DI NOMINA A PROMOTORE ASSICURATIVO <%if (onActPas.selected === true) {%> SENIOR <%}%> DEL <%= titleName %> <%= customer.surname %>  <%= customer.name %></u></strong>
+            </p>
+
+            <% if (onActPas.selected === true) { %>
+                <p>
+                    Con la presente lettera <strong>SHELTIA srl</strong>, società
+                    d’intermediazione assicurativa iscritta al <strong>n. 511867</strong> della
+                    Sezione B del RUI, in persona del Rappresentante Legale
+                    <strong>dott. Alberto Maria Maturi</strong>, verificato e preso atto della
+                    documentazione da Lei prodotta, di cui verrà conservata
+                    copia agli atti della Società, relativamente:
+                </p>
+                <ul>
+                    <li>
+                        alla Sua iscrizione al <strong><%= onRuiN.typeValue %></strong> della lettera E
+                        del RUI,
+                    </li>
+                    <li>
+                        al possesso dei previsti requisiti di onorabilità e
+                        professionalità,
+                    </li>
+                </ul>
+                <p>
+                    Le conferisce l’incarico di Promotore Assicurativo Senior,
+                    con decorrenza dal <strong><%- onActSartDateFormat %></strong>, nell’ambito del quale Ella,
+                    con propri mezzi ed organizzazione, s’impegna a promuovere
+                    e realizzare attività di brokeraggio assicurativo per
+                    conto della nostra Società nell’ambito del territorio
+                    della filiale di <strong><%= nomeFiliale.typeValue %></strong>.
+                    <br/>
+                    A tale fine, Ella dovrà avvalersi della collaborazione dei
+                    Promotori Assicurativi Junior e/o dei segnalatori inseriti
+                    nel territorio assegnatoLe.
+                </p>
+                <p>
+                    Il presente incarico Le è conferito con vincolo di
+                    esclusiva: Le è fatto pertanto obbligo esplicito di
+                    astenersi dall’assumere altri incarichi di distribuzione
+                    assicurativa da parte di qualsiasi altro Intermediario
+                    iscritto alla lettera A), B) e D) del Registro degli
+                    Intermediari Assicurativi (RUI).
+                    <br/>
+                    La Sua sede di lavoro sarà <strong><%= nomeFiliale.typeValue %></strong>. Ai fini di un più
+                    agevole svolgimento del rapporto di prestazione
+                    professionale, la <strong>SHELTIA s.r.l.</strong> metterà a Sua
+                    disposizione una postazione negli uffici della sede di
+                    <strong><%= nomeFiliale.typeValue %></strong> – <strong><%= indirizzoFiliale.typeValue %></strong>, cui Ella potrà accedere liberamente.
+                </p>
+            <% } else  { %>
+                <% if (onRuiBooleanNo.selected === false) { %>
+                    <p>
+                        Con la presente lettera <strong>SHELTIA srl</strong>, società
+                        d’intermediazione assicurativa iscritta al <strong>n. 511867</strong> della
+                        Sezione B del RUI, in persona del Rappresentante Legale
+                        <strong>dott. Alberto Maria Maturi</strong>, verificato e preso atto della documentazione da Lei
+                        prodotta, di cui verrà conservata copia agli atti della
+                        Società, relativamente:
+                    </p>
+                    <ul>
+                        <li>
+                            alla Sua iscrizione al n. <strong><%= onRuiN.typeValue %></strong> RUI della lettera E
+                            del RUI,
+                        </li>
+                        <li>
+                            al possesso dei requisiti di onorabilità e professionalità
+                            previsti dalla normativa vigente,
+                        </li>
+                    </ul>
+                    <p>
+                        Le conferisce l’incarico di Promotore Assicurativo, con
+                        decorrenza dal primo giorno successivo alla data di
+                        comunicazione da parte di IVASS della registrazione del
+                        rapporto di collaborazione al Registro Unico degli
+                        Intermediari, nell’ambito del quale Ella, con propri mezzi ed
+                        organizzazione, s’impegna a promuovere e realizzare attività
+                        di brokeraggio assicurativo per conto della nostra Società
+                        nell’ambito della Filiale di <strong><%= nomeFiliale.typeValue %></strong>.
+                    </p>
+                    <p>
+                        Il presente incarico Le è conferito con vincolo di esclusiva *:
+                        Le è fatto pertanto obbligo esplicito di astenersi
+                        dall’assumere altri incarichi di distribuzione assicurativa da
+                        parte di qualsiasi altro Intermediario iscritto alla lettera
+                        A), B) e D) del Registro degli Intermediari Assicurativi (RUI).
+                    </p>
+                    <p>
+                        *Fermo restando eventuali deroghe espressamente ed eccezionalmente riconosciute dalla Direzione di Sheltia
+                    </p>
+                <% } else  { %>
+                    <p>
+                        Con la presente lettera <strong>SHELTIA srl</strong>, società
+                        d’intermediazione assicurativa iscritta al <strong>n. 511867</strong> della
+                        Sezione B del RUI, in persona del Rappresentante Legale
+                        <strong>dott. Alberto Maria Maturi</strong>, preso atto della documentazione da Lei prodotta, di cui
+                        verrà conservata copia agli atti della Società e verificato
+                        il possesso dei requisiti di onorabilità e professionalità
+                        previsti dalla normativa vigente, si impegna a procedere alla
+                        Sua iscrizione alla sez. E del Registro Unico degli
+                        Intermediari. Pertanto, con decorrenza dal primo giorno
+                        successivo alla data di comunicazione da parte di IVASS della
+                        registrazione del rapporto di collaborazione al RUI Le viene
+                        conferito l’incarico di Promotore Assicurativo, nell’ambito del
+                        quale Ella, con propri mezzi ed organizzazione, s’impegna a
+                        promuovere e realizzare attività di brokeraggio assicurativo
+                        per conto della nostra Società nell’ambito della Filiale di
+                        <strong><%= nomeFiliale.typeValue %></strong>.
+                    </p>
+
+                    <p>
+                        Il presente incarico Le è conferito con vincolo di esclusiva *:
+                        Le è fatto pertanto obbligo esplicito di astenersi
+                        dall’assumere altri incarichi di distribuzione assicurativa da
+                        parte di qualsiasi altro Intermediario iscritto alla lettera
+                        A), B) e D) del Registro degli Intermediari Assicurativi (RUI).
+                    </p>
+                    <p>
+                        *Fermo restando eventuali deroghe espressamente ed eccezionalmente riconosciute dalla Direzione di Sheltia
+                    </p>
+                <% } %>
+            <% } %>
+
+            <p>
+                Per la Sua attività Le verranno corrisposti (verso
+                regolare fatturazione), compensi provvigionali nel limite
+                massimo calcolato con le seguenti modalità.
+            </p>
+
+            <% if (onActPas.selected === true) { %>
+                <ol>
+                    <li>
+                        Indicatore di Valore
+                        <div>
+                            <p>
+                                Per ogni prodotto inserito nel catalogo a nostra disposizione viene calcolato un Indicatore di Valore (IV) in base a diverse caratteristiche del prodotto (premio, durata, linee d’investimento, redditività ecc...).
+                                <br>   L’IV viene automaticamente calcolato dal sistema informatico in dotazione ai professionisti cui si riferisce la Sua attività di organizzazione e coordinamento in fase di sottoscrizione del contratto da parte del cliente.
+                                <br>  Al totale dei contratti sottoscritti ed emessi in ciascun mese produttivo corrisponderà un ammontare d’IV.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        Compensi provvigionali calcolati con periodicità mensile in relazione ai contratti regolarmente emessi dalle Compagnie
+                        <div>
+                            <p>
+                                2.1 Sul totale mensile d’IV realizzato <u>direttamente</u> Le verranno applicate le seguenti aliquote, variabili in funzione del volume raggiunto secondo il seguente schema:
+                            </p>
+                        </div>
+                    </li>
+
+                </ol>
+
+            <% } %>
+
+            <% if (onActNoCont.selected === true) { %>
+                <ol>
+                    <li>
+                        Indicatore di Valore
+                        <div>
+                            <p>
+                                Per ogni prodotto inserito nel catalogo a nostra disposizione viene calcolato un Indicatore di Valore (IV) in base a diverse caratteristiche del prodotto (premio, durata, linee d’investimento, redditività ecc...).
+                                <br>   L’IV viene automaticamente calcolato dal sistema informatico in dotazione ai professionisti cui si riferisce la Sua attività di organizzazione e coordinamento in fase di sottoscrizione del contratto da parte del cliente.
+                                <br>  Al totale dei contratti sottoscritti ed emessi in ciascun mese produttivo corrisponderà un ammontare d’IV.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        1. Compensi provvigionali calcolati con periodicità mensile
+                        <div>
+                            <p>
+                                Sul totale mensile degli IV realizzati Le verranno applicate le seguenti aliquote, variabili in funzione del volume raggiunto secondo il seguente schema:
+                            </p>
+                        </div>
+                    </li>
+                    <img src="/static/images/survey/atti/04/grafico1.png" class="my-3" style="width: 500px;  display:block; margin:auto;" alt="grafico">
+
+                </ol>
+
+            <% } %>
+
+            <% if (onActProf.selected === true) { %>
+                <ol>
+                    <li>
+                        Indicatore di Valore
+                        <div>
+                            <p>
+                                Per ogni prodotto inserito nel catalogo a nostra disposizione viene calcolato un Indicatore di Valore (IV) in base a diverse caratteristiche del prodotto (premio, durata, linee d’investimento, redditività ecc...).
+                                L’IV viene automaticamente calcolato dal sistema informatico in dotazione ai professionisti cui si riferisce la Sua attività di organizzazione e coordinamento in fase di sottoscrizione del contratto da parte del cliente.
+                                Al totale dei contratti sottoscritti ed emessi in ciascun mese produttivo corrisponderà un ammontare d’IV.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        1.  Compensi provvigionali calcolati con periodicità mensile
+                        <div>
+                            <p>
+                                Sul totale mensile degli IV realizzati Le verranno applicate le seguenti aliquote, variabili in funzione del volume raggiunto secondo il seguente schema:
+                            </p>
+                        </div>
+                    </li>
+                    <img src="/static/images/survey/atti/01/grafico1.png" class="my-3" style="width: 500px;  display:block; margin:auto;" alt="grafico">
+
+                </ol>
+
+            <% } %>
+
+            <% if (onActJun.selected === true) { %>
+
+                <ol>
+                    <li>
+                        Indicatore di Valore
+                        <div>
+                            <p>
+                                Per ogni prodotto inserito nel catalogo a nostra disposizione viene calcolato un Indicatore di Valore (IV) in base a diverse caratteristiche del prodotto (premio, durata, linee d’investimento, redditività ecc...).
+                                <br>   L’IV viene automaticamente calcolato dal sistema informatico in dotazione ai professionisti cui si riferisce la Sua attività di organizzazione e coordinamento in fase di sottoscrizione del contratto da parte del cliente.
+                                <br>  Al totale dei contratti sottoscritti ed emessi in ciascun mese produttivo corrisponderà un ammontare d’IV.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        1. Compensi provvigionali calcolati con periodicità mensile
+                        <div>
+                            <p>
+                                Sul totale mensile degli IV realizzati Le verranno applicate le seguenti aliquote, variabili in funzione del volume raggiunto secondo il seguente schema:
+                            </p>
+                        </div>
+                    </li>
+                    <img src="/static/images/survey/atti/02/grafico1.png"  class="my-3" style="width: 500px;  display:block; margin:auto;" alt="grafico">
+
+                </ol>
+            <% } %>
+        </div>
+    </div>
+    <%- include ('../partials/footer-atto-nomina.ejs') %>
+    <div style="page-break-after:always;"></div>
+</div>
+
+<div class="container container-height page-spacer" style="position: relative;">
+    <%- include ('../partials/header-center.ejs') %>
+    <% if (onActPas.selected === true) { %>
+        <div class="row no-gutters">
+            <div class="col-12">
+                <img src="/static/images/survey/atti/07/grafico1.png"  class="my-3" style="width: 500px;  display:block; margin:auto;" alt="grafico">
+
+                <ol start="2">
+                    <li style="list-style-type: none;">
+                        <div>
+                            <p>2.2. Per quanto concerne la produzione indiretta della struttura coordinata, verranno applicate le seguenti aliquote al monte IV:</p>
+                            <img src="/static/images/survey/atti/07/grafico2.png"  class="my-3" style="width: 300px;  display:block; margin:auto;" alt="grafico">
+                            <p>
+                                2.3  Rappel calcolati con periodicità semestrale e annuale
+                                <br>
+                                Semestralmente, si procederà a determinare la media mensile produttiva del periodo di riferimento.
+                                <br>
+                                A fronte di una media produttiva mensile maggiore di 300.000 IV, verrà individuata la corrispondente aliquota provvigionale da applicare al monte IV prodotto come riportato nella tabella a seguire:
+                                <img src="/static/images/survey/atti/07/grafico3.png"  class="my-3" style="width: 300px;  display:block; margin:auto;" alt="grafico">
+                            <p>
+                                In particolare, ai soli fini della determinazione della fascia
+                                di riferimento per il calcolo del rappel si terrà conto anche
+                                dell’eventuale produzione diretta, mentre la quantificazione
+                                del rappel sarà effettuata ovviamente con riferimento alla
+                                sola produzione indiretta della propria struttura, al netto di
+                                quanto già liquidato mensilmente.
+                            </p>
+                            <p>
+                                A fine esercizio sarà possibile ricalcolare il Rappel del1°
+                                semestre a fronte di una produzione minima annuale di 4.000.000
+                                di IV.
+                            </p>
+                        </div>
+
+                    </li>
+
+                    <li>
+                        Integrazioni mensili
+                        <div>
+                            <p>Le integrazioni mensili verranno liquidate in funzione dei risultati produttivi conseguiti (produzione diretta e indiretta), secondo la seguente tabella:
+                            </p>
+                        </div>
+                        <img src="/static/images/survey/atti/07/grafico4.png"  class="my-3" style="width: 300px;  display:block; margin:auto;" alt="grafico">
+
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+    <% } %>
+
+    <% if (onActNoCont.selected === true) { %>
+        <div class="row no-gutters">
+            <div class="col-12">
+                <ol start="2">
+                    <li>
+                        2. Rappel calcolati con periodicità trimestrale e annuale
+                        <div>
+                            <p>Trimestralmente si procederà a calcolare la media produttiva del periodo e se la stessa risulterà maggiore di 75.000 IV si applicherà l’aliquota provvigionale corrispondente alla relativa fascia a tutto il monte IV prodotto nel trimestre di riferimento.</p>
+                            <img src="/static/images/survey/atti/04/grafico2.png"  class="my-3" style="width: 300px;  display:block; margin:auto;" alt="grafico">
+                            <p>Il rappel sarà calcolato al netto di quanto già liquidato mensilmente.
+                                <br>
+                                A fine esercizio è inoltre previsto un ricalcolo annuale del rappel tale da favorire anche il recupero di rappel trimestrali non liquidati, solo nel caso in cui si raggiunga una produzione annuale minima di 900.000 IV.</p>
+                        </div>
+
+                    </li>
+
+                    <li>
+                        Provvigioni d’incasso
+                        <div>
+                            <p>Sul portafoglio di contratti collegato alla zona di Sua competenza, per le annualità successive alla prima, Le verrà corrisposto un compenso provvigionale denominato “provvigione d’incasso” (PI) in misura fissa e diversificata in funzione dei contratti cui si riferisce.
+                                <br> L’ammontare di detta provvigione Le verrà comunicata a parte.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li>
+                        Management Fee
+                        <div>
+                            Sul portafoglio di contratti collegato alla zona di Sua competenza, Le verrà riconosciuto un valore di Management Fee nella misura del 15% di quanto riconosciuto a Sheltia dalle compagnie d’assicurazione.
+                        </div>
+                    </li>
+                </ol>
+                <p>Le condizioni sopra riportate resteranno valide sino al 31 dicembre 2020 e tacitamente rinnovate salvo nuova comunicazione in merito da parte della Società.</p>
+            </div>
+        </div>
+
+    <% } %>
+
+    <% if (onActProf.selected === true) { %>
+        <div class="row no-gutters">
+            <div class="col-12">
+                <ol start="2">
+                    <li>
+                        2. Rappel calcolati con periodicità trimestrale e annuale
+                        <div>
+                            <p>Trimestralmente si procederà a calcolare la media produttiva del periodo e se la stessa risulterà maggiore di 75.000 IV si applicherà l’aliquota provvigionale corrispondente alla relativa fascia a tutto il monte IV prodotto nel trimestre di riferimento.</p>
+                            <img src="/static/images/survey/atti/01/grafico2.png"  class="my-3" style="width: 300px;  display:block; margin:auto;" alt="grafico">
+                            <p>Il rappel sarà calcolato al netto di quanto già liquidato mensilmente.
+                                <br>
+                                A fine esercizio è inoltre previsto un ricalcolo annuale del rappel tale da favorire anche il recupero di rappel trimestrali non liquidati, solo nel caso in cui si raggiunga una produzione annuale minima di 900.000 IV.</p>
+                        </div>
+
+                    </li>
+
+                    <li>
+                        Provvigioni d’incasso
+                        <div>
+                            <p>
+                                Sul portafoglio di contratti collegato alla zona di Sua competenza, per le annualità successive alla prima, Le verrà corrisposto un compenso provvigionale denominato “provvigione d’incasso” (PI) in misura fissa e diversificata in funzione dei contratti cui si riferisce.
+                                <br>
+                                L’ammontare di detta provvigione Le verrà comunicata a parte.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li>
+                        Management Fee
+                        <div>
+                            Sul portafoglio di contratti collegato alla zona di Sua competenza, Le verrà riconosciuto un valore di Management Fee nella misura del 15% di quanto riconosciuto a Sheltia dalle compagnie d’assicurazione
+                        </div>
+                    </li>
+                </ol>
+                <p>Le condizioni sopra riportate resteranno valide sino al 31 dicembre 2020 e tacitamente rinnovate salvo nuova comunicazione in merito da parte della Società.</p>
+                <p>Per i primi sei mesi di attività Le verrà riconosciuto un bonus mensile che si sviluppa per importi decrescenti, nei primi quattro in parte garantiti e in parte subordinati al conseguimento dei target, mentre gli ultimi due mesi esclusivamente correlati al raggiungimento dell’obiettivo mensile.</p>
+                <p>Di seguito si evidenziano i bonus e i target assegnati:</p>
+                <img src="/static/images/survey/atti/01/grafico3.png"  class="my-3" style="width: 500px;  display:block; margin:auto;" alt="grafico">
+            </div>
+        </div>
+
+    <% } %>
+
+    <% if (onActJun.selected === true) { %>
+        <div class="row no-gutters">
+            <div class="col-12">
+                <ol start="2">
+                    <li>
+                        2. Rappel calcolati con periodicità trimestrale e annuale
+                        <div>
+                            <p>Trimestralmente si procederà a calcolare la media produttiva del periodo e se la stessa risulterà maggiore di 75.000 IV si applicherà l’aliquota provvigionale corrispondente alla relativa fascia a tutto il monte IV prodotto nel trimestre di riferimento.</p>
+                            <img src="/static/images/survey/atti/02/grafico2.png"  class="my-3" style="width: 300px;  display:block; margin:auto;" alt="grafico">
+                            <p>Il rappel sarà calcolato al netto di quanto già liquidato mensilmente.
+                                <br>
+                                A fine esercizio è inoltre previsto un ricalcolo annuale del rappel tale da favorire anche il recupero di rappel trimestrali non liquidati, solo nel caso in cui si raggiunga una produzione annuale minima di 900.000 IV.</p>
+                        </div>
+
+                    </li>
+
+                    <li>
+                        Provvigioni d’incasso
+                        <div>
+                            <p>Sul portafoglio di contratti collegato alla zona di Sua competenza, per le annualità successive alla prima, Le verrà corrisposto un compenso provvigionale denominato “provvigione d’incasso” (PI) in misura fissa e diversificata in funzione dei contratti cui si riferisce.
+                                <br> L’ammontare di detta provvigione Le verrà comunicata a parte.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li>
+                        Management Fee
+                        <div>
+                            Sul portafoglio di contratti collegato alla zona di Sua competenza, Le verrà riconosciuto un valore di Management Fee nella misura del 15% di quanto riconosciuto a Sheltia dalle compagnie d’assicurazione.
+                        </div>
+                    </li>
+                </ol>
+                <p>Le condizioni sopra riportate resteranno valide sino al 31 dicembre 2020 e tacitamente rinnovate salvo nuova comunicazione in merito da parte della Società.</p>
+                <p>Per i primi tre mesi di attività Le verrà riconosciuto un importo lordo di €. 500,00, da liquidarsi in forma garantita per € 350 e, per la differenza di € 150, al raggiungimento dei seguenti target mensili:</p>
+                <img src="/static/images/survey/atti/02/grafico3.png"  class="my-3" style="width: 500px;  display:block; margin:auto;" alt="grafico">
+            </div>
+        </div>
+
+    <% } %>
+    <%- include ('../partials/footer-atto-nomina.ejs') %>
+    <div style="page-break-after:always;"></div>
+</div>
+
+<div class="container container-height page-spacer" style="position: relative;">
+    <%- include ('../partials/header-center.ejs') %>
+    <div class="row no-gutters">
+        <div class="col-12">
+
+            <% if (onActPas.selected === true) { %>
+                <p>
+                    Il riconoscimento della prima integrazione avverrà in occasione della liquidazione del mese provvigionale corrispondente al mese di inizio collaborazione ed inserimento in struttura.
+                </p>
+
+                <p>
+                    Resta fermo che la misura del conseguimento totale dei target produttivi assegnati rappresentano il termine di valutazione principale della qualità della collaborazione fornita nel ruolo assegnatoLe.
+                </p>
+
+                <p>Qualora Lei dovesse recedere dall’accordo di collaborazione sottoscritto, le integrazioni mensili già liquidate in Suo favore durante l’anno del recesso dovranno essere restituite a Sheltia.</p>
+
+                <ol start="4">
+                    <li>
+                        Management fee
+                        <div>
+                            <p>
+                                Sul portafoglio di contratti collegato al territorio di Sua competenza, Le verrà corrisposto un ulteriore compenso provvigionale denominato “management fee” (MF) in aggiunta a quanto previsto ai precedenti punti 2 e 3, pari al 10% di quanto corrisposto alla nostra società dalle Compagnie Assicurative fornitrici dei prodotti collocati.
+                            </p>
+                        </div>
+                    </li>
+                </ol>
+
+                <p>
+                    I target produttivi mensili Le verranno comunicati dal Branch Manager/District Manager di riferimento, coerentemente agli obiettivi fissati per l’anno 2020.
+                </p>
+
+            <% } %>
+
+            <% if (onActNoCont.selected === true) { %>
+
+
+            <% } %>
+
+            <% if (onActProf.selected === true) { %>
+                    <p>
+                        Il riconoscimento del primo bonus avverrà in occasione della liquidazione del mese provvigionale corrispondente al mese di inizio collaborazione ed inserimento in struttura.
+                    </p>
+
+            <% } %>
+
+            <% if (onActJun.selected === true) { %>
+                    <p>
+                        Il riconoscimento del primo bonus avverrà in occasione della liquidazione
+                        del mese provvigionale corrispondente al mese di inizio collaborazione ed
+                        inserimento in struttura.
+                    </p>
+            <% } %>
+
+
+            <p>
+                Il presente incarico si considererà immediatamente risolto nel caso in cui si dovesse verificare:
+            </p>
+            <ul>
+                <li>
+                    Che Ella violi il vincolo di esclusiva previsto dal presente atto di nomina;
+                </li>
+                <li>
+                    che Ella perda i requisiti di onorabilità e/o professionalità necessari per mantenere l’iscrizione alla Sezione E del
+                    RUI. In tal caso dovrà immediatamente darne comunicazione scritta alla Società con mezzo idoneo a consentire la tracciabilità della comunicazione stessa.
+                </li>
+            </ul>
+
+            <% if (onActPas.selected === true) { %>
+                <p>
+                    La Società potrà revocare l’incarico conferitoLe in ogni momento. D’altra parte Ella potrà rinunciare in ogni momento all’incarico conferitoLe con la presente lettera di nomina, dandone preavviso di 30 giorni alla Società tramite comunicazione scritta con mezzo idoneo a consentire la tracciabilità della comunicazione stessa.
+                    Alla cessazione dall’incarico Le verranno liquidati gli eventuali compensi maturati ma non ancora liquidati, al netto di eventuali storni provvigionali o partite a debito.
+                </p>
+            <% } else { %>
+                <p>
+                    La revoca dell’incarico conferitoLe o la rinuncia da parte Sua, potranno essere effettuate in ogni momento, dandone comunicazione scritta con mezzo idoneo a consentire la tracciabilità della comunicazione stessa.
+                    Alla cessazione dall’incarico la Società provvederà alla Sua cancellazione dalla Sez. E del RUI e con la prima liquidazione utile, Le verranno riconosciuti gli eventuali compensi provvigionali maturati ma non ancora liquidati, al netto di eventuali storni provvigionali non ancora recuperati.
+                </p>
+            <% } %>
+
+            <p>
+                Le ricordiamo che i Suoi dati personali saranno utilizzati e trattati da Sheltia Srl nel rispetto del Regolamento 679/2019 (c.d. GDPR), secondo le modalità, le garanzie e i limiti contenuti nell’Informativa privacy a Lei consegnata unitamente alla Scheda inserimento e sulla quale Lei ha fornito espresso consenso.
+            </p>
+            <p class="mt-4">
+                Con i migliori saluti.
+            </p>
+            <p class="pt-2">
+                Roma, <strong><%- onActDateFormat %></strong>
+            </p>
+                <p style="float: left; width:600px;" class="pt-5">
+                    Per accordo ed accettazione: _____________________________
+                </p>
+                <p class="mt-4 text-center" style="float: right; width:300px;">
+                    <strong>SHELTIA srl</strong>
+                    <br>
+                    Il Presidente
+                    <br>
+                    (Alberto M. Maturi)
+                </p>
+        </div>
+    </div>
+    <%- include ('../partials/footer-atto-nomina.ejs') %>
+    <div style="page-break-after:always;"></div>
+</div>
+
+<div class="container container-height page-spacer" style="position: relative;">
+    <%- include ('../partials/header-center.ejs') %>
+    <div class="row no-gutters">
+        <div class="col-12">
+            <strong>
+                ALLEGATO 1
+            </strong>
+            <br>
+            <p class="text-center  py-4"><strong>
+                    AUTORIZZAZIONE ALL’EMISSIONE DI FATTURA <br>
+                    (ai sensi dell’art. 21, comma 1 DPR 633/72)
+                </strong></p>
+        </div>
+
+        <div class="col-12">
+            <p>
+                Al fine di semplificare e accelerare la corresponsione dei compensi, la
+                SHELTIA SRL è disponibile ad emettere la relativa fattura per Vostro conto
+                ai sensi dell’art. 21 comma 1, del DPR 633/1972, relativamente alle
+                relazioni avvenute a far data dal <strong><%- onActSartDateFormat %></strong>
+            </p>
+            <p>
+                Le fatture saranno compilate e saranno recapitate direttamente dalla
+                SHELTIA SRL.
+            </p>
+            <p>
+                La invitiamo pertanto ad avvalervi della facoltà consentita dall’art. 21,
+                comma 1, DPR 633/72, (così come modificato dall’art. 1. D.Lgs. 52/2004) e a
+                rilasciare a SHELTIA SRL apposito mandato per l’emissione delle fatture
+                relative ai compensi, previa restituzione della presente debitamente
+                sottoscritta per accettazione (v. apposito spazio in calce alla presente).
+            </p>
+            <p class="mt-4">
+                <strong>SHELTIA srl</strong>
+                <br>
+                Il Presidente
+                <br>
+                (Alberto M. Maturi)
+                <br>
+                <br>
+                ________________________
+            </p>
+            <p>
+                <br>
+                <br>
+                Per accettazione e conferimento mandato alla fatturazione art. 21, 1 c. DPR
+                633/1972:
+            </p>
+            <p>
+                Data: <strong><%- onActDateFormat %></strong>
+                <br>
+            </p>
+            <p>
+                Firma
+                <br>
+                <br>
+                _________________________
+            </p>
+
+        </div>
+    </div>
+    <%- include ('../partials/footer-atto-nomina.ejs') %>
+    <div style="page-break-after:always;"></div>
+</div>
+
+<div class="container container-height page-spacer" style="position: relative;">
+    <%- include ('../partials/header-center.ejs') %>
+    <div class="row no-gutters">
+        <div class="col-12">
+            <strong>
+                ALLEGATO 2
+            </strong>
+            <br>
+            <p class="text-center py-4"><strong>
+                    NORMATIVA ANTIRICICLAGGIO – CODICE ETICO- PROTEZIONE DEI DATI PERSONALI
+                </strong></p>
+        </div>
+
+        <div class="col-12">
+            <p class="pb-4">
+                Il sottoscritto <strong><%= customer.surname %>  <%= customer.name %> </strong>, in relazione all’atto di nomina di cui il
+                presente allegato è parte integrante,
+            </p>
+            <p class="pb-2">
+                <strong>DICHIARA</strong>
+            </p>
+
+            <ul>
+                <li>
+                    Di conoscere le disposizioni in materia di antiriciclaggio d. lgs.
+                    231/2007 ss.mm.ii e della regolamentazione Ivass di settore e di aver
+                    preso visione delle procedure adottate dall’intermediario, impegnandosi
+                    a rispettarle;
+                </li>
+                <li>
+                    Di avere ricevuto e preso visione del Codice Etico, approvato in data
+                    30/03/16 dal Consiglio d’Amministrazione di Sheltia Srl, impegnandosi a
+                    condividerne i valori e ad osservarne le disposizioni;
+                </li>
+                <li>
+                    Di attenersi alle disposizioni sulla “privacy”, nel rispetto primario
+                    delle norme del Regolamento UE 2016/279 (General Data Protection
+                    Regulation GDPR) e di ogni altra disposizione di legge o regolamento
+                    disciplinante la materia e di agire nel rispetto delle procedure e
+                    presidi adottate da Sheltia in materia;
+                    <br>
+                    <br>
+                </li>
+            </ul>
+            <p class="mt-4">
+                Data: <strong><%- onActDateFormat %></strong>
+                <br>
+            </p>
+            <p>
+                Firma
+                <br>
+                <br>
+                _________________________
+            </p>
+
+        </div>
+    </div>
+    <%- include ('../partials/footer-atto-nomina.ejs') %>
+    <div style="page-break-after:always;"></div>
+</div>
+
+<div class="container container-height page-spacer" style="position: relative;">
+    <%- include ('../partials/header-center.ejs') %>
+    <div class="row no-gutters">
+        <div class="col-12">
+            <strong>
+                ALLEGATO 3
+            </strong>
+            <br>
+            <p class="text-center  py-4"><strong>
+                    VINCOLO DI ESCLUSIVA
+                </strong></p>
+        </div>
+
+        <div class="col-12">
+            <p class="pb-4">
+                Il sottoscritto <strong><%= customer.surname %>  <%= customer.name %> </strong> in relazione all’atto di nomina di cui il
+                presente allegato è parte integrante,
+            </p>
+            <p class="pb-2">
+                <strong>DICHIARA</strong>
+            </p>
+            <ul>
+                <li>
+                    di essere a conoscenza dell’esistenza di un vincolo di esclusiva che
+                    vieta, nel periodo di validità dell’incarico di distribuzione
+                    assicurativa da parte di SHELTIA srl, di poter concludere accordi di
+                    collaborazione con altri Intermediari iscritti alla lettera A), B) e D)
+                    del RUI;
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    di impegnarsi a rispettare tale vincolo sino a quando non verrà cessato
+                    l’accordo di collaborazione con SHELTIA Srl
+                    <br>
+                    <br>
+                </li>
+            </ul>
+            <p class="mt-5">
+                Data: <strong><%- onActDateFormat %></strong>
+            </p>
+            <p>
+                Firma
+            </p>
+            <p>
+                _________________________
+            </p>
+
+        </div>
+    </div>
+    <%- include ('../partials/footer-atto-nomina.ejs') %>
+    <div style="page-break-after:always;"></div>
+</div>
+

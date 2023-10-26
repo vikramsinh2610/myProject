@@ -1,0 +1,623 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&display=swap');
+
+// Bootstrap and its default variables
+@import './variables-default';
+@import '../../../node_modules/bootstrap/scss/bootstrap';
+
+html {
+  -webkit-print-color-adjust: exact;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 11pt;
+  margin: 8px;
+}
+.docs {
+  font-size: 12pt;
+}
+.font-small {
+  font-size: 12pt;
+}
+
+.arrow {
+  position: absolute;
+  top: 100px;
+}
+
+.gene {
+  position: absolute;
+}
+
+.rotateRight {
+  -webkit-transform: rotate(55deg);
+  -moz-transform: rotate(55deg);
+  -o-transform: rotate(55deg);
+  -ms-transform: rotate(55deg);
+  transform: rotate(55deg);
+  top: 140px;
+}
+
+.rotateLeft {
+  -webkit-transform: rotate(-55deg);
+  -moz-transform: rotate(-55deg);
+  -o-transform: rotate(-55deg);
+  -ms-transform: rotate(-55deg);
+  transform: rotate(-55deg);
+  top: 140px;
+}
+
+#cover-page {
+  .cover-text {
+    font-weight: 400;
+  }
+
+  .cover-title {
+    position: absolute;
+    color: #1F3764;
+    margin-top: 80px;
+    width: 250px;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+}
+
+.title-h1 {
+  color: #1F3764;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  font-size: 20px;
+}
+
+.title-h2 {
+  color: #1F3764;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  font-size: 16px;
+}
+
+.border-bottom-field {
+  border-bottom: #048AD3 1px solid;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.separator {
+  border-top: 1px solid $primary;
+}
+
+.docs .border-bottom-field {
+  max-width: 700px;
+}
+
+.docs .border-bottom-field {
+  font-size: 12pt;
+}
+
+.mini-font {
+  font-size: 8pt;
+}
+
+.field-label {
+  padding-right: 10px;
+}
+
+.divTable{
+  display: table;
+  width: 100%;
+}
+.divTableRow {
+  display: table-row;
+}
+.divTableHeading {
+  background-color: #EEE;
+  display: table-header-group;
+}
+.divTableCell, .divTableHead {
+  border: 1px solid #999999;
+  display: table-cell;
+  padding: 3px 10px;
+}
+.valutazione .divTableCell:first-child {
+  border: none;
+  display: table-cell;
+  padding: 10px 10px;
+}
+.valutazione .divTableCell:nth-child(2) {
+  min-width: 300px ;
+  padding: 10px 10px;
+  font-weight: bold;
+}
+.divTableHeading {
+  background-color: #EEE;
+  display: table-header-group;
+  font-weight: bold;
+}
+
+.divTableFoot {
+  background-color: #EEE;
+  display: table-footer-group;
+  font-weight: bold;
+}
+.divTableBody {
+  display: table-row-group;
+}
+
+.box-firma {
+  text-align: center;
+  margin: 0 auto;
+  width: 300px;
+  height: 150px;
+  border: 1px solid #000000;
+  padding: 10px
+}
+.box-firma span {
+  text-transform: uppercase;
+}
+.box-firma .border-bottom-field {
+  margin-top: 20px;
+}
+
+@media print {
+  @page {
+    margin: 13mm;
+  }
+
+  body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 13pt;
+    line-height: 1.2;
+  }
+  .docs {
+    font-size: 14pt;
+    line-height: 1.6;
+  }
+  .font-small {
+    font-size: 13pt;
+    line-height: 1.5;
+  }
+
+  .mini-font {
+    font-size: 9pt;
+  }
+
+  .docs .border-bottom-field {
+    font-size: 14pt;
+  }
+
+  .box-firma {
+    width: 400px;
+    height: 170px;
+    padding: 10px;
+  }
+
+  .box-firma .border-bottom-field {
+    margin-top: 20px;
+  }
+
+  .container {
+    padding: 0;
+    margin: 0;
+    max-width: none;
+    width: auto;
+  }
+
+  .container-height {
+    height: calc(100vh - 40px)
+  }
+
+  .full-height {
+    min-height: calc(100vh - 340px)
+  }
+
+  .footer {
+    bottom: 0;
+  }
+
+  .num-page {
+    right: 24px;
+    top: -1px;
+  }
+
+  .num-page-double {
+    right: 20px;
+    top: -1px;
+  }
+
+  .header-title {
+    font-size: 22pt;
+  }
+
+  .header-row {
+    height: 30px;
+  }
+
+  .header-label {
+    font-size: 12pt;
+  }
+
+  .header-text {
+    font-size: 13pt;
+  }
+
+  .text-bold-page {
+    font-size: 22pt;
+  }
+
+  .text-bold-black,
+  strong {
+    font-size: 13pt;
+  }
+
+  .text-highlight-page {
+    font-size: 18pt;
+  }
+
+  .text-biblio {
+    font-size: 20px;
+    line-height: 2;
+  }
+
+  .text-bold-small {
+    font-size: 15px;
+  }
+
+  .text-cell-big {
+    font-size: 40px;
+  }
+
+  .text-cell-food-big {
+    font-size: 27px;
+  }
+
+  .text-small {
+    font-size: 18px;
+  }
+
+  .report-page-small-text {
+    font-size: 12px;
+  }
+
+  .arrow {
+    left: 260px;
+  }
+
+  .rotateRight {
+    left: 320px;
+  }
+
+  .rotateLeft {
+    left: 210px;
+  }
+
+  .gene-left {
+    left: 153px;
+  }
+
+  .gene-right {
+    left: 205px;
+  }
+}
+
+@media screen {
+  body {
+    margin: 13mm;
+  }
+
+  .container {
+    padding: 0;
+    margin: auto;
+    min-width: 900px;
+    width: 900px;
+  }
+
+  .container-height {
+    height: 1450px;
+  }
+
+  .full-height {
+    min-height: calc(1450px - 340px)
+  }
+
+  .page-spacer {
+    margin-top: 50px;
+  }
+
+  .footer {
+    bottom: 0;
+  }
+
+  .num-page {
+    right: 19px;
+  }
+
+  .num-page-double {
+    right: 17px;
+  }
+
+  .header-title {
+    font-size: 17pt;
+  }
+
+  .header-row {
+    height: 25px;
+  }
+
+  .header-label {
+    font-size: 11pt;
+  }
+
+  .header-text {
+    font-size: 11pt;
+  }
+
+  .text-bold-page {
+    font-size: 18pt;
+  }
+
+  .text-bold-page {
+    font-size: 15pt;
+  }
+
+  .text-highlight-page {
+    font-size: 15pt;
+  }
+
+  .text-biblio {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .text-bold-small {
+    font-size: 13px;
+  }
+
+  .text-cell-big {
+    font-size: 40px;
+  }
+
+  .text-cell-food-big {
+    font-size: 22px;
+  }
+
+  .text-small {
+    font-size: 15px;
+  }
+
+  .report-page-small-text {
+    font-size: 11px;
+  }
+
+  .arrow {
+    left: 200px;
+  }
+
+  .rotateRight {
+    left: 260px;
+  }
+
+  .rotateLeft {
+    left: 150px;
+  }
+
+  .gene-left {
+    left: 111px;
+  }
+
+  .gene-right {
+    left: 163px;
+  }
+}
+
+.bg-primary-fade {
+  background-color: $primary-fade-color;
+}
+
+.bg-primary-fade-1 {
+  background-color: $primary-fade-color-1;
+}
+
+.bg-primary-fade-2 {
+  background-color: $primary-fade-color-2;
+}
+
+.bg-cell-dark {
+  background-color: $cell-dark-color;
+}
+
+.bg-cell-light {
+  background-color: $cell-light-color;
+}
+
+.bg-cell-lighter {
+  background-color: $cell-lighter-color;
+}
+
+.footer {
+  position: absolute;
+  height: 40px;
+  width: 100%;
+  border-top: $primary 4px solid;
+}
+
+.footer.atto-nomina-footer {
+  height: 100px;
+  border-top: #048AD3 2px solid;
+}
+
+.footer.border-footer {
+  height: 190px;
+  border-top: #048AD3 2px solid;
+}
+
+.name {
+  color: $primary;
+  font-family: Dosis, sans-serif;
+  font-weight: 500;
+  text-align: center;
+  display: block;
+}
+
+.container-name {
+  position: absolute;
+  right: 300px;
+}
+
+.year {
+  position: absolute;
+  color: $primary;
+  font-family: Dosis, sans-serif;
+  font-weight: 500;
+  text-align: center;
+  right: 0;
+}
+
+.num-page,
+.num-page-double {
+  color: $grey;
+  font-family: Dosis, sans-serif;
+  font-weight: 500;
+  text-align: center;
+}
+
+.header-section {
+  border-bottom: $primary 4px solid;
+  color: $primary;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.header-block {
+  color: $primary;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.text-block {
+  line-height: 1.8;
+}
+
+.square {
+  border: $primary 2px solid;
+  color: $grey;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  top: 3px;
+  width: 23px;
+  height: 23px;
+  display: inline-block;
+  position: relative;
+}
+
+.square.square-x:before {
+  position: absolute;
+  content: 'x';
+  color: #212529;
+  left: 0;
+  right: 0;
+  font-size: 18px;
+  margin-top: -5px;
+}
+
+.text-answer {
+  display: inline;
+}
+
+.text-answer.line-answer{
+  display: inline-block;
+}
+
+.medical-report-container {
+  position: absolute;
+  bottom: 200px;
+  width: 100%;
+}
+
+.medical-report {
+  font-family: Dosis, sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  border-color: black;
+  border-bottom-style: solid;
+  border-top-style: solid;
+  width: fit-content;
+}
+
+.logo img {
+  height: 100%;
+  width: 100%;
+}
+
+.logo-img img {
+  height: 70px;
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0 auto;
+}
+
+.header-title {
+  height: 70px;
+  background: url(../images/barra_top.png) no-repeat 0 0;
+  background-size: 100%;
+  margin-top: 20px;
+  font-family: Dosis, sans-serif;
+  font-weight: 400;
+}
+
+.header-label {
+  color: $primary;
+  font-family: Dosis, sans-serif;
+  font-weight: 500;
+}
+
+.header-text {
+  color: darkgrey;
+  font-weight: 500;
+}
+
+.text-bold-page {
+  color: $primary;
+  font-weight: 700;
+}
+
+.text-bold-black,
+strong {
+  font-weight: 700;
+}
+
+.text-highlight-page {
+  color: $primary;
+  font-weight: 500;
+}
+
+.text-bold-small {
+  font-weight: 700;
+}
+
+.text-cell-big,
+.text-cell-food-big {
+  font-weight: 700;
+}
+
+.text-small {
+  font-weight: 300;
+}
+
+.report-page-text {
+  font-family: 'Times New Roman';
+}
+
+.report-page-small-text {
+  font-size: 12pt;
+}

@@ -1,0 +1,223 @@
+{
+  "_id": "b1d941cf-f757-42ff-8a2d-80da7c409641",
+  "sepa": {
+    "iban": { "iban": "IT74S0300203280378427335418" },
+    "number": "BWVRA000001684",
+    "address": {
+      "city": "Uboldo",
+      "route": "Via Xx Settembre",
+      "country": "Italia",
+      "province": "VA",
+      "postalCode": "21040",
+      "streetNumber": "260"
+    },
+    "customer": {
+      "id": "19303",
+      "sex": "M",
+      "vat": "",
+      "name": "Annalisa Colognesi",
+      "uuid": "fb340701-f48b-43e5-88f4-f04a3a3b752e",
+      "email": "annalisa.colognesi@sheltia.com",
+      "roleId": "promoter",
+      "status": 2,
+      "address": {
+        "city": "Uboldo",
+        "route": "Via Xx Settembre",
+        "country": "Italia",
+        "province": "VA",
+        "postalCode": "21040",
+        "streetNumber": "260"
+      },
+      "surname": "Colognesi",
+      "twitter": "",
+      "facebook": "",
+      "linkedIn": "",
+      "birthCity": "CANTU'",
+      "birthDate": "1998-09-14T00:00:00.000Z",
+      "inherited": false,
+      "isCompany": false,
+      "birthState": "ITALIA",
+      "fiscalCode": "CLGNLS98P54B639W",
+      "fixedPhone": "",
+      "birthRegion": "CO",
+      "companyName": "Annalisa",
+      "companyType": null,
+      "displayname": "Annalisa Colognesi",
+      "mobilePhone": "3388241526",
+      "nationality": "",
+      "creationDate": "2022-05-26T00:00:00.000Z",
+      "customerType": 2,
+      "legalAddress": {
+        "city": "Uboldo",
+        "route": "Via Xx Settembre",
+        "country": "Italia",
+        "province": "VA",
+        "postalCode": "21040",
+        "streetNumber": "260"
+      },
+      "promoterName": "Annalisa Colognesi",
+      "displayAddress": "Via Xx Settembre, 260, 21040 Uboldo (VA)",
+      "foundationDate": "",
+      "networkHierarchy": "DIREZIONE / FIL_DIREZIONE / 01 SETTORE / 11",
+      "displayLegalAddress": "Via Xx Settembre, 260, 21040 Uboldo (VA)",
+      "fiscalCodeAttachmentObj": {
+        "displayName": "Codice Fiscale.pdf",
+        "attachmentId": "sheltia-documents-stage/workflow/a7b9aed5-fbaa-46fa-b0cb-933499a06760.pdf"
+      }
+    },
+    "document": {
+      "uuid": "",
+      "document": [
+        { "displayName": "DOC IDENTITà PER TEST OTP.pdf", "attachmentId": "79ead9bd-a11b-4a58-9906-d14f21a99394" }
+      ],
+      "personId": "",
+      "issueCity": "UBOLDO",
+      "issueDate": "14/09/2020",
+      "expiryDate": "14/09/2023",
+      "issueRegion": "VA",
+      "documentType": { "label": "Carta d'identita", "value": 1 },
+      "issueCountry": "ITALIA",
+      "documentNumber": "AX000000000",
+      "issueAuthority": { "label": "Comune", "value": 1 }
+    },
+    "isThirdPayer": true,
+    "hasAdvisoryFee": true,
+    "linkedCustomerId": "fb340701-f48b-43e5-88f4-f04a3a3b752e"
+  },
+  "type": "inv",
+  "product": {
+    "code": "US16S_v02",
+    "name": "Darta Easy Multiline PU & PAC",
+    "type": "SUB",
+    "company": "DARTA SAVING LIFE ASSURANCE",
+    "category": "Risparmio/Investimento",
+    "companyId": "7a7fa96c-2403-0b46-a4e5-a46d00b4962e",
+    "productId": "a64ab8ef-a543-5448-844d-a5bf011a3bc1"
+  },
+  "adequacy": {
+    "score": {
+      "13-pir": 75,
+      "11-life": 70,
+      "14-risp": 20,
+      "28-unic": 160,
+      "02-pupac": 25,
+      "06-guard": 70,
+      "07-quant": 70,
+      "08-certa": 60,
+      "09-accum": 60,
+      "15-young": 20,
+      "04-period": 125,
+      "05-target": 125,
+      "18-hybrid": 70,
+      "16-capital": 20,
+      "17-rendita": 20,
+      "12-lifegold": 120,
+      "20-protetto": 20,
+      "22-titutela": 20,
+      "27-progetto": 60,
+      "21-risparmio": 20,
+      "23-integrapa": 20,
+      "24-integrapu": 120,
+      "26-portfolio": 175,
+      "01-multipiano": 20,
+      "25-multinvest": 135
+    },
+    "resultId": "45aeebff-ba5d-4c9e-beb5-d75216aa6e4c"
+  },
+  "promoter": {
+    "name": "Annalisa",
+    "email": "gg@gg.it",
+    "address": {
+      "city": "Milano",
+      "route": "viale certosa",
+      "country": "Italia",
+      "province": "MI",
+      "postalCode": "20149",
+      "streetNumber": "41"
+    },
+    "surname": "Colognesi",
+    "ivassCode": "23423423",
+    "promoterId": "cda87db7-1df8-e14c-ba8b-fc0147b2bb9d",
+    "mobilePhone": "3341156821",
+    "errorMessage": { "mobilePhone": "" },
+    "ruiSignupDate": "01-11-2022"
+  },
+  "extraInfo": { "place": "MILANO" },
+  "signature": {
+    "files": [
+      { "fileId": "/files/209bc799-8b93-4c0d-bdae-39f5176f2290", "fileType": "afc" },
+      { "fileId": "/files/735c0ce6-24e8-44fa-9555-a17fabb30cae", "fileType": "allegato4" },
+      { "fileId": "/files/61bc08ef-c864-4cf1-9a22-65af0a307bd0", "fileType": "adequacy" },
+      { "fileId": "/files/aa88d946-33f8-492a-a3b6-91283520b88b", "fileType": "sepa" }
+    ],
+    "customer": {
+      "info": {
+        "id": "91f4d426-63a3-44db-b3bc-d72bb0924770",
+        "name": "Andrea",
+        "email": "annalisa.colognesi@sheltia.com",
+        "surname": "Poletti",
+        "isCompany": false,
+        "mobilePhone": "+393341156821"
+      },
+      "email": "annalisa.colognesi@sheltia.com",
+      "status": "done",
+      "memberId": "/members/9943b9a8-033b-47d1-b774-0856499806ee"
+    },
+    "promoter": {
+      "info": {
+        "id": "cda87db7-1df8-e14c-ba8b-fc0147b2bb9d",
+        "name": "Annalisa",
+        "email": "annalisa.colognesi@sheltia.com",
+        "surname": "Colognesi",
+        "mobilePhone": "+393341156821"
+      },
+      "email": "annalisa.colognesi@sheltia.com",
+      "status": "done",
+      "memberId": "/members/a4a7f399-7599-46ff-8b71-8902af06c07a"
+    },
+    "thirdPayer": {
+      "info": {
+        "id": "fb340701-f48b-43e5-88f4-f04a3a3b752e",
+        "name": "Annalisa",
+        "email": "annalisa.colognesi@sheltia.com",
+        "surname": "Colognesi",
+        "mobilePhone": "+393341156821"
+      },
+      "email": "annalisa.colognesi@sheltia.com",
+      "memberId": "/members/d427b790-af5c-4c3e-b4d0-df8349c1ae3d"
+    },
+    "procedureId": "/procedures/13cc064d-bc10-4916-bdda-c65ace37d7e2",
+    "procedureCompleted": false
+  },
+  "customerId": "91f4d426-63a3-44db-b3bc-d72bb0924770",
+  "creationDate": "2022-11-12T09:56:57.004Z",
+  "distribution": {
+    "company": {
+      "id": "052",
+      "name": "ALLIANZ DARTA SAVING",
+      "type": "impresa",
+      "ivass": "N. II.00409 – ALBO IVASS",
+      "riskText": 1
+    },
+    "riskText": "Senza autorizzazione ex art. 118 Cap pagamento non liberatorio"
+  },
+  "validSections": [
+    "adequacy-survey",
+    "pick-product",
+    "proposal-number",
+    "promoter-info",
+    "promoter-address",
+    "distribution-info",
+    "sepa-debit",
+    "third-payer",
+    "sepa-customer-info",
+    "third-payer-document",
+    "sepa-iban-info",
+    "end-extra-info",
+    "sign-create-pdf",
+    "sign-promoter",
+    "sign-customer"
+  ],
+  "proposalNumber": "SUB0201134524",
+  "inquiryResultId": "64944373-2f45-49e3-83ca-c9d1a8dbc8ff"
+}

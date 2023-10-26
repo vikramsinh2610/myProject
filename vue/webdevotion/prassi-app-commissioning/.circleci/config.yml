@@ -1,0 +1,167 @@
+version: 2
+jobs:
+  qa:
+    docker:
+      - image: giona69/php-node14-aws
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - node-v4-{{ .Branch }}-{{ checksum "yarn.lock" }}
+      - run: yarn install
+      - run: yarn list
+      - run: yarn lint
+      - run: quasar run @quasar/testing test --unit jest --dev=pwa
+      - run: gulp logs
+      - run: yarn lint --fix
+      - store_test_results:
+          path: test-results
+      - save_cache:
+          paths:
+            - node_modules
+          key: node-v4-{{ .Branch }}-{{ checksum "yarn.lock" }}
+
+  deploy-tcw-app-stage:
+    docker:
+      - image: giona69/php-node14-aws
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - node-v4-{{ .Branch }}-{{ checksum "yarn.lock" }}
+      - run: cp src/boot/env/env.stage.tcw.js src/boot/env/env.js
+      - run: cp src/i18n/it/index.tcw.js src/i18n/it/index.js
+      - run: cp public/icons-tcw/* public/icons
+      - run: quasar build -m pwa
+      - run: aws s3 rm s3://tcw-app-stage --recursive
+      - run: aws s3 cp ./dist/pwa s3://tcw-app-stage --recursive --acl public-read
+      - run: aws cloudfront create-invalidation --distribution-id ENCLRTCWLOYSG --paths "/*"
+
+  deploy-demo-app-stage:
+    docker:
+      - image: giona69/php-node14-aws
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - node-v4-{{ .Branch }}-{{ checksum "yarn.lock" }}
+      - run: cp src/boot/env/env.dev.demo.js src/boot/env/env.js
+      - run: cp src/i18n/it/index.sheltia.js src/i18n/it/index.js
+      - run: cp public/icons-sheltia/* public/icons
+      - run: quasar build -m pwa
+      - run: aws s3 rm s3://demo-comm-prassi-stage --recursive
+      - run: aws s3 cp ./dist/pwa s3://demo-comm-prassi-stage --recursive --acl public-read
+      - run: aws cloudfront create-invalidation --distribution-id E39NLTCHD7BMWA --paths "/*"
+
+  deploy-sheltia-app-stage:
+    docker:
+      - image: giona69/php-node14-aws
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - node-v4-{{ .Branch }}-{{ checksum "yarn.lock" }}
+      - run: cp src/boot/env/env.stage.sheltia.js src/boot/env/env.js
+      - run: cp src/i18n/it/index.sheltia.js src/i18n/it/index.js
+      - run: cp public/icons-sheltia/* public/icons
+      - run: quasar build -m pwa
+      - run: aws s3 rm s3://sheltia-app-stage --recursive
+      - run: aws s3 cp ./dist/pwa s3://sheltia-app-stage --recursive --acl public-read
+      - run: aws cloudfront create-invalidation --distribution-id E3O1EJPAXK7DJQ --paths "/*"
+
+  deploy-sheltia-app-stage2:
+    docker:
+      - image: giona69/php-node14-aws
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - node-v4-{{ .Branch }}-{{ checksum "yarn.lock" }}
+      - run: cp src/boot/env/env.stage.sheltia2.js src/boot/env/env.js
+      - run: cp src/i18n/it/index.sheltia.js src/i18n/it/index.js
+      - run: cp public/icons-sheltia/* public/icons
+      - run: quasar build -m pwa
+      - run: aws s3 rm s3://sheltia-app-stage-2 --recursive
+      - run: aws s3 cp ./dist/pwa s3://sheltia-app-stage-2 --recursive --acl public-read
+      - run: aws cloudfront create-invalidation --distribution-id E1B0MAUV1QIMHV --paths "/*"
+
+  deploy-tcw-app-prod:
+    docker:
+      - image: giona69/php-node14-aws
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - node-v4-{{ .Branch }}-{{ checksum "yarn.lock" }}
+      - run: gulp logs
+      - run: yarn lint --fix
+      - run: cp src/boot/env/env.prod.tcw.js src/boot/env/env.js
+      - run: cp src/i18n/it/index.tcw.js src/i18n/it/index.js
+      - run: cp public/icons-tcw/* public/icons
+      - run: quasar build -m pwa
+      - run: aws s3 rm s3://tcw-app-prod --recursive
+      - run: aws s3 cp ./dist/pwa s3://tcw-app-prod --recursive --acl public-read
+      - run: aws cloudfront create-invalidation --distribution-id E1UJ0A7GDJTZXG --paths "/*"
+
+  deploy-sheltia-app-prod:
+    docker:
+      - image: giona69/php-node14-aws
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - node-v4-{{ .Branch }}-{{ checksum "yarn.lock" }}
+      - run: gulp logs
+      - run: yarn lint --fix
+      - run: cp src/boot/env/env.prod.sheltia.js src/boot/env/env.js
+      - run: cp src/i18n/it/index.sheltia.js src/i18n/it/index.js
+      - run: cp public/icons-sheltia/* public/icons
+      - run: quasar build -m pwa
+      - run: aws s3 rm s3://sheltia-app-prod --recursive
+      - run: aws s3 cp ./dist/pwa s3://sheltia-app-prod --recursive --acl public-read
+      - run: aws cloudfront create-invalidation --distribution-id EEMPPN9J4A2QZ --paths "/*"
+
+workflows:
+  version: 2
+  prassi-app:
+    jobs:
+      - qa:
+          filters:
+            tags:
+              only: /.*/
+      - deploy-tcw-app-stage:
+          requires:
+            - qa
+          filters:
+            branches:
+              only: /^feature.*/
+      - deploy-sheltia-app-stage:
+          requires:
+            - qa
+          filters:
+            branches:
+              only: /^feature.*/
+      - deploy-sheltia-app-stage2:
+          requires:
+            - qa
+          filters:
+            branches:
+              only: /^feat2.*/
+      - deploy-demo-app-stage:
+          requires:
+            - qa
+          filters:
+            branches:
+              only: /^feature.*/
+      - deploy-tcw-app-prod:
+          requires:
+            - qa
+          filters:
+            branches:
+              only: master
+      - deploy-sheltia-app-prod:
+          requires:
+            - qa
+          filters:
+            branches:
+              only: master

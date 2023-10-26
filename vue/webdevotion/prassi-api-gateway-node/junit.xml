@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="226" failures="0" errors="0" time="53.822">
+  <testsuite name="src/services/sheltia-commissioning-srv/index.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:10:42" time="3.916" tests="2">
+    <testcase classname="Sheltia Commissioning Test-Sheltia tests pay commissioning by range NOT IRPEF" name="Sheltia Commissioning Test-Sheltia tests pay commissioning by range NOT IRPEF" time="0.002">
+    </testcase>
+    <testcase classname="Sheltia Commissioning Test-Sheltia tests pay commissioning by range IRPEF STYLE" name="Sheltia Commissioning Test-Sheltia tests pay commissioning by range IRPEF STYLE" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/kpi-srv/kpi-functions.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:10:46" time="0.262" tests="18">
+    <testcase classname="Kpi Functions Test-should calculate iv value" name="Kpi Functions Test-should calculate iv value" time="0.001">
+    </testcase>
+    <testcase classname="Kpi Functions Test-should calculate adjusted value" name="Kpi Functions Test-should calculate adjusted value" time="0.001">
+    </testcase>
+    <testcase classname="Kpi Functions Test-should calculate adjusted value single calculation with advance option" name="Kpi Functions Test-should calculate adjusted value single calculation with advance option" time="0.001">
+    </testcase>
+    <testcase classname="Kpi Functions Test-should calculate adjusted value single calculation with no advance option" name="Kpi Functions Test-should calculate adjusted value single calculation with no advance option" time="0">
+    </testcase>
+    <testcase classname="Kpi Functions Test-should calculate adjusted value single calculation with selected correct advance option" name="Kpi Functions Test-should calculate adjusted value single calculation with selected correct advance option" time="0.001">
+    </testcase>
+    <testcase classname="Kpi Functions Test-should calculate adjusted value single calculation with brackets option" name="Kpi Functions Test-should calculate adjusted value single calculation with brackets option" time="0.001">
+    </testcase>
+    <testcase classname="Kpi Functions Test-should calculate adjusted value single calculation with selected correct brackets option" name="Kpi Functions Test-should calculate adjusted value single calculation with selected correct brackets option" time="0.001">
+    </testcase>
+    <testcase classname="Kpi Functions Test-should calculate adjusted value single calculation with selected correct brackets option 2" name="Kpi Functions Test-should calculate adjusted value single calculation with selected correct brackets option 2" time="0">
+    </testcase>
+    <testcase classname="Kpi Functions Test-should calculate adjusted value single calculation with selected correct brackets option 3" name="Kpi Functions Test-should calculate adjusted value single calculation with selected correct brackets option 3" time="0.001">
+    </testcase>
+    <testcase classname="Kpi Functions Test-should calculate adjusted value single calculation with selected correct brackets option 14 3 1" name="Kpi Functions Test-should calculate adjusted value single calculation with selected correct brackets option 14 3 1" time="0.001">
+    </testcase>
+    <testcase classname="Kpi Functions Test-should calculate adjusted value single calculation with selected correct brackets option 14 3 6" name="Kpi Functions Test-should calculate adjusted value single calculation with selected correct brackets option 14 3 6" time="0.001">
+    </testcase>
+    <testcase classname="Kpi Functions Test-should calculate adjusted value single calculation with selected correct brackets option 14 3 12" name="Kpi Functions Test-should calculate adjusted value single calculation with selected correct brackets option 14 3 12" time="0">
+    </testcase>
+    <testcase classname="Kpi Functions Test-should calculate adjusted value single calculation with selected correct brackets option 10 3 1" name="Kpi Functions Test-should calculate adjusted value single calculation with selected correct brackets option 10 3 1" time="0">
+    </testcase>
+    <testcase classname="Kpi Functions Test-should calculate adjusted value single calculation with advance option 2" name="Kpi Functions Test-should calculate adjusted value single calculation with advance option 2" time="0.001">
+    </testcase>
+    <testcase classname="Kpi Functions Test-should calculate adjusted value single calculation with selected correct brackets option yearly" name="Kpi Functions Test-should calculate adjusted value single calculation with selected correct brackets option yearly" time="0.001">
+    </testcase>
+    <testcase classname="Kpi Functions Test-should calculate adjusted value single calculation with selected correct brackets option advance" name="Kpi Functions Test-should calculate adjusted value single calculation with selected correct brackets option advance" time="0">
+    </testcase>
+    <testcase classname="Kpi Functions Test-should calculate correntizzazione" name="Kpi Functions Test-should calculate correntizzazione" time="0.001">
+    </testcase>
+    <testcase classname="Kpi Functions Test-should calculate promoter number" name="Kpi Functions Test-should calculate promoter number" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/practice-commission-srv/utils.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:10:46" time="0.9" tests="9">
+    <testcase classname="Utils-should generate a number sequence with lenght of 2 date years difference" name="Utils-should generate a number sequence with lenght of 2 date years difference" time="0.002">
+    </testcase>
+    <testcase classname="Utils-should calculate TCW payout, payin, with 12 installments a year" name="Utils-should calculate TCW payout, payin, with 12 installments a year" time="0.002">
+    </testcase>
+    <testcase classname="Utils-should calculate TCW payout from payin with 12 installments a year" name="Utils-should calculate TCW payout from payin with 12 installments a year" time="0.089">
+    </testcase>
+    <testcase classname="Utils-should calculate TCW payout, payin, with 12 installments a year and 3 month advance" name="Utils-should calculate TCW payout, payin, with 12 installments a year and 3 month advance" time="0">
+    </testcase>
+    <testcase classname="Utils-should calculate TCW payout from payin with 12 installments a year and 3 month advance" name="Utils-should calculate TCW payout from payin with 12 installments a year and 3 month advance" time="0.09">
+    </testcase>
+    <testcase classname="Utils-should calculate TCW payout, payin, with unique premium" name="Utils-should calculate TCW payout, payin, with unique premium" time="0.001">
+    </testcase>
+    <testcase classname="Utils-should calculate TCW payout from payin with unique premium" name="Utils-should calculate TCW payout from payin with unique premium" time="0.083">
+    </testcase>
+    <testcase classname="Utils-should calculate TCW payout, payin, with quarterly premium" name="Utils-should calculate TCW payout, payin, with quarterly premium" time="0">
+    </testcase>
+    <testcase classname="Utils-should calculate TCW payout from payin with quarterly premium" name="Utils-should calculate TCW payout from payin with quarterly premium" time="0.086">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/survey-srv/index.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:10:47" time="2.086" tests="1">
+    <testcase classname="Survey tests-add survey result question 03-14 case 3" name="Survey tests-add survey result question 03-14 case 3" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/company-acquittance-srv/index.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:10:49" time="6.533" tests="8">
+    <testcase classname="Company Acquittance Tests-process acquittance 2000012248 with 12 months installments, manually modified" name="Company Acquittance Tests-process acquittance 2000012248 with 12 months installments, manually modified" time="0.893">
+    </testcase>
+    <testcase classname="Company Acquittance Tests-process acquittance 2000041037189 with 12/year and 3 months advance, manually modified" name="Company Acquittance Tests-process acquittance 2000041037189 with 12/year and 3 months advance, manually modified" time="0.666">
+    </testcase>
+    <testcase classname="Company Acquittance Tests-process acquittance 2000041037189 with selected excel payin" name="Company Acquittance Tests-process acquittance 2000041037189 with selected excel payin" time="0.639">
+    </testcase>
+    <testcase classname="Company Acquittance Tests-process acquittance 2000041037189 with selected calculated payin" name="Company Acquittance Tests-process acquittance 2000041037189 with selected calculated payin" time="0.646">
+    </testcase>
+    <testcase classname="Company Acquittance Tests-process acquittance 2000012248 manually modified, same payin values" name="Company Acquittance Tests-process acquittance 2000012248 manually modified, same payin values" time="0.729">
+    </testcase>
+    <testcase classname="Company Acquittance Tests-process acquittance 2000041037189 with selected excel payin and same calculated values" name="Company Acquittance Tests-process acquittance 2000041037189 with selected excel payin and same calculated values" time="0.636">
+    </testcase>
+    <testcase classname="Company Acquittance Tests-process acquittance 2000012877 with selected excel payin and annual rate" name="Company Acquittance Tests-process acquittance 2000012877 with selected excel payin and annual rate" time="0.633">
+    </testcase>
+    <testcase classname="Company Acquittance Tests-process acquittance 2000013586 with selected excel payin 3 month sub 12 installments per yeaar" name="Company Acquittance Tests-process acquittance 2000013586 with selected excel payin 3 month sub 12 installments per yeaar" time="0.637">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/customer-insurer-srv/index.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:10:56" time="1.599" tests="9">
+    <testcase classname="Get Customer Insurer Tests-getCustomerInsurer should get record of exact period" name="Get Customer Insurer Tests-getCustomerInsurer should get record of exact period" time="0.172">
+    </testcase>
+    <testcase classname="Get Customer Insurer Tests-getCustomerInsurer should insert record of today period" name="Get Customer Insurer Tests-getCustomerInsurer should insert record of today period" time="0.13">
+    </testcase>
+    <testcase classname="Get Customer Insurer Tests-getCustomerInsurer should get record of next period" name="Get Customer Insurer Tests-getCustomerInsurer should get record of next period" time="0.165">
+    </testcase>
+    <testcase classname="Get Customer Insurer Tests-getCustomerInsurer should get record of before period" name="Get Customer Insurer Tests-getCustomerInsurer should get record of before period" time="0.147">
+    </testcase>
+    <testcase classname="Force Customer Insurer Tests-forceCustomerInsurer should get record of exact period" name="Force Customer Insurer Tests-forceCustomerInsurer should get record of exact period" time="0.193">
+    </testcase>
+    <testcase classname="Force Customer Insurer Tests-forceCustomerInsurer should insert record of today period" name="Force Customer Insurer Tests-forceCustomerInsurer should insert record of today period" time="0.138">
+    </testcase>
+    <testcase classname="Force Customer Insurer Tests-forceCustomerInsurer should get record of next period" name="Force Customer Insurer Tests-forceCustomerInsurer should get record of next period" time="0.175">
+    </testcase>
+    <testcase classname="Force Customer Insurer Tests-forceCustomerInsurer should get record of before period" name="Force Customer Insurer Tests-forceCustomerInsurer should get record of before period" time="0.131">
+    </testcase>
+    <testcase classname="Force Customer Insurer Tests-forceCustomerInsurer to fix bug rigamonti" name="Force Customer Insurer Tests-forceCustomerInsurer to fix bug rigamonti" time="0.132">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/customer-srv/index.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:10:58" time="0.854" tests="2">
+    <testcase classname="Customer Tests-deletes customer by id TCW" name="Customer Tests-deletes customer by id TCW" time="0.37">
+    </testcase>
+    <testcase classname="Customer Tests-deletes customer by id SHELTIA" name="Customer Tests-deletes customer by id SHELTIA" time="0.089">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/commissioning-flow-srv/commissioning-sync.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:10:58" time="2.179" tests="5">
+    <testcase classname="Commissioning Sync Tests-tests management fees sync" name="Commissioning Sync Tests-tests management fees sync" time="0.127">
+    </testcase>
+    <testcase classname="Commissioning Sync Tests-tests customer insurer check" name="Commissioning Sync Tests-tests customer insurer check" time="0.099">
+    </testcase>
+    <testcase classname="Commissioning Sync Tests-tests dossier insurer check" name="Commissioning Sync Tests-tests dossier insurer check" time="0.087">
+    </testcase>
+    <testcase classname="Commissioning Sync Tests-tests customer insurer check mail" name="Commissioning Sync Tests-tests customer insurer check mail" time="0.089">
+    </testcase>
+    <testcase classname="Commissioning Sync Tests-tests dossier insurer check mail" name="Commissioning Sync Tests-tests dossier insurer check mail" time="0.09">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/network-actions-srv/index.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:01" time="0.65" tests="1">
+    <testcase classname="Network Actions Tests-tests create network node and verify role" name="Network Actions Tests-tests create network node and verify role" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/practice-commission-srv/practice-commission-installment-repository.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:01" time="0.652" tests="3">
+    <testcase classname="Practice Fee Repository-should save practice fee entries" name="Practice Fee Repository-should save practice fee entries" time="0.285">
+    </testcase>
+    <testcase classname="Practice Fee Repository-should update practice fee entries" name="Practice Fee Repository-should update practice fee entries" time="0.136">
+    </testcase>
+    <testcase classname="Practice Fee Repository-Should get payable entries by productive period" name="Practice Fee Repository-Should get payable entries by productive period" time="0.134">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/dossier-insurer-srv/index.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:02" time="0.75" tests="5">
+    <testcase classname="Get Dossier Insurer Tests-getDossierInsurer should get record of exact period" name="Get Dossier Insurer Tests-getDossierInsurer should get record of exact period" time="0.13">
+    </testcase>
+    <testcase classname="Get Dossier Insurer Tests-getLastDossierInsurer should get record of exact period" name="Get Dossier Insurer Tests-getLastDossierInsurer should get record of exact period" time="0.113">
+    </testcase>
+    <testcase classname="Get Dossier Insurer Tests-getDossierInsurer should insert record of today period" name="Get Dossier Insurer Tests-getDossierInsurer should insert record of today period" time="0.119">
+    </testcase>
+    <testcase classname="Get Dossier Insurer Tests-getDossierInsurer should get record of next period" name="Get Dossier Insurer Tests-getDossierInsurer should get record of next period" time="0.113">
+    </testcase>
+    <testcase classname="Get Dossier Insurer Tests-getDossierInsurer should get record of before period" name="Get Dossier Insurer Tests-getDossierInsurer should get record of before period" time="0.106">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/network-srv/index.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:03" time="1.351" tests="5">
+    <testcase classname="Get Network Tree Tests-createAndGetNetwork should get record of exact period" name="Get Network Tree Tests-createAndGetNetwork should get record of exact period" time="0.185">
+    </testcase>
+    <testcase classname="Get Network Tree Tests-createAndGetNetwork should get record of next period" name="Get Network Tree Tests-createAndGetNetwork should get record of next period" time="0.143">
+    </testcase>
+    <testcase classname="Get Network Tree Tests-createAndGetNetworkAsTree should get record of exact period" name="Get Network Tree Tests-createAndGetNetworkAsTree should get record of exact period" time="0.159">
+    </testcase>
+    <testcase classname="Get Network Tree Tests-createAndGetNetworkAsTree should get record of next period" name="Get Network Tree Tests-createAndGetNetworkAsTree should get record of next period" time="0.16">
+    </testcase>
+    <testcase classname="Get Network Tree Tests-updateNode should update postgres node" name="Get Network Tree Tests-updateNode should update postgres node" time="0.549">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/letter-srv/bonus/bonus-calculator.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:04" time="0.332" tests="4">
+    <testcase classname="Bonus Calculator-should calculate BonusLetter with Montly Prepaid Conditioned and Monthly Guaranteed" name="Bonus Calculator-should calculate BonusLetter with Montly Prepaid Conditioned and Monthly Guaranteed" time="0.006">
+    </testcase>
+    <testcase classname="Bonus Calculator-should calculate BonusLetter with Payment Delayed Conditioned with delay" name="Bonus Calculator-should calculate BonusLetter with Payment Delayed Conditioned with delay" time="0.001">
+    </testcase>
+    <testcase classname="Bonus Calculator-should calculate BonusLetter with One Time Delayed Prepaid (failing) and One Time Guaranteed" name="Bonus Calculator-should calculate BonusLetter with One Time Delayed Prepaid (failing) and One Time Guaranteed" time="0.001">
+    </testcase>
+    <testcase classname="Bonus Calculator-should calculate BonusLetter with One Time Delayed Prepaid (failing) and progressive recovery" name="Bonus Calculator-should calculate BonusLetter with One Time Delayed Prepaid (failing) and progressive recovery" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/promoter-srv/promoter-repository.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:05" time="1.987" tests="1">
+    <testcase classname="promoter repository tests-saves user role" name="promoter repository tests-saves user role" time="0.095">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/network-srv/network-repository.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:07" time="2.671" tests="3">
+    <testcase classname="Get Network Repository Tests-updateNode should update network node" name="Get Network Repository Tests-updateNode should update network node" time="0.904">
+    </testcase>
+    <testcase classname="Get Network Repository Tests-updateNode should insert network node" name="Get Network Repository Tests-updateNode should insert network node" time="0.76">
+    </testcase>
+    <testcase classname="Get Network Repository Tests-deleteNode should delete network node" name="Get Network Repository Tests-deleteNode should delete network node" time="0.841">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/commissioning-flow-srv/index.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:09" time="7.028" tests="1">
+    <testcase classname="Commissioning Flow Tests-tests commissioning rollback close and close again" name="Commissioning Flow Tests-tests commissioning rollback close and close again" time="5.381">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/letter-srv/template-builder.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:16" time="0.509" tests="8">
+    <testcase classname="Letter Template Builder-should create GUARANTEED template" name="Letter Template Builder-should create GUARANTEED template" time="0.002">
+    </testcase>
+    <testcase classname="Letter Template Builder-should create GUARANTEED_WITH_BONUS template" name="Letter Template Builder-should create GUARANTEED_WITH_BONUS template" time="0.001">
+    </testcase>
+    <testcase classname="Letter Template Builder-should create GUARANTEED_WITH_BONUS_PREPAYD template" name="Letter Template Builder-should create GUARANTEED_WITH_BONUS_PREPAYD template" time="0">
+    </testcase>
+    <testcase classname="Letter Template Builder-should create MANAGEMENT_FEE template" name="Letter Template Builder-should create MANAGEMENT_FEE template" time="0.001">
+    </testcase>
+    <testcase classname="Letter Template Builder-should create WELCOME_BONUS template" name="Letter Template Builder-should create WELCOME_BONUS template" time="0.001">
+    </testcase>
+    <testcase classname="Letter Template Builder-should create RAPPEL template" name="Letter Template Builder-should create RAPPEL template" time="0.001">
+    </testcase>
+    <testcase classname="Letter Template Builder-should create PRIVACY template" name="Letter Template Builder-should create PRIVACY template" time="0.001">
+    </testcase>
+    <testcase classname="Letter Template Builder-should create JOB template" name="Letter Template Builder-should create JOB template" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/letter-srv/letter-repository.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:17" time="1.064" tests="5">
+    <testcase classname="Letter Repository-should insert a letter" name="Letter Repository-should insert a letter" time="0.174">
+    </testcase>
+    <testcase classname="Letter Repository-should get sequential letter id" name="Letter Repository-should get sequential letter id" time="0.213">
+    </testcase>
+    <testcase classname="Letter Repository-should get a letter" name="Letter Repository-should get a letter" time="0.208">
+    </testcase>
+    <testcase classname="Letter Repository-should count overlapping letters of same promoter and type" name="Letter Repository-should count overlapping letters of same promoter and type" time="0.134">
+    </testcase>
+    <testcase classname="Letter Repository-should update a letter" name="Letter Repository-should update a letter" time="0.164">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/commissioning-flow-srv/commissioning-fsm.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:18" time="0.075" tests="10">
+    <testcase classname="Commissioning FSM-should stay to &quot;opened&quot; state on &quot;add-practice-installment&quot; or &quot;remove-practice-installment&quot; events from &quot;opened&quot; state" name="Commissioning FSM-should stay to &quot;opened&quot; state on &quot;add-practice-installment&quot; or &quot;remove-practice-installment&quot; events from &quot;opened&quot; state" time="0.001">
+    </testcase>
+    <testcase classname="Commissioning FSM-should move to &quot;confirmed&quot; state on &quot;confirm&quot; event from &quot;opened&quot; state" name="Commissioning FSM-should move to &quot;confirmed&quot; state on &quot;confirm&quot; event from &quot;opened&quot; state" time="0">
+    </testcase>
+    <testcase classname="Commissioning FSM-should move to &quot;processing&quot; state on &quot;process&quot; event from &quot;opened&quot; state" name="Commissioning FSM-should move to &quot;processing&quot; state on &quot;process&quot; event from &quot;opened&quot; state" time="0">
+    </testcase>
+    <testcase classname="Commissioning FSM-should move to &quot;opened&quot; state on &quot;rollback&quot; event from &quot;opened-error&quot; state" name="Commissioning FSM-should move to &quot;opened&quot; state on &quot;rollback&quot; event from &quot;opened-error&quot; state" time="0">
+    </testcase>
+    <testcase classname="Commissioning FSM-should move to &quot;rollbacking&quot; state on &quot;rollback-error&quot; event from &quot;processing&quot; state" name="Commissioning FSM-should move to &quot;rollbacking&quot; state on &quot;rollback-error&quot; event from &quot;processing&quot; state" time="0.001">
+    </testcase>
+    <testcase classname="Commissioning FSM-should move to &quot;opened&quot; state on &quot;completed-rollback&quot; event from &quot;rollbacking&quot; state" name="Commissioning FSM-should move to &quot;opened&quot; state on &quot;completed-rollback&quot; event from &quot;rollbacking&quot; state" time="0">
+    </testcase>
+    <testcase classname="Commissioning FSM-should move to &quot;closed&quot; state on &quot;close&quot; event from &quot;confirmed&quot; state" name="Commissioning FSM-should move to &quot;closed&quot; state on &quot;close&quot; event from &quot;confirmed&quot; state" time="0">
+    </testcase>
+    <testcase classname="Commissioning FSM-should init state" name="Commissioning FSM-should init state" time="0.001">
+    </testcase>
+    <testcase classname="Commissioning FSM-should error on invalid initial state" name="Commissioning FSM-should error on invalid initial state" time="0.015">
+    </testcase>
+    <testcase classname="Commissioning FSM-should error on invalid event" name="Commissioning FSM-should error on invalid event" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/practice-commission-srv/commission-installment.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:18" time="0.038" tests="1">
+    <testcase classname="CommissionInstallment-should have these properties" name="CommissionInstallment-should have these properties" time="0.007">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/promoter-srv/promoter.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:18" time="0.032" tests="1">
+    <testcase classname="Promoter-should have these properties" name="Promoter-should have these properties" time="0.003">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/invoice-pdf-srv/pdf-creator.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:18" time="0.435" tests="2">
+    <testcase classname="PDF Creator-should return doc definitions object and contain proper object in" name="PDF Creator-should return doc definitions object and contain proper object in" time="0.02">
+    </testcase>
+    <testcase classname="PDF Creator-contains proper object in content array" name="PDF Creator-contains proper object in content array" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/utils/productive-period-helper.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:19" time="0.038" tests="10">
+    <testcase classname="Productive Period Helper-should parse" name="Productive Period Helper-should parse" time="0">
+    </testcase>
+    <testcase classname="Productive Period Helper-should unparse" name="Productive Period Helper-should unparse" time="0">
+    </testcase>
+    <testcase classname="Productive Period Helper-should convert productive period to date" name="Productive Period Helper-should convert productive period to date" time="0">
+    </testcase>
+    <testcase classname="Productive Period Helper-should calculate exclusive difference between productive periods" name="Productive Period Helper-should calculate exclusive difference between productive periods" time="0">
+    </testcase>
+    <testcase classname="Productive Period Helper-should add months to productive periods" name="Productive Period Helper-should add months to productive periods" time="0.001">
+    </testcase>
+    <testcase classname="Productive Period Helper-return today period if future period" name="Productive Period Helper-return today period if future period" time="0">
+    </testcase>
+    <testcase classname="Productive Period Helper-return 2019 12 period" name="Productive Period Helper-return 2019 12 period" time="0">
+    </testcase>
+    <testcase classname="Productive Period Helper-return past period if past period" name="Productive Period Helper-return past period if past period" time="0">
+    </testcase>
+    <testcase classname="Productive Period Helper-return today period if today period" name="Productive Period Helper-return today period if today period" time="0.001">
+    </testcase>
+    <testcase classname="Productive Period Helper-returnlast day of productive period" name="Productive Period Helper-returnlast day of productive period" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/document-srv/document-types.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:19" time="0.037" tests="5">
+    <testcase classname="Document Types-should generate path for LETTER_ATTACHMENT document type" name="Document Types-should generate path for LETTER_ATTACHMENT document type" time="0.001">
+    </testcase>
+    <testcase classname="Document Types-should generate path for COMPANY_ACQUITTANCE document type" name="Document Types-should generate path for COMPANY_ACQUITTANCE document type" time="0">
+    </testcase>
+    <testcase classname="Document Types-should generate path for COMPANY_ACQUITTANCE_REPORT document type" name="Document Types-should generate path for COMPANY_ACQUITTANCE_REPORT document type" time="0.001">
+    </testcase>
+    <testcase classname="Document Types-should generate path for INVOICE document type" name="Document Types-should generate path for INVOICE document type" time="0">
+    </testcase>
+    <testcase classname="Document Types-should generate path for unknown document type" name="Document Types-should generate path for unknown document type" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/company-acquittance-srv/acquittance-fsm.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:19" time="0.047" tests="5">
+    <testcase classname="Acquittance FSM-should stay to &quot;created&quot; state on &quot;refresh&quot; event" name="Acquittance FSM-should stay to &quot;created&quot; state on &quot;refresh&quot; event" time="0.001">
+    </testcase>
+    <testcase classname="Acquittance FSM-should move to &quot;confirmed&quot; state on &quot;confirm&quot; event from &quot;opened&quot; state" name="Acquittance FSM-should move to &quot;confirmed&quot; state on &quot;confirm&quot; event from &quot;opened&quot; state" time="0.001">
+    </testcase>
+    <testcase classname="Acquittance FSM-should init state" name="Acquittance FSM-should init state" time="0">
+    </testcase>
+    <testcase classname="Acquittance FSM-should error on invalid initial state" name="Acquittance FSM-should error on invalid initial state" time="0.008">
+    </testcase>
+    <testcase classname="Acquittance FSM-should error on invalid event" name="Acquittance FSM-should error on invalid event" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/practice-srv/practice.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:19" time="0.033" tests="1">
+    <testcase classname="Practice-should have these properties" name="Practice-should have these properties" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/invoice-pdf-srv/pdf-input.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:19" time="0.036" tests="2">
+    <testcase classname="PDFInput-should have its JSON Schema" name="PDFInput-should have its JSON Schema" time="0.002">
+    </testcase>
+    <testcase classname="PDFInput-should have these properties" name="PDFInput-should have these properties" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/invoicing-flow-srv/invoicing-repository.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:19" time="0.559" tests="3">
+    <testcase classname="Invoicing Repository-should save invoicing state" name="Invoicing Repository-should save invoicing state" time="0.135">
+    </testcase>
+    <testcase classname="Invoicing Repository-should get invoicing state by Id" name="Invoicing Repository-should get invoicing state by Id" time="0.13">
+    </testcase>
+    <testcase classname="Invoicing Repository-should check if invoicing state exists by Id" name="Invoicing Repository-should check if invoicing state exists by Id" time="0.183">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/invoicing-flow-srv/invoicing-fsm.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:19" time="0.147" tests="5">
+    <testcase classname="Invoicing FSM-should stay to &quot;opened&quot; state on &quot;confirm-invoice&quot; or &quot;unconfirm-invoice&quot; events from &quot;opened&quot; state" name="Invoicing FSM-should stay to &quot;opened&quot; state on &quot;confirm-invoice&quot; or &quot;unconfirm-invoice&quot; events from &quot;opened&quot; state" time="0.002">
+    </testcase>
+    <testcase classname="Invoicing FSM-should move to &quot;closed&quot; state on &quot;close&quot; event from &quot;opened&quot; state" name="Invoicing FSM-should move to &quot;closed&quot; state on &quot;close&quot; event from &quot;opened&quot; state" time="0">
+    </testcase>
+    <testcase classname="Invoicing FSM-should init state" name="Invoicing FSM-should init state" time="0.001">
+    </testcase>
+    <testcase classname="Invoicing FSM-should error on invalid initial state" name="Invoicing FSM-should error on invalid initial state" time="0.01">
+    </testcase>
+    <testcase classname="Invoicing FSM-should error on invalid event" name="Invoicing FSM-should error on invalid event" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/customer-insurer-srv/customer-insurer-repository.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:19" time="0.278" tests="1">
+    <testcase classname="CustomerInsurer repository tests-get getLastBeforePeriod customer insurer" name="CustomerInsurer repository tests-get getLastBeforePeriod customer insurer" time="0.167">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/dossier-insurer-srv/dossier-insurer-repository.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:20" time="0.265" tests="1">
+    <testcase classname="DossierInsurer repository tests-get getLastBeforePeriod dossier insurer" name="DossierInsurer repository tests-get getLastBeforePeriod dossier insurer" time="0.162">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/tcw-payout-srv/index.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:20" time="0.059" tests="2">
+    <testcase classname="Tcw Payout Service-should calculate payout using provided configuration" name="Tcw Payout Service-should calculate payout using provided configuration" time="0.001">
+    </testcase>
+    <testcase classname="Tcw Payout Service-should calculate payout using provided configuration irpef style" name="Tcw Payout Service-should calculate payout using provided configuration irpef style" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/commissioning-flow-srv/commissioning-repository.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:20" time="0.49" tests="3">
+    <testcase classname="Commissioning Repository-should save commissioning state" name="Commissioning Repository-should save commissioning state" time="0.145">
+    </testcase>
+    <testcase classname="Commissioning Repository-should get commissioning state by Id" name="Commissioning Repository-should get commissioning state by Id" time="0.144">
+    </testcase>
+    <testcase classname="Commissioning Repository-should check if commissioning state exists by Id" name="Commissioning Repository-should check if commissioning state exists by Id" time="0.129">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/payin-srv/index.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:21" time="0.038" tests="2">
+    <testcase classname="Payin Service-should calcualte payin using provided configuration" name="Payin Service-should calcualte payin using provided configuration" time="0">
+    </testcase>
+    <testcase classname="Payin Service-should calcualte payin using provided configuration irpef style" name="Payin Service-should calcualte payin using provided configuration irpef style" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/promoter-job-srv/role-ids.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:21" time="1.524" tests="5">
+    <testcase classname="role ids tests-maps network role to auth role" name="role ids tests-maps network role to auth role" time="0.003">
+    </testcase>
+    <testcase classname="role ids tests-translates network role" name="role ids tests-translates network role" time="0.002">
+    </testcase>
+    <testcase classname="role ids tests-translates network role to Nessuno" name="role ids tests-translates network role to Nessuno" time="0">
+    </testcase>
+    <testcase classname="role ids tests-translates network role to Non esistente" name="role ids tests-translates network role to Non esistente" time="0.002">
+    </testcase>
+    <testcase classname="role ids tests-gets role list" name="role ids tests-gets role list" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/practice-commission-srv/index.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:22" time="1.687" tests="3">
+    <testcase classname="Utils-sync single practice, 12 months installments, 3 months advance" name="Utils-sync single practice, 12 months installments, 3 months advance" time="0.506">
+    </testcase>
+    <testcase classname="Utils-sync single practice unique premium" name="Utils-sync single practice unique premium" time="0.224">
+    </testcase>
+    <testcase classname="Utils-sync single practice quarterly premium" name="Utils-sync single practice quarterly premium" time="0.224">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/letter-srv/letter-fsm.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:24" time="0.045" tests="7">
+    <testcase classname="Letter FSM-should move to &quot;active&quot; state on &quot;activate&quot; event from &quot;wip&quot; state" name="Letter FSM-should move to &quot;active&quot; state on &quot;activate&quot; event from &quot;wip&quot; state" time="0">
+    </testcase>
+    <testcase classname="Letter FSM-should move to &quot;inactive&quot; state on &quot;inactivate&quot; event from &quot;active&quot; state" name="Letter FSM-should move to &quot;inactive&quot; state on &quot;inactivate&quot; event from &quot;active&quot; state" time="0">
+    </testcase>
+    <testcase classname="Letter FSM-should move to &quot;deleted&quot; state on &quot;delete&quot; event from &quot;wip&quot; state" name="Letter FSM-should move to &quot;deleted&quot; state on &quot;delete&quot; event from &quot;wip&quot; state" time="0">
+    </testcase>
+    <testcase classname="Letter FSM-should move to &quot;expired&quot; state on &quot;expires&quot; event from &quot;active&quot; state" name="Letter FSM-should move to &quot;expired&quot; state on &quot;expires&quot; event from &quot;active&quot; state" time="0.001">
+    </testcase>
+    <testcase classname="Letter FSM-should init state" name="Letter FSM-should init state" time="0">
+    </testcase>
+    <testcase classname="Letter FSM-should error on invalid initial state" name="Letter FSM-should error on invalid initial state" time="0.007">
+    </testcase>
+    <testcase classname="Letter FSM-should error on invalid event" name="Letter FSM-should error on invalid event" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/letter-srv/bonus/bonus-letter.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:24" time="0.039" tests="2">
+    <testcase classname="BonusLetter-should have these properties" name="BonusLetter-should have these properties" time="0.002">
+    </testcase>
+    <testcase classname="BonusLetter-should return it s JSON Schema" name="BonusLetter-should return it s JSON Schema" time="0.003">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/letter-srv/management-fee/management-fee-letter.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:24" time="0.035" tests="2">
+    <testcase classname="ManagementFeeLetter-should have these properties" name="ManagementFeeLetter-should have these properties" time="0.002">
+    </testcase>
+    <testcase classname="ManagementFeeLetter-should return it s JSON Schema" name="ManagementFeeLetter-should return it s JSON Schema" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/product-configuration-srv/product-configuration-repository.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:24" time="0.249" tests="2">
+    <testcase classname="Product Configuration Repository-should get configuration by product ID" name="Product Configuration Repository-should get configuration by product ID" time="0.132">
+    </testcase>
+    <testcase classname="Product Configuration Repository-should error with nonexistent product configuration" name="Product Configuration Repository-should error with nonexistent product configuration" time="0.046">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/letter-srv/job/job-letter.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:24" time="0.035" tests="2">
+    <testcase classname="JobLetter-should have these properties" name="JobLetter-should have these properties" time="0.002">
+    </testcase>
+    <testcase classname="JobLetter-should return it s JSON Schema" name="JobLetter-should return it s JSON Schema" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/letter-srv/letter.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:24" time="0.032" tests="2">
+    <testcase classname="Letter-should have these properties" name="Letter-should have these properties" time="0.001">
+    </testcase>
+    <testcase classname="Letter-should return it s JSON Schema" name="Letter-should return it s JSON Schema" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/customer-insurer-srv/customer-insurer.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:24" time="0.037" tests="2">
+    <testcase classname="CustomerInsurer-should have these properties" name="CustomerInsurer-should have these properties" time="0.001">
+    </testcase>
+    <testcase classname="CustomerInsurer-should reject not integer year month" name="CustomerInsurer-should reject not integer year month" time="0.004">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/dossier-insurer-srv/dossier-insurer.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:24" time="0.034" tests="2">
+    <testcase classname="DossierInsurer-should have these properties" name="DossierInsurer-should have these properties" time="0.001">
+    </testcase>
+    <testcase classname="DossierInsurer-should reject not integer year month" name="DossierInsurer-should reject not integer year month" time="0.005">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/company-acquittance-srv/payment.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:24" time="0.032" tests="2">
+    <testcase classname="Payment-should have these properties" name="Payment-should have these properties" time="0.001">
+    </testcase>
+    <testcase classname="Payment-should have JSON Schema" name="Payment-should have JSON Schema" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/letter-srv/privacy/privacy-letter.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:24" time="0.032" tests="2">
+    <testcase classname="PrivacyLetter-should have these properties" name="PrivacyLetter-should have these properties" time="0.001">
+    </testcase>
+    <testcase classname="PrivacyLetter-should return it s JSON Schema" name="PrivacyLetter-should return it s JSON Schema" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/promoter-job-srv/role-repository.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:25" time="1.416" tests="2">
+    <testcase classname="roles tests-gets all roles" name="roles tests-gets all roles" time="0.003">
+    </testcase>
+    <testcase classname="roles tests-gets system role" name="roles tests-gets system role" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/company-srv/company-repository.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:26" time="0.253" tests="2">
+    <testcase classname="Company Repository-should map legacy Company object" name="Company Repository-should map legacy Company object" time="0.001">
+    </testcase>
+    <testcase classname="Company Repository-should get all companies" name="Company Repository-should get all companies" time="0.132">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/product-srv/product-repository.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:26" time="0.315" tests="2">
+    <testcase classname="Product Repository-should map legacy Product object" name="Product Repository-should map legacy Product object" time="0.001">
+    </testcase>
+    <testcase classname="Product Repository-should get all products" name="Product Repository-should get all products" time="0.162">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/invoicing-flow-srv/invoicing-state.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:27" time="0.034" tests="2">
+    <testcase classname="InvoicingState-should have these properties" name="InvoicingState-should have these properties" time="0.001">
+    </testcase>
+    <testcase classname="InvoicingState-should init empty _id" name="InvoicingState-should init empty _id" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/commissioning-flow-srv/commissioning-state.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:27" time="0.046" tests="2">
+    <testcase classname="CommissioningState-should have these properties" name="CommissioningState-should have these properties" time="0.001">
+    </testcase>
+    <testcase classname="CommissioningState-should init empty _id" name="CommissioningState-should init empty _id" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/utils/counters.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:27" time="0.372" tests="2">
+    <testcase classname="Counters-should init and return new counter" name="Counters-should init and return new counter" time="0.164">
+    </testcase>
+    <testcase classname="Counters-should increment existing counter" name="Counters-should increment existing counter" time="0.138">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/company-acquittance-srv/acquittance.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:27" time="0.038" tests="2">
+    <testcase classname="Acquittance-should have these properties" name="Acquittance-should have these properties" time="0.001">
+    </testcase>
+    <testcase classname="Acquittance-should have JSON Schema" name="Acquittance-should have JSON Schema" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/company-acquittance-srv/parser/__tests__/parser.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:27" time="0.255" tests="1">
+    <testcase classname="Parser-should parse company income Excel" name="Parser-should parse company income Excel" time="0.016">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/document-srv/document.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:27" time="0.034" tests="1">
+    <testcase classname="DocumentObject-should have these properties" name="DocumentObject-should have these properties" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/product-configuration-srv/option.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:27" time="0.031" tests="1">
+    <testcase classname="Option-should have these properties" name="Option-should have these properties" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/letter-srv/bonus/guaranteed-bonus.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:27" time="0.034" tests="2">
+    <testcase classname="GuaranteedBonus-should have these properties" name="GuaranteedBonus-should have these properties" time="0.003">
+    </testcase>
+    <testcase classname="GuaranteedBonus-should return it s JSON Schema" name="GuaranteedBonus-should return it s JSON Schema" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/product-configuration-srv/product-configuration.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:27" time="0.03" tests="1">
+    <testcase classname="Config-should have properties" name="Config-should have properties" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/document-srv/document-repository.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:27" time="0.237" tests="1">
+    <testcase classname="Document Repository-should insert a document" name="Document Repository-should insert a document" time="0.17">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/utils/text-helper.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:28" time="0.056" tests="1">
+    <testcase classname="Text Helper-should capitalize first letter of each word in a string" name="Text Helper-should capitalize first letter of each word in a string" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/excel-report-srv/index.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:28" time="0.171" tests="1">
+    <testcase classname="Excel report service-should create buffer properly" name="Excel report service-should create buffer properly" time="0.021">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/letter-srv/bonus/conditioned-bonus.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:28" time="0.028" tests="2">
+    <testcase classname="ConditionedBonus-should have these properties" name="ConditionedBonus-should have these properties" time="0.001">
+    </testcase>
+    <testcase classname="ConditionedBonus-should return it s JSON Schema" name="ConditionedBonus-should return it s JSON Schema" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/letter-srv/bonus/absorbability.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:28" time="0.027" tests="2">
+    <testcase classname="Absorbability-should have these properties" name="Absorbability-should have these properties" time="0">
+    </testcase>
+    <testcase classname="Absorbability-should return it s JSON Schema" name="Absorbability-should return it s JSON Schema" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/letter-srv/privacy/agreement.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:28" time="0.028" tests="2">
+    <testcase classname="Agreement-should have these properties" name="Agreement-should have these properties" time="0.001">
+    </testcase>
+    <testcase classname="Agreement-should return it s JSON Schema" name="Agreement-should return it s JSON Schema" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/utils/cipher.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:28" time="0.041" tests="2">
+    <testcase classname="Cipher-should encrypt a string" name="Cipher-should encrypt a string" time="0.002">
+    </testcase>
+    <testcase classname="Cipher-should decrypt a string" name="Cipher-should decrypt a string" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/invoice-pdf-srv/format-eur.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:28" time="0.03" tests="1">
+    <testcase classname="IT Number formatter-should format a number in italian format" name="IT Number formatter-should format a number in italian format" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/utils/group-by.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:28" time="0.055" tests="1">
+    <testcase classname="GroupBy-should group by an array of objects by given property" name="GroupBy-should group by an array of objects by given property" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/tcw-payout-partitioner-srv/payout-partition.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:28" time="0.028" tests="1">
+    <testcase classname="PayoutPartition-should have these properties" name="PayoutPartition-should have these properties" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/letter-srv/bonus/bonus.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:28" time="0.027" tests="2">
+    <testcase classname="Bonus-should have these properties" name="Bonus-should have these properties" time="0.001">
+    </testcase>
+    <testcase classname="Bonus-should return it s JSON Schema" name="Bonus-should return it s JSON Schema" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/letter-srv/bonus/target.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:28" time="0.027" tests="2">
+    <testcase classname="Target-should have these properties" name="Target-should have these properties" time="0.001">
+    </testcase>
+    <testcase classname="Target-should return it s JSON Schema" name="Target-should return it s JSON Schema" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/company-srv/company.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:28" time="0.026" tests="1">
+    <testcase classname="Company-should have these properties" name="Company-should have these properties" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/product-srv/product.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:28" time="0.028" tests="1">
+    <testcase classname="Product-should have these properties" name="Product-should have these properties" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/letter-srv/bonus/kpi.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:28" time="0.029" tests="2">
+    <testcase classname="KPI-should have these properties" name="KPI-should have these properties" time="0.001">
+    </testcase>
+    <testcase classname="KPI-should return it s JSON Schema" name="KPI-should return it s JSON Schema" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/letter-srv/bonus/condition.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:28" time="0.029" tests="2">
+    <testcase classname="Condition-should have these properties" name="Condition-should have these properties" time="0">
+    </testcase>
+    <testcase classname="Condition-should return it s JSON Schema" name="Condition-should return it s JSON Schema" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/letter-srv/job/job.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:28" time="0.027" tests="2">
+    <testcase classname="Job-should have these properties" name="Job-should have these properties" time="0">
+    </testcase>
+    <testcase classname="Job-should return its JSON Schema" name="Job-should return its JSON Schema" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/utils/subset.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:28" time="0.034" tests="1">
+    <testcase classname="Subset-should retuns all subset of a set" name="Subset-should retuns all subset of a set" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/invoice-pdf-srv/pad.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:28" time="0.034" tests="1">
+    <testcase classname="Pad-should pad number to obain specified lenght" name="Pad-should pad number to obain specified lenght" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/sheltia-payout-srv/index.test.js" errors="0" failures="0" skipped="0" timestamp="2021-07-26T09:11:28" time="0.028" tests="1">
+    <testcase classname="Sheltia Payout Service-should calculate payout using provided configuration" name="Sheltia Payout Service-should calculate payout using provided configuration" time="0.001">
+    </testcase>
+  </testsuite>
+</testsuites>

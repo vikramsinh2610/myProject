@@ -1,0 +1,137 @@
+<div id="anag-cover" class="container container-height page-spacer" style="position: relative;">
+    <%- include ('../partials/header-center.ejs') %>
+    <div class="row">
+        <div class="col-12">
+            <div class="px-5 pb-1">
+                <div class="row">
+                    <div class="col-12 py-2">
+                        <div class="d-block" style="float: right;">
+                            Spett.le <br>
+                            SHELTIA SRL  <br>
+                            Via Ennio Quirino Visconti, 103  <br>
+                            00193  <br>
+                            ROMA (RM)
+                        </div>
+                    </div>
+                </div>
+                <div class="row font-small">
+                    <div class="col-12 py-1">
+                    <p>
+                        <strong>OGGETTO: AUTOCERTIFICAZIONE per l’accertamento dei requisiti previsti dall’art. 22 del Regolamento IVASS n. 40/2018 per l’iscrizione della Persona Fisica alla sezione E del Registro Unico degli Intermediari Assicurativi (RUI) di cui all’art. 109 del d.lgs. n. 209/2005 (Codice delle Assicurazioni Private)</strong>
+                    </p>
+                    <p>
+                        Ai sensi dell’articolo 47 del D.P.R. 28 dicembre 2000, n. 445, <br> il/la
+                        sottoscritto/a intermediario <strong><%= customer.name %>   <%= customer.surname %></strong>, Cod. Fisc. <strong><%= customer.fiscalCode %></strong> , consapevole delle sanzioni penali previste dall’articolo 76
+                        dallo stesso D.P.R. n. 445/2000 per le ipotesi di falsità in atti e di
+                        dichiarazioni mendaci, nonché consapevole delle disposizioni contenute
+                        nell’articolo 75 del citato D.P.R. circa la decadenza dall’iscrizione nel
+                        registro degli intermediari in caso di dichiarazioni non veritiere, alla
+                        data della presente dichiarazione dichiara di:
+                    </p>
+                    <ol>
+                        <li>
+                            godere dei diritti civili;
+                        </li>
+                        <li>
+                            non aver riportato condanna irrevocabile, o sentenza irrevocabile di
+                            applicazione della pena di cui all’articolo 444, comma 2, del codice di
+                            procedura penale, per delitto contro la pubblica amministrazione,
+                            contro l’amministrazione della giustizia, contro la fede pubblica,
+                            contro l’economia pubblica, l’industria e il commercio, contro il
+                            patrimonio per il quale la legge commini la pena della reclusione non
+                            inferiore nel minino ad un anno o nel massimo a tre anni, o per altro
+                            delitto non colposo per il quale la legge commini la pena della
+                            reclusione non inferiore nel minimo a due anni o nel massimo a cinque
+                            anni, oppure condanna irrevocabile comportante l’applicazione della
+                            pena accessoria dell’interdizione da pubblici uffici, perpetua o di
+                            durata superiore a tre anni, salvo che non sia intervenuta la
+                            riabilitazione;
+                        </li>
+                        <li>
+                            non essere stato/a dichiarato/a fallito/a, né essere stato Presidente,
+                            Amministratore con delega di poteri, Direttore Generale, Sindaco di
+                            Società od Enti che siano stati assoggettati a procedure di fallimento,
+                            concordato preventivo o liquidazione coatta amministrativa, almeno per
+                            i tre esercizi precedenti all’adozione dei relativi provvedimenti,
+                            fermo restando che l’impedimento ha durata fino ai cinque anni
+                            successivi all’adozione dei provvedimenti stessi;
+                        </li>
+                        <li>
+                            non versare nelle situazioni di decadenza, divieto o sospensione
+                            previste dall’articolo 10 della Legge 31.5.1965, n. 575, e successive
+                            modificazioni;
+                        </li>
+                        <li>
+                            non essere iscritto/a nel ruolo dei periti assicurativi;
+                        </li>
+                        <li>
+                            non essere pubblico dipendente con rapporto di lavoro a tempo pieno
+                            ovvero a tempo parziale che superi la metà dell’orario lavorativo a
+                            tempo pieno;
+                        </li>
+                        <li>
+                            non avere stretti legami<sup>1</sup> con persone fisiche o
+                            giuridiche che impediscano l’esercizio dei poteri di vigilanza da parte
+                            dell’IVASS secondo quanto previsto dall’articolo 109, comma 4-sexies
+                            del Codice delle Assicurazioni Private.
+                        </li>
+                    </ol>
+                    <div class="col-12 py-2 row">
+                        <div class="col-4">
+                            Data e luogo  <br><br>
+                            <div class="border-bottom-field"> <%= luogoData %> &nbsp; </div>
+                        </div>
+                        <div class="col-4">
+                        </div>
+                        <div class="col-4">
+                            Firma <br><br>
+
+                            <div class="border-bottom-field">&nbsp;</div>
+                        </div>
+                    </div>
+
+
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mini-font footer border-footer pt-1">
+        <p>
+            1 Definizione art. 1 Codice delle Assicurazioni Private:
+        </p>
+        <ol>
+            <li>
+                stretti legami: il rapporto fra due o più persone fisiche o giuridiche
+                nei casi in cui sussiste:
+            </li>
+            <ul>
+                <li>
+                    un legame di controllo ai sensi dell'articolo 72;
+                </li>
+                <li>
+                    una partecipazione, detenuta direttamente o per il tramite di
+                    società controllate, società fiduciarie o per interposta persona,
+                    almeno pari al dieci per cento del capitale o dei diritti di voto,
+                    ovvero una partecipazione che, pur restando al di sotto del limite
+                    sopra indicato, dà comunque la possibilità di esercitare
+                    un'influenza notevole ancorché non dominante;
+                </li>
+                <li>
+                    un legame in base al quale le stesse persone sono sottoposte al
+                    controllo del medesimo soggetto, o comunque sono sottoposte a
+                    direzione unitaria in virtù di un contratto o di una clausola
+                    statutaria, oppure quando gli organi di amministrazione sono
+                    composti in maggioranza dalle medesime persone, oppure quando
+                    esistono legami importanti e durevoli di riassicurazione;
+                </li>
+                <li>
+                    un rapporto di carattere tecnico, organizzativo, finanziario,
+                    giuridico e familiare che possa influire in misura rilevante sulla
+                    gestione dell'impresa.
+                </li>
+            </ul>
+        </ol>
+    </div>
+</div>
+

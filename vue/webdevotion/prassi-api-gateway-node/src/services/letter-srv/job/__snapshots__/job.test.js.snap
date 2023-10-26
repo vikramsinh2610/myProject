@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Job should return its JSON Schema 1`] = `
+Object {
+  "properties": Object {
+    "roleId": Object {
+      "type": "string",
+    },
+  },
+  "required": Array [
+    "roleId",
+  ],
+  "type": "object",
+}
+`;

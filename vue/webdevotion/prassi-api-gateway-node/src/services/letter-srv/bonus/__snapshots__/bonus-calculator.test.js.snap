@@ -1,0 +1,148 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Bonus Calculator should calculate BonusLetter with Montly Prepaid Conditioned and Monthly Guaranteed: A 1`] = `
+Array [
+  ComputedBonus {
+    "absorbability": Absorbability {
+      "directProductionPercentage": 0,
+      "indirectProductionPercentage": 0,
+    },
+    "accruedAmount": 1000,
+    "expireDate": 2019-01-31T00:00:00.000Z,
+    "invoiceDescription": null,
+    "kpi": Array [
+      Object {
+        "targets": Array [
+          Object {
+            "kpi": Object {
+              "_id": "KPI1",
+              "value": 500,
+            },
+            "targetValue": 500,
+            "weightPercentage": 5000,
+          },
+          Object {
+            "kpi": Object {
+              "_id": "KPI2",
+              "value": 800,
+            },
+            "targetValue": 800,
+            "weightPercentage": 5000,
+          },
+        ],
+      },
+    ],
+    "targetAmount": 1000,
+    "targetComplete": true,
+    "targetPercentage": 10000,
+    "type": "conditioned+rappel+prepayment",
+  },
+]
+`;
+
+exports[`Bonus Calculator should calculate BonusLetter with Montly Prepaid Conditioned and Monthly Guaranteed: B 1`] = `Array []`;
+
+exports[`Bonus Calculator should calculate BonusLetter with Montly Prepaid Conditioned and Monthly Guaranteed: C 1`] = `
+Array [
+  ComputedBonus {
+    "absorbability": Object {
+      "directProductionPercentage": 0,
+      "indirectProductionPercentage": 100,
+    },
+    "accruedAmount": 2000,
+    "expireDate": 2019-01-31T00:00:00.000Z,
+    "invoiceDescription": null,
+    "kpi": Array [],
+    "targetAmount": 2000,
+    "targetComplete": true,
+    "targetPercentage": 10000,
+    "type": "guaranteed+one-time",
+  },
+]
+`;
+
+exports[`Bonus Calculator should calculate BonusLetter with One Time Delayed Prepaid (failing) and One Time Guaranteed: A 1`] = `
+Array [
+  ComputedBonus {
+    "absorbability": Absorbability {
+      "directProductionPercentage": 0,
+      "indirectProductionPercentage": 0,
+    },
+    "accruedAmount": -1000,
+    "expireDate": 2019-01-31T00:00:00.000Z,
+    "invoiceDescription": null,
+    "kpi": Array [],
+    "targetAmount": 1000,
+    "targetComplete": false,
+    "targetPercentage": 10000,
+    "type": "conditioned+rappel+recovery",
+  },
+]
+`;
+
+exports[`Bonus Calculator should calculate BonusLetter with One Time Delayed Prepaid (failing) and progressive recovery: A 1`] = `
+Array [
+  ComputedBonus {
+    "absorbability": Absorbability {
+      "directProductionPercentage": 0,
+      "indirectProductionPercentage": 0,
+    },
+    "accruedAmount": -4000,
+    "expireDate": 2019-01-31T00:00:00.000Z,
+    "invoiceDescription": null,
+    "kpi": Array [],
+    "targetAmount": 5000,
+    "targetComplete": false,
+    "targetPercentage": 3000,
+    "type": "conditioned+rappel+recovery",
+  },
+]
+`;
+
+exports[`Bonus Calculator should calculate BonusLetter with One Time Delayed Prepaid (failing) and progressive recovery: B 1`] = `Array []`;
+
+exports[`Bonus Calculator should calculate BonusLetter with One Time Delayed Prepaid (failing) and progressive recovery: C 1`] = `Array []`;
+
+exports[`Bonus Calculator should calculate BonusLetter with One Time Delayed Prepaid (failing) and progressive recovery: D 1`] = `Array []`;
+
+exports[`Bonus Calculator should calculate BonusLetter with Payment Delayed Conditioned with delay: A 1`] = `Array []`;
+
+exports[`Bonus Calculator should calculate BonusLetter with Payment Delayed Conditioned with delay: B 1`] = `
+Array [
+  ComputedBonus {
+    "absorbability": Absorbability {
+      "directProductionPercentage": 0,
+      "indirectProductionPercentage": 0,
+    },
+    "accruedAmount": 1000,
+    "expireDate": 2019-01-31T00:00:00.000Z,
+    "invoiceDescription": null,
+    "kpi": Array [
+      Object {
+        "targets": Array [
+          Object {
+            "kpi": Object {
+              "_id": "KPI1",
+              "value": 500,
+            },
+            "targetValue": 500,
+            "weightPercentage": 5000,
+          },
+          Object {
+            "kpi": Object {
+              "_id": "KPI2",
+              "value": 800,
+            },
+            "targetValue": 800,
+            "weightPercentage": 5000,
+          },
+        ],
+      },
+    ],
+    "targetAmount": 1000,
+    "targetComplete": true,
+    "targetPercentage": 10000,
+    "type": "conditioned+rappel+payment-delayed",
+  },
+]
+`;

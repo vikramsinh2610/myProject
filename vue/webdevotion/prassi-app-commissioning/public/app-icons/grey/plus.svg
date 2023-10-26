@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="16px" viewBox="0 0 16 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">    <title>Plus</title>
+    <defs>
+        <path d="M478.6,331.4 L485,331.4 L485,334.6 L478.6,334.6 L478.6,341 L475.4,341 L475.4,334.6 L469,334.6 L469,331.4 L475.4,331.4 L475.4,325 L478.6,325 L478.6,331.4 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-469.000000, -325.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Plus" fill="#A9B0BB" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

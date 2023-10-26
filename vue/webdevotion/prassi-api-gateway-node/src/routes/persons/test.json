@@ -1,0 +1,39 @@
+{
+  "_id": "106411d1-b16f-164f-81e1-a4d800d3a52e",
+  "sex": "F",
+  "vat": "",
+  "name": "",
+  "email": "manidiforbicelmd@pec.it",
+  "address": {
+    "city": "La Maddalena",
+    "route": "Via Aldo Moro",
+    "country": "Italy",
+    "province": "OT",
+    "postalCode": "07024",
+    "streetNumber": "",
+    "displayAddress": "Via Aldo Moro, 07024 La Maddalena (OT)"
+  },
+  "created": "2015-07-17T12:50:34.606Z",
+  "surname": "Mocci",
+  "modified": "2020-01-31T10:19:46.883Z",
+  "birthCity": "La Maddalena",
+  "birthDate": "1976-08-15T23:00:00.000Z",
+  "fiscalCode": "MCCDNL76M56E425S",
+  "fixedPhone": "",
+  "birthRegion": "SS",
+  "displayName": " Mocci",
+  "mobilePhone": "",
+  "legalAddress": {
+    "city": "La Maddalena",
+    "route": "Via Aldo Moro",
+    "country": "Italy",
+    "province": "OT",
+    "postalCode": "07024",
+    "streetNumber": "2",
+    "displayAddress": "Via Aldo Moro, 2, 07024 La Maddalena (OT)"
+  },
+  "physicalPerson": true,
+  "typeDisplayValue": "Cliente",
+  "statusDisplayValue": "Proposta in corso",
+  "priorityDisplayValue": "Bassa"
+}

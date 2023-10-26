@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Absorbability should return it s JSON Schema 1`] = `
+Object {
+  "properties": Object {
+    "directProductionPercentage": Object {
+      "description": "Direct production percentage, with 2 decimals as integer",
+      "maximum": 10000,
+      "minimum": 0,
+      "type": "integer",
+    },
+    "indirectProductionPercentage": Object {
+      "description": "Indirect production percentage, with 2 decimals as integer",
+      "maximum": 10000,
+      "minimum": 0,
+      "type": "integer",
+    },
+  },
+  "required": Array [
+    "directProductionPercentage",
+    "indirectProductionPercentage",
+  ],
+  "type": "object",
+}
+`;

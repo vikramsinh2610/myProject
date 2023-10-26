@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Condition should return it s JSON Schema 1`] = `
+Object {
+  "properties": Object {
+    "targets": Object {
+      "items": Object {
+        "properties": Object {
+          "kpi": Object {
+            "properties": Object {
+              "_id": Object {
+                "type": "string",
+              },
+              "options": Object {
+                "additionalProperties": true,
+                "type": "object",
+              },
+              "type": Object {
+                "enum": Array [
+                  "number",
+                  "currency",
+                  "percentage",
+                ],
+                "type": "string",
+              },
+              "value": Object {
+                "type": "integer",
+              },
+            },
+            "required": Array [
+              "_id",
+            ],
+            "type": "object",
+          },
+          "targetValue": Object {
+            "type": "integer",
+          },
+          "weightPercentage": Object {
+            "maximum": 10000,
+            "minimum": 0,
+            "type": "integer",
+          },
+        },
+        "required": Array [
+          "kpi",
+          "targetValue",
+          "weightPercentage",
+        ],
+        "type": "object",
+      },
+      "type": "array",
+    },
+  },
+  "required": Array [
+    "targets",
+  ],
+  "type": "object",
+}
+`;

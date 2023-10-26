@@ -1,0 +1,230 @@
+<div class="container container-height page-spacer" style="position: relative;">
+    <%- include ('../partials/header-center.ejs') %>
+    <div class="row vh-100">
+        <div class="col-12">
+            <div class="px-5 py-3">
+                <h1 class="title-h1">SCHEDA VALUTAZIONE: COMPILAZIONE RISERVATA A BM/DM</h1>
+            </div>
+            <div class="px-5 py-3">
+                <div class="row pb-2 pt-2">
+                    <div class="col-6">
+                        <div class="border-bottom-field">&nbsp; <%= customer.name %>   <%= customer.surname %></div>
+                        <div class="field-label">NOME COGNOME</div>
+                    </div>
+                    <div class="col-6">
+                        <div class="border-bottom-field"> &nbsp; <%- onRolPositionRole.typeValue ? onRolPositionRole.typeValue.value : ''%></div>
+                        <div class="field-label" style="width: 400px;">RUOLO PROPOSTO PER L’INSERIMENTO</div>
+                    </div>
+                </div>
+                <div class="row  pb-2 pt-3">
+                    <div class="col-6">
+                        <div class="border-bottom-field">
+                            <%- onFormNcData.typeValue ? moment(onFormNcData.typeValue).utcOffset('+0200').format('DD/MM/YYYY') :'&nbsp;' %>
+                        </div>
+                        <div class="field-label" style="width: 500px;">Data inizio corso formazione</div>
+                    </div>
+                    <div class="col-6">
+                        <div class="border-bottom-field">&nbsp; <%- onFormNcName.typeValue %> &nbsp; </div>
+                        <div class="field-label" style="width: 300px;">Formatore</div>
+                    </div>
+                </div>
+                <div class="row  pb-2 pt-2">
+                    <div class="col-6">
+                            <% if (onRoleContributionNo.selected === true) { %>
+                                <div class="border-bottom-field">No</div>
+                            <% } else  { %>
+                                <div class="border-bottom-field">Si</div>
+                            <% } %>
+                        <div class="field-label" style="width: 400px;">RICONOSCIMENTO CONTRIBUTO</div>
+                    </div>
+                </div>
+                <% if (onRoleContributionNo.selected === false) { %>
+                <div class="row  pb-2 pt-2">
+                    <div class="col-12">
+                        <div class="border-bottom-field"> &nbsp; <%- onRoleContributionDet.typeValue %></div>
+                        <div class="field-label" style="width: 800px; text-transform: uppercase;">Indicare l’importo del contributo da riconoscere ed eventuali target</div>
+                    </div>
+                </div>
+                <% } %>
+                <div class="row  pb-2 pt-2">
+                    <% onRolePositionSignaler.responses.forEach(function(response){ %>
+                        <div class="col-6 d-flex">
+                            <div class="field-label" style="width: 300px; text-transform: uppercase;"><%- response.text %></div>
+                            <% if (response.type === 'offer-role') { %>
+                                <div class="border-bottom-field"><%- response.typeValue ? response.typeValue.value : '&nbsp;' %></div>
+                            <% } else  { %>
+                                <div class="border-bottom-field"><%- response.typeValue %></div>
+                            <% } %>
+                        </div>
+                    <% }); %>
+                </div>
+                <div class="row  pb-2 pt-2">
+                    <p class="p1"><span class="s1">*</span><span class="s2">REGOLE DEL REFERRAL &ldquo;PA PORTA PA:</span></p>
+                    <ul class="ul1">
+                        <li class="li1"><span class="s2">Al PA che segnala un altro PA vengono riconosciuti &euro; 100 al momento dell'iscrizione Ivass del candidato segnalato;</span></li>
+                        <li class="li1"><span class="s2">Al raggiungimento di 45.000 Iv prodotti da parte del PA professionalizzato neo-inserito nel primo trimestre, verranno riconosciuti al segnalatore ulteriori 200 &euro;;</span></li>
+                        <li class="li1"><span class="s2">Nel caso invece di PA neofita neo-inserito, al segnalatore spettano 200 &euro; al raggiungimento di 30.000 Iv prodotti nel primo trimestre</span></li>
+                    </ul>
+                </div>
+                <% onEvalSign.responses.forEach(function(response){ %>
+                    <div class="row  pb-2 pt-2">
+                        <div class="col-6 d-flex">
+                            <div class="field-label" style="width: 300px;"><%- response.text %></div>
+                            <% if (response.type === 'date') { %>
+                                <div class="border-bottom-field"><%- response.typeValue ? moment(response.typeValue).utcOffset('+0200').format('DD/MM/YYYY') :'' %></div>
+                            <% } else  { %>
+                            <div class="border-bottom-field"><%- response.typeValue %></div>
+                            <% } %>
+                        </div>
+                    </div>
+                <% }); %>
+                <div class="row  pb-3 pt-4">
+                    <div class="col-12 py-2">
+                        In fede,
+                    </div>
+                    <div class="col-4">
+                        FIRMA TM   <br><br><br>
+                        <div class="border-bottom-field"> </div>
+                    </div>
+                    <div class="col-4">
+                        FIRMA BM  <br><br><br>
+                        <div class="border-bottom-field"> </div>
+                    </div>
+                    <div class="col-4">
+                        FIRMA DM<br><br><br>
+
+                        <div class="border-bottom-field"> </div>
+                    </div>
+                </div>
+
+                <div class="row py-3">
+                    <div class="col-12">
+                       <p>La scheda anagrafica e gli allegati devono essere anticipati per @ a operation@sheltia.com, giada.borrini@sheltia.com e giampaolo.valvo@sheltia.com e gli originali devono esser inviati a Sheltia Srl, V. Pisani 7, 20124 Milano (MI)</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div style="page-break-after:always;"></div>
+</div>
+
+<div class="container container-height page-spacer" style="position: relative;">
+    <%- include ('../partials/header-center.ejs') %>
+  <div class="row no-gutters">
+    <div class="col">
+      <div id='sections-page-content' class="p-2">
+          <div class="break-elem">
+              <div class="px-5 py-3">
+                  <h1 class="title-h1">SCHEDA VALUTAZIONE CANDIDATI</h1>
+              </div>
+              <div class="col-12">
+                  <div class="divTable valutazione">
+                      <div class="divTableBody">
+                          <div class="divTableRow">
+                              <div class="divTableCell">NOME E COGNOME</div>
+                              <div class="divTableCell"><%= customer.name %>   <%= customer.surname %></div>
+                          </div>
+                          <div class="divTableRow">
+                              <div class="divTableCell">ANNI SENIORITY COMMERCIALE</div>
+                              <div class="divTableCell"><%= onEvalBasicYears.typeValue %> </div>
+                          </div>
+                          <div class="divTableRow">
+                              <div class="divTableCell">ANNI SENIORITY COMMERCIALE IN AMBITO ASSICURATIVO</div>
+                              <div class="divTableCell"><%= onEvalBasicYass.typeValue %> </div>
+                          </div>
+                          <div class="divTableRow">
+                              <div class="divTableCell">INTERESSE-CURIOSITA' PER SHELTIA (ALTO/MEDIO/BASSO)</div>
+                              <div class="divTableCell"><%= onEvalBasicSheltia.typeValue %> </div>
+                          </div>
+                          <div class="divTableRow">
+                              <div class="divTableCell">INTERESSE-CURIOSITA' PER BROKERAGGIO (ALTO/MEDIO/BASSO)</div>
+                              <div class="divTableCell"><%= onEvalBasicBroker.typeValue %> </div>
+                          </div>
+                          <div class="divTableRow">
+                              <div class="divTableCell pt-4"><strong>COMPETENZE COMMERCIALI</strong></div>
+                          </div>
+                          <div class="divTableRow">
+                              <div class="divTableCell">CONOSCENZA DEL MERCATO ASSICURATIVO (ALTO/MEDIO/BASSO)</div>
+                              <div class="divTableCell"><%= onEvalCommAss.typeValue %> </div>
+                          </div>
+                          <div class="divTableRow">
+                              <div class="divTableCell">CONOSCENZA DEI PRODOTTI ASSICURATIVI (ALTO/MEDIO/BASSO)</div>
+                              <div class="divTableCell"><%= onEvalCommProduction.typeValue %> </div>
+                          </div>
+                          <div class="divTableRow">
+                              <div class="divTableCell">NEGOZIAZIONE (ALTO/MEDIO/BASSO)</div>
+                              <div class="divTableCell"><%= onEvalCommNego.typeValue %> </div>
+                          </div>
+                          <div class="divTableRow">
+                              <div class="divTableCell">ANALISI DELLA DOMANDA (ALTO/MEDIO/BASSO)</div>
+                              <div class="divTableCell"><%= onEvalCommAna.typeValue %> </div>
+                          </div>
+                          <div class="divTableRow">
+                              <div class="divTableCell">SELF-MARKETING (ALTO/MEDIO/BASSO) </div>
+                              <div class="divTableCell"><%= onEvalCommSelf.typeValue %> </div>
+                          </div>
+                          <div class="divTableRow">
+                              <div class="divTableCell pt-4"><strong>COMPETENZE RELAZIONALI</strong></div>
+                          </div>
+                          <div class="divTableRow">
+                              <div class="divTableCell">EMPATIA (ALTO/MEDIO/BASSO)</div>
+                              <div class="divTableCell"><%= onEvalRelEmph.typeValue %> </div>
+                          </div>
+                          <div class="divTableRow">
+                              <div class="divTableCell">PERSUASIONE (ALTO/MEDIO/BASSO)</div>
+                              <div class="divTableCell"><%= onEvalRelPers.typeValue %> </div>
+                          </div>
+                          <div class="divTableRow">
+                              <div class="divTableCell">DIALETTICA-PRONTEZZA NELLA RISPOSTA (ALTO/MEDIO/BASSO)</div>
+                              <div class="divTableCell"><%= onEvalRelDial.typeValue %> </div>
+                          </div>
+                          <div class="divTableRow">
+                              <div class="divTableCell">ASSERTIVITÀ (ALTO/MEDIO/BASSO)</div>
+                              <div class="divTableCell"><%= onEvalRelAssert.typeValue %> </div>
+                          </div>
+                          <div class="divTableRow">
+                              <div class="divTableCell">FLESSIBILITA' (ALTO/MEDIO/BASSO)</div>
+                              <div class="divTableCell"><%= onEvalRelFlex.typeValue %> </div>
+                          </div>
+                          <div class="divTableRow">
+                              <div class="divTableCell">ATTITUDINE AL LAVORO DI GRUPPO (ALTO/MEDIO/BASSO)</div>
+                              <div class="divTableCell"><%= onEvalRelAttitu.typeValue %> </div>
+                          </div>
+                          <div class="divTableRow">
+                              <div class="divTableCell pt-4"></div>
+                          </div>
+                          <div class="divTableRow">
+                              <div class="divTableCell">CANALE INGRESSO (SITO/UNIVERSITA'/PA PORTA PA/LINKEDIN…)</div>
+                              <div class="divTableCell"><%= onEvalOtherChannel.typeValue %> </div>
+                          </div>
+                          <div class="divTableRow">
+                              <div class="divTableCell">NR COLLOQUI SOSTENUTI</div>
+                              <div class="divTableCell"><%= onEvalOtherN.typeValue %> </div>
+                          </div>
+                          <div class="divTableRow">
+                              <div class="divTableCell">SELEZIONATORE </div>
+                              <div class="divTableCell"><%= onEvalOtherSelection.typeValue %> </div>
+                          </div>
+                          <div class="divTableRow">
+                              <div class="divTableCell">FIRMA SELEZIONATORE</div>
+                              <div class="divTableCell"> </div>
+                          </div>
+                          <div class="divTableRow">
+                              <div class="divTableCell">DATA ULTIMO COLLOQUIO</div>
+                              <div class="divTableCell"><%- onEvalOtherData.typeValue ? moment(onEvalOtherData.typeValue).utcOffset('+0200').format('DD/MM/YYYY') :'' %> </div>
+                          </div>
+                          <div class="divTableRow">
+                              <div class="divTableCell">DATA EFFETTIVA INSERIMENTO (SE SELEZIONATO)</div>
+                              <div class="divTableCell"><%- onEvalOtherDatain.typeValue ? moment(onEvalOtherDatain.typeValue).utcOffset('+0200').format('DD/MM/YYYY') :'' %> </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+   <div style="page-break-after:always;"></div>
+</div>

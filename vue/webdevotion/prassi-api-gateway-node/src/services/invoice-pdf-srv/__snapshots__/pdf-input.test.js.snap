@@ -1,0 +1,341 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PDFInput should have its JSON Schema 1`] = `
+Object {
+  "body": Object {
+    "properties": Object {
+      "birthDate": Object {
+        "description": "ISO6801 date",
+        "type": "string",
+      },
+      "content": Object {
+        "properties": Object {
+          "grossEntries": Object {
+            "items": Object {
+              "properties": Object {
+                "installments": Object {
+                  "type": "array",
+                },
+                "name": Object {
+                  "type": "string",
+                },
+                "origin": Object {
+                  "type": "string",
+                },
+                "productivePeriodMonth": Object {
+                  "maximum": 12,
+                  "minumum": 0,
+                  "type": "integer",
+                },
+                "productivePeriodYear": Object {
+                  "maximum": 2099,
+                  "minumum": 2000,
+                  "type": "integer",
+                },
+                "value": Object {
+                  "type": "number",
+                },
+              },
+              "type": "object",
+            },
+            "type": "array",
+          },
+          "grossTotal": Object {
+            "properties": Object {
+              "name": Object {
+                "type": "string",
+              },
+              "value": Object {
+                "type": "number",
+              },
+            },
+            "type": "object",
+          },
+          "netEntries": Object {
+            "items": Object {
+              "properties": Object {
+                "name": Object {
+                  "type": "string",
+                },
+                "origin": Object {
+                  "type": "string",
+                },
+                "productivePeriodMonth": Object {
+                  "maximum": 12,
+                  "minumum": 0,
+                  "type": "integer",
+                },
+                "productivePeriodYear": Object {
+                  "maximum": 2099,
+                  "minumum": 2000,
+                  "type": "integer",
+                },
+                "value": Object {
+                  "type": "number",
+                },
+              },
+              "type": "object",
+            },
+            "type": "array",
+          },
+          "taxEntries": Object {
+            "items": Object {
+              "properties": Object {
+                "name": Object {
+                  "type": "string",
+                },
+                "value": Object {
+                  "type": "number",
+                },
+              },
+              "type": "object",
+            },
+            "type": "array",
+          },
+        },
+        "type": "object",
+      },
+      "dueDate": Object {
+        "description": "ISO6801 date",
+        "type": "string",
+      },
+      "emissionDate": Object {
+        "description": "ISO6801 date",
+        "type": "string",
+      },
+      "fiscalYear": Object {
+        "maximum": 2099,
+        "minimum": 2000,
+        "type": "integer",
+      },
+      "iban": Object {
+        "type": "string",
+      },
+      "invoiceNumber": Object {
+        "minimum": 0,
+        "type": "integer",
+      },
+      "payment": Object {
+        "properties": Object {
+          "bank": Object {
+            "type": "string",
+          },
+          "paymentCondition": Object {
+            "type": "string",
+          },
+        },
+        "type": "object",
+      },
+      "productivePeriodMonth": Object {
+        "maximum": 12,
+        "minumum": 0,
+        "type": "integer",
+      },
+      "productivePeriodYear": Object {
+        "maximum": 2099,
+        "minumum": 2000,
+        "type": "integer",
+      },
+      "recipient": Object {
+        "properties": Object {
+          "address": Object {
+            "properties": Object {
+              "city": Object {
+                "type": "string",
+              },
+              "country": Object {
+                "type": "string",
+              },
+              "houseNumber": Object {
+                "type": "string",
+              },
+              "postalCode": Object {
+                "type": "string",
+              },
+              "province": Object {
+                "pattern": "^([A-Z]{2})$",
+                "type": "string",
+              },
+              "route": Object {
+                "type": "string",
+              },
+            },
+            "type": "object",
+          },
+          "fiscalCode": Object {
+            "type": "string",
+          },
+          "name": Object {
+            "type": "string",
+          },
+          "vatNumber": Object {
+            "type": "string",
+          },
+        },
+        "type": "object",
+      },
+      "regimeType": Object {
+        "enum": Array [
+          "ordinary",
+          "minimum",
+          "flat",
+        ],
+        "type": "string",
+      },
+      "sender": Object {
+        "properties": Object {
+          "address": Object {
+            "properties": Object {
+              "city": Object {
+                "type": "string",
+              },
+              "country": Object {
+                "type": "string",
+              },
+              "houseNumber": Object {
+                "type": "string",
+              },
+              "postalCode": Object {
+                "type": "string",
+              },
+              "province": Object {
+                "pattern": "^([A-Z]{2})$",
+              },
+              "route": Object {
+                "type": "string",
+              },
+            },
+            "type": "object",
+          },
+          "birthCity": Object {
+            "type": "string",
+          },
+          "birthDate": Object {
+            "description": "ISO6801 date",
+            "type": "string",
+          },
+          "fiscalCode": Object {
+            "type": "string",
+          },
+          "name": Object {
+            "type": "string",
+          },
+          "vatNumber": Object {
+            "type": "string",
+          },
+        },
+        "type": "object",
+      },
+      "total": Object {
+        "type": "number",
+      },
+    },
+    "type": "object",
+  },
+}
+`;
+
+exports[`PDFInput should have these properties 1`] = `
+PDFInput {
+  "content": Content {
+    "grossEntries": Array [
+      Entry {
+        "installments": Array [],
+        "name": "Anticipo provvigionale",
+        "origin": undefined,
+        "productivePeriodMonth": undefined,
+        "productivePeriodYear": undefined,
+        "value": 8424,
+      },
+      Entry {
+        "installments": Array [],
+        "name": "Provvigioni maturate nel mese di gennaio 2018",
+        "origin": undefined,
+        "productivePeriodMonth": undefined,
+        "productivePeriodYear": undefined,
+        "value": 7330.71,
+      },
+      Entry {
+        "installments": Array [],
+        "name": "Over provvigionali",
+        "origin": undefined,
+        "productivePeriodMonth": undefined,
+        "productivePeriodYear": undefined,
+        "value": 4847.6,
+      },
+    ],
+    "grossTotal": Entry {
+      "installments": Array [],
+      "name": "Totale corrispettivi lordi",
+      "origin": undefined,
+      "productivePeriodMonth": undefined,
+      "productivePeriodYear": undefined,
+      "value": 20602.31,
+    },
+    "netEntries": Array [],
+    "taxEntries": Array [
+      Entry {
+        "installments": Array [],
+        "name": "Imponibile ritenuta d’acconto (50% dei corrispettivi lordi)",
+        "origin": undefined,
+        "productivePeriodMonth": undefined,
+        "productivePeriodYear": undefined,
+        "value": 10301.16,
+      },
+      Entry {
+        "installments": Array [],
+        "name": "Ritenuta d’acconto 23%",
+        "origin": undefined,
+        "productivePeriodMonth": undefined,
+        "productivePeriodYear": undefined,
+        "value": -2359.27,
+      },
+    ],
+  },
+  "dueDate": "2018-07-20T12:15:48.320Z",
+  "emissionDate": "2018-07-20T12:15:48.320Z",
+  "fiscalYear": 2018,
+  "iban": "IT 23 T 02008 43260 000103943030",
+  "invoiceNumber": "007",
+  "payment": Payment {
+    "bank": "Unicredit – Filiale di Cefalù – Piazza Garibaldi, 2",
+    "paymentCondition": "pagamento a vista",
+  },
+  "productivePeriodMonth": 2,
+  "productivePeriodYear": 2018,
+  "recipient": Contractor {
+    "address": Address {
+      "city": "Rozzano",
+      "country": "Italia",
+      "houseNumber": "60/A",
+      "postalCode": "20089",
+      "province": "MI",
+      "route": "Via Monte Bianco",
+    },
+    "birthCity": undefined,
+    "birthDate": undefined,
+    "fiscalCode": "PZZNTN22H66E1111",
+    "name": "TC Agency Insurance S.r.l.",
+    "vatNumber": "09528651004",
+  },
+  "regimeType": "flat",
+  "sender": Contractor {
+    "address": Address {
+      "city": "Meda",
+      "country": "Italia",
+      "houseNumber": "6",
+      "postalCode": "20821",
+      "province": "MB",
+      "route": "Via Carlo Cattaneo",
+    },
+    "birthCity": undefined,
+    "birthDate": undefined,
+    "fiscalCode": "C.F. PZZNTN72H12E617O",
+    "name": "Antonio Pizzardi",
+    "vatNumber": "03146970961",
+  },
+  "total": 32300,
+  "totalIV": 0,
+  "trustDate": "2018-07-20T12:15:48.320Z",
+}
+`;

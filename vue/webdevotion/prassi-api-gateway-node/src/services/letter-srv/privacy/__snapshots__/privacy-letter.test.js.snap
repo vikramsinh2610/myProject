@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PrivacyLetter should return it s JSON Schema 1`] = `
+Object {
+  "description": "Bonus Letter",
+  "properties": Object {
+    "_id": Object {
+      "type": "string",
+    },
+    "agreements": Object {
+      "items": Object {
+        "properties": Object {
+          "agree": Object {
+            "type": "boolean",
+          },
+          "content": Object {
+            "type": "string",
+          },
+          "name": Object {
+            "type": "string",
+          },
+        },
+        "required": Array [
+          "name",
+          "content",
+          "agree",
+        ],
+        "type": "object",
+      },
+      "type": "array",
+    },
+    "attachmentIds": Object {
+      "description": "Attachements ID",
+      "items": Object {
+        "type": "string",
+      },
+      "type": "array",
+    },
+    "description": Object {
+      "type": "string",
+    },
+    "didActiveDate": Object {
+      "pattern": "^((19|20)[0-9]{2})-(1[0-2]|0[1-9])-(3[01]|0[1-9]|[12][0-9])T(2[0-3]|[01][0-9]):([0-5][0-9]):([0-5][0-9])([.])([0-9]{3})Z",
+      "type": "string",
+    },
+    "didCreateDate": Object {
+      "pattern": "^((19|20)[0-9]{2})-(1[0-2]|0[1-9])-(3[01]|0[1-9]|[12][0-9])T(2[0-3]|[01][0-9]):([0-5][0-9]):([0-5][0-9])([.])([0-9]{3})Z",
+      "type": "string",
+    },
+    "didDeleteDate": Object {
+      "pattern": "^((19|20)[0-9]{2})-(1[0-2]|0[1-9])-(3[01]|0[1-9]|[12][0-9])T(2[0-3]|[01][0-9]):([0-5][0-9]):([0-5][0-9])([.])([0-9]{3})Z",
+      "type": "string",
+    },
+    "didExpireDate": Object {
+      "pattern": "^((19|20)[0-9]{2})-(1[0-2]|0[1-9])-(3[01]|0[1-9]|[12][0-9])T(2[0-3]|[01][0-9]):([0-5][0-9]):([0-5][0-9])([.])([0-9]{3})Z",
+      "type": "string",
+    },
+    "promoterDisplayName": Object {
+      "description": "Promoter full name",
+      "type": "string",
+    },
+    "promoterId": Object {
+      "description": "Promoter ID",
+      "type": "string",
+    },
+    "promoterSerialNumber": Object {
+      "description": "Promoter Serial Number",
+      "type": "string",
+    },
+    "signatureDate": Object {
+      "pattern": "^((19|20)[0-9]{2})-(1[0-2]|0[1-9])-(3[01]|0[1-9]|[12][0-9])T(2[0-3]|[01][0-9]):([0-5][0-9]):([0-5][0-9])([.])([0-9]{3})Z",
+      "type": "string",
+    },
+    "status": Object {
+      "description": "Status of the letter",
+      "enum": Array [
+        "wip",
+        "active",
+        "inactive",
+        "expired",
+        "deleted",
+      ],
+      "type": "string",
+    },
+    "type": Object {
+      "enum": Array [
+        "none",
+        "job",
+        "commissioning-pa",
+        "commissioning-pas",
+        "bonus-pa",
+        "bonus-pas",
+        "rappel-pa",
+        "rappel-pa-2021",
+        "rappel-pas",
+        "rappel",
+        "rappel-2",
+        "rappel-3",
+        "rappel-5",
+        "welcome-bonus",
+        "guaranteed",
+        "guaranteed-variable",
+        "guaranteed-variable-minimum",
+        "guaranteed-with-bonus",
+        "guaranteed-with-bonus-prepaid",
+        "management-fee",
+        "privacy",
+      ],
+      "type": "string",
+    },
+    "willExpireDate": Object {
+      "pattern": "^((19|20)[0-9]{2})-(1[0-2]|0[1-9])-(3[01]|0[1-9]|[12][0-9])T(2[0-3]|[01][0-9]):([0-5][0-9]):([0-5][0-9])([.])([0-9]{3})Z",
+      "type": "string",
+    },
+  },
+  "required": Array [
+    "_id",
+    "status",
+    "promoterId",
+    "promoterSerialNumber",
+    "promoterDisplayName",
+    "type",
+    "description",
+    "signatureDate",
+    "attachmentIds",
+    "agreements",
+  ],
+  "type": "object",
+}
+`;

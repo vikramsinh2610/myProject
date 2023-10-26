@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Excel report service should create buffer properly 1`] = `
+Object {
+  "Report": Object {
+    "!ref": "A1:C4",
+    "A1": Object {
+      "h": "Nome",
+      "t": "s",
+      "v": "Nome",
+      "w": "Nome",
+    },
+    "A2": Object {
+      "h": "Luca",
+      "t": "s",
+      "v": "Luca",
+      "w": "Luca",
+    },
+    "A3": Object {
+      "h": "Joe",
+      "t": "s",
+      "v": "Joe",
+      "w": "Joe",
+    },
+    "B1": Object {
+      "h": "Età",
+      "t": "s",
+      "v": "Età",
+      "w": "Età",
+    },
+    "B2": Object {
+      "h": "22",
+      "t": "s",
+      "v": "22",
+      "w": "22",
+    },
+    "B3": Object {
+      "h": "23",
+      "t": "s",
+      "v": "23",
+      "w": "23",
+    },
+    "B4": Object {
+      "h": "23",
+      "t": "s",
+      "v": "23",
+      "w": "23",
+    },
+    "C1": Object {
+      "h": "Город",
+      "t": "s",
+      "v": "Город",
+      "w": "Город",
+    },
+    "C2": Object {
+      "h": "Milano",
+      "t": "s",
+      "v": "Milano",
+      "w": "Milano",
+    },
+    "C3": Object {
+      "h": "New York",
+      "t": "s",
+      "v": "New York",
+      "w": "New York",
+    },
+    "C4": Object {
+      "h": "New York",
+      "t": "s",
+      "v": "New York",
+      "w": "New York",
+    },
+  },
+}
+`;

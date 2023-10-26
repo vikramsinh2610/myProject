@@ -1,0 +1,46 @@
+import { shallowMount, createLocalVue } from '@vue/test-utils';
+import Quasar, * as All from 'quasar';
+import Vuelidate from 'vuelidate';
+import PrassiPromoterFilter from './prassi-promoter-filter';
+
+const localVue = createLocalVue();
+localVue.use(Quasar, { components: All, directives: All, plugins: All });
+localVue.use(Vuelidate);
+
+describe('PrassiPromoterFilter.vue', () => {
+  it('renders PrassiPromoterFilter component', () => {
+    jest.useFakeTimers();
+
+    const wrapper = shallowMount(PrassiPromoterFilter, {
+      localVue,
+      propsData: {
+        filter: {
+          type: Object,
+          default: () => ({
+            selected: 'indirect',
+          }),
+        },
+      },
+      mocks: {
+        $t: () => {},
+        $n: () => '100',
+        $env: { alpha: false },
+        $d: () => 'data',
+        $utils: {
+          isoToDisplayDate() {
+            return '';
+          },
+          logobj() {
+            return '';
+          },
+          log() {
+            return '';
+          },
+        },
+      },
+    });
+
+    const tabs = wrapper.findAll({ name: 'QSearch' });
+    tabs.at(0).trigger('click');
+  });
+});

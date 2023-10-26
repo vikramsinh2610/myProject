@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ConditionedBonus should return it s JSON Schema 1`] = `
+Object {
+  "description": "Conditioned Bonus",
+  "properties": Object {
+    "amount": Object {
+      "type": "integer",
+    },
+    "conditions": Object {
+      "items": Object {
+        "properties": Object {
+          "targets": Object {
+            "items": Object {
+              "properties": Object {
+                "kpi": Object {
+                  "properties": Object {
+                    "_id": Object {
+                      "type": "string",
+                    },
+                    "options": Object {
+                      "additionalProperties": true,
+                      "type": "object",
+                    },
+                    "type": Object {
+                      "enum": Array [
+                        "number",
+                        "currency",
+                        "percentage",
+                      ],
+                      "type": "string",
+                    },
+                    "value": Object {
+                      "type": "integer",
+                    },
+                  },
+                  "required": Array [
+                    "_id",
+                  ],
+                  "type": "object",
+                },
+                "targetValue": Object {
+                  "type": "integer",
+                },
+                "weightPercentage": Object {
+                  "maximum": 10000,
+                  "minimum": 0,
+                  "type": "integer",
+                },
+              },
+              "required": Array [
+                "kpi",
+                "targetValue",
+                "weightPercentage",
+              ],
+              "type": "object",
+            },
+            "type": "array",
+          },
+        },
+        "required": Array [
+          "targets",
+        ],
+        "type": "object",
+      },
+      "type": "array",
+    },
+    "maxRecoveryPercentage": Object {
+      "maximum": 10000,
+      "minimum": 0,
+      "type": "integer",
+    },
+    "paymentTime": Object {
+      "enum": Array [
+        "prepayment",
+        "payment-delayed",
+      ],
+      "type": "string",
+    },
+    "productivePeriodPaymentDelay": Object {
+      "maximum": 3,
+      "minimum": 0,
+      "type": "integer",
+    },
+    "type": Object {
+      "enum": Array [
+        "conditioned",
+      ],
+      "type": "string",
+    },
+  },
+  "required": Array [
+    "amount",
+    "type",
+    "paymentTime",
+    "conditions",
+  ],
+  "type": "object",
+}
+`;

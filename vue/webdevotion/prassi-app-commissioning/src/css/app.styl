@@ -1,0 +1,384 @@
+// app global css
+
+@font-face
+  font-family MyIcons
+  src url(../../public/fonts/icons-font.otf)
+
+@font-face
+  font-family SairaSemiCondensed
+  src url(../../public/fonts/SairaSemiCondensed-Regular.ttf)
+  font-weight 100
+
+@font-face
+  font-family SairaSemiCondensed
+  src url(../../public/fonts/SairaSemiCondensed-Medium.ttf)
+  font-weight normal
+
+@font-face
+  font-family SairaSemiCondensed
+  src url(../../public/fonts/SairaSemiCondensed-Bold.ttf)
+  font-weight bold
+
+body
+  font-family SairaSemiCondensed
+  font-size 16px
+  background-color #eff3f6
+
+.q-btn .q-icon
+  font-size unset
+  width: unset;
+  height: unset;
+
+.fa-user:before
+  content:url(../../public/app-icons/white/man.svg)
+
+.fa-sitemap:before
+  content:url(../../public/app-icons/white/organization.svg)
+
+.fa-numbers:before
+  content:url(../../public/app-icons/white/numbers.svg)
+
+.fa-invoicing:before
+  content:url(../../public/app-icons/white/report.svg)
+
+.fa-accounting:before
+  content:url(../../public/app-icons/white/accounting.svg)
+
+.fa-briefcase:before
+  content:url(../../public/app-icons/white/consultancy.svg)
+
+.fa-briefcase-grey:before
+  content:url(../../public/app-icons/grey/consultancy.svg)
+
+.fa-organization-grey:before
+  content:url(../../public/app-icons/grey/net.svg)
+
+.fa-organization:before
+  content:url(../../public/app-icons/white/net.svg)
+
+.fa-file-alt:before
+  content:url(../../public/app-icons/white/contract.svg)
+
+.fa-bars:before
+  content:url(../../public/app-icons/grey/hamburger.svg)
+
+.fa-search:before
+  content:url(../../public/app-icons/grey/search.svg)
+
+.fa-plus:before
+  content:url(../../public/app-icons/grey/plus.svg)
+
+.fa-arrow-down:before
+  content:url(../../public/app-icons/grey/down.svg)
+
+.fa-align-left:before
+  content:url(../../public/app-icons/grey/grid.svg)
+
+.fa-search-white:before
+  content:url(../../public/app-icons/white/search.svg)
+
+.fa-plus-white:before
+  content:url(../../public/app-icons/white/plus.svg)
+
+.fa-arrow-down-white:before
+  content:url(../../public/app-icons/white/down.svg)
+
+.fa-align-left-white:before
+  content:url(../../public/app-icons/white/grid.svg)
+
+.fa-settings:before
+  content:url(../../public/app-icons/white/user-settings.svg)
+
+.bg-menu-background
+  background-color $side-menu-background
+
+.text-red
+  color $r-3
+
+.text-green
+  color $g-3
+
+.q-btn--outline .q-btn__wrapper:before
+  border: none;
+
+.border-menu-1st-section
+  border-color $menu-1st-section
+
+.border-menu-last-section
+  border-color $menu-last-section
+
+.border-tertiary
+  border-color $tertiary
+
+.text-tertiary
+  color $tertiary
+
+.text-direzione
+  color: #eb5463
+
+.bg-direzione
+  background: #eb5463
+
+.bg-header
+  background $page-background
+
+.text-promoter
+  color: #88c053
+.bg-promoter
+  background: #88c053
+
+.text-team
+  color: #f5b945
+.bg-team
+  background: #f5b945
+
+.text-signaller
+  color: #e3e8eb
+.bg-signaller
+  background: #e3e8eb
+
+.text-none
+  color: #e3e8eb
+.bg-none
+  background: #e3e8eb
+
+.bg-double
+  background: #FBE0D0
+
+.text-district
+  color: #4a88da
+.bg-district
+  background: #4a88da
+
+.text-branch
+  color: #46ceac
+.bg-branch
+  background: #46ceac
+
+.text-headquarter
+  color: #eb5463
+.bg-headquarter
+  background: #eb5463
+
+.q-collapsible-inner .q-item
+  padding-right 11px
+  padding-left 11px
+
+.q-item-label
+  font-size 20px
+
+.q-input-target
+  height 25px
+
+.q-tabs-bar
+  border-color $secondary
+
+.q-tabs-head
+  min-height 34px
+
+.q-tab__label
+  font-size 16px
+
+.q-tab__indicator
+  background-color $secondary
+
+.q-toggle__label
+  font-size 22px
+
+.q-checkbox__label
+  font-size 22px
+
+.q-title
+  font-size 20px
+  font-weight 500
+  line-height 1.12
+  letter-spacing .02em
+
+.q-if:after, .q-field--standard .q-field__control:after
+  color $secondary
+
+.q-if-error:after, .q-field--standard .text-negative:after
+  color $negative
+
+.q-item.q-router-link--active
+  color white
+
+.q-select__options--content .q-item--active
+  color $secondary
+
+.q-item.q-router-link--active, .q-item--active
+  color $secondary
+
+.q-notification__message
+  font-size 16px
+
+.q-stepper-header
+  border-bottom  solid 1px $card-border
+  box-shadow none
+
+.q-chip
+  height 21px
+  padding 0
+  margin 0
+  max-width 100%
+
+.q-chip .q-chip__content
+  padding 0 3px 0 3px
+  text-overflow ellipsis
+  white-space nowrap
+  overflow hidden
+  display block
+
+.q-select__input--padding, .q-field__input--padding
+  display none
+
+.q-chip-main, .select-ellipsis .q-field__native span
+  text-overflow ellipsis
+  white-space nowrap
+  overflow hidden
+
+.step-waiting .q-stepper-dot span
+  color $primary
+
+.step-done .q-stepper-dot
+  background-color $primary
+  color white
+
+.step-active .q-stepper-dot
+  background-color $secondary
+  color white
+
+.step-waiting .q-stepper-dot
+  background-color $lg-2
+  color $primary
+
+.q-tree-node-header .items-center
+  width 100%
+
+.q-pa-sm
+  padding 10px
+
+.company .q-item-avatar
+  width 60px
+  height 60px
+  border-radius 50%
+  border-color $g-3
+  border-style solid
+
+.q-field, .q-input .q-input-target, .q-input-target
+  font-size 22px
+
+.table-input .q-field__native
+  font-size 14px
+
+.p-btn
+  margin-left auto
+  margin-right  auto
+  width 250px
+
+.p-btn:hover
+    background-color $secondary
+    color white !important
+
+.p-btn-icon
+  margin-left auto
+  margin-right  auto
+
+.p-btn-icon:hover
+  background-color $secondary
+  color white !important
+
+.modal-header
+  background-color $secondary
+  color white
+
+.fill-available
+  flex-basis 0
+  flex-grow 1
+
+.modal-scroll
+  max-height 640px
+
+.modal.minimized .modal-content
+  max-height 90vh
+
+.margin-auto
+  margin auto
+
+.h-100
+  height 100%
+
+.layout-full-height
+  height calc(100vh - 70px)
+  overflow-y hidden
+
+.text-center
+  text-align: center
+
+.v-items-class
+  margin-top 6px !important
+
+// safari only hack to prevent font bottom cut
+@media not all and (min-resolution:.001dpcm)
+  input[type='text'], input[type='email'], input[type='password'], input[type='search'], input[type='url'], input[type='tel']
+    min-height 1.4em
+
+.min-w-170
+  min-width: 170px !important;
+
+// calendar height fix
+.q-datetime-input
+  max-height: 57px
+
+.q-select .q-if-inner .row
+  width: 100%
+
+// header&body misfit issue
+.q-infinite-scroll
+  overflow-y: overlay
+  overflow-x: hidden
+  -ms-overflow-style: -ms-autohiding-scrollbar
+
+// header&body misfit issue
+.listing-header-container
+  overflow-y: overlay
+  overflow-x: hidden
+  -ms-overflow-style: -ms-autohiding-scrollbar
+
+@-moz-document url-prefix()
+  .listing-header-container
+    overflow-y: scroll
+  .q-infinite-scroll
+    overflow-y: scroll
+
+.bread-crumb
+  color inherit
+  text-decoration none
+  box-shadow inset 0 -2px 0 $secondary
+  padding-bottom 2px
+  transition all .15s ease-in-out
+
+.bread-crumb:hover
+  color $secondary
+  box-shadow none
+
+.q-field--auto-height .q-field__native, .q-field--auto-height .q-field__prefix, .q-field--auto-height .q-field__suffix
+  line-height: 24px
+
+.option-group-resize .q-checkbox__label, .option-group-resize .q-toggle__label
+  font-size: 16px !important
+
+.step-positive div:not(.q-stepper__tab--active) .q-stepper__dot
+  background: $positive
+
+.step-warning div:not(.q-stepper__tab--active) .q-stepper__dot
+  background: $warning
+
+.step-negative div:not(.q-stepper__tab--active) .q-stepper__dot
+  background: $negative
+
+.person-readonly .q-card
+  pointer-events: none !important
+
+.pac-container
+  z-index 9999
