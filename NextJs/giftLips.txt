@@ -1,0 +1,124 @@
+warisali01987@gmail.com
+Warisali21@
+skype
+---------------------------------------------------
+Github:
+warisali01987@gmail.com
+Warisali21@
+FE - https://github.com/QRTiger/giftlips-nextjs.git
+BE - https://github.com/QRTiger/giftlips-api.git
+https://waris01987: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@github.com/QRTiger/giftlips-nextjs.git
+https://waris01987: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@github.com/QRTiger/giftlips-api.git
+
+====================================================================================================
+npm run autorestart
+
+=======================================================================================================
+Pull Request
+------------------------------------------------------------
+branch-154
+https://github.com/QRTiger/giftlips-nextjs/pull/18
+------------------------------------------------------------
+
+========================================================================================================
+gaurav78.developer@gmail.com
+Dev@1234
+
+apparas1994@gmail.com
+intelcorei5
+
+Today's work update
+Project: GiftLIps
+- After success Pay Display message in modal 
+- Fix Postorder API error from FE
+- Start working on Email Card Invitations on user FE - In process
+
+
+
+
+63cfe0385fd2c5ef3ef76698
+
+63cfe0745fd2c5ef3ef7669c
+
+print_ship
+
+
+http://localhost:8080/card-members/63d0be3ac6e42ddd95eaa5b9/personalDetailOfMember
+
+
+63d0be3ac6e42ddd95eaa5b9
+
+{cardId:ObjectId('63d0be3ac6e42ddd95eaa5b9')}
+
+http://localhost:3000/cards/63c799e21dec1736ff41b01f/customize
+
+because 
+
+cardId,userId,entryId,cardMemberId
+
+
+let url: string = "https://dev.api.giftlips.com"
+
+
+==========================================================================================================
+Backend- C:\workspace\2022\Next\giftlips-api
+- npm run autorestart
+--------------------------------------------------
+frontEnd - C:\workspace\2022\Next\giftlips-nextjs
+yarn dev
+
+For Comment
+Emit : addComment
+C:\workspace\2022\Next\giftlips-nextjs\components\Reels\ReelEntry.tsx
+
+-----------------------------------------------------
+warisali01987@gmail.com
+test123
+
+my card
+add fun video
+
+
+http://localhost:3000/cards/63c7dce31dec1736ff41b29d/customize
+http://localhost:3000/cards/63c799e21dec1736ff41b01f/customize
+
+credentials:
+
+apparas1994@gmail.com
+intelcorei5
+
+http://localhost:3000/cards/63e3945baa75ad3d2255b531/customize
+
+http://localhost:3000/cards/63d22d2f7380bf4fe7dc31e9/customize
+http://localhost:3000/cards/63d22d2f7380bf4fe7dc31e9/customize
+
+
+http://localhost:3000/cards/63d2340ae84ea5870c06aa48/customize
+http://localhost:3000/cards/63d7df7ca311f57fa57f0c50/customize
+
+Your greeting card videos are available until February 9, 2024. Upgrade now to keep the memories alive.
+
+
+onplaying
+oncanplay
+
+
+GIF-163 : https://github.com/QRTiger/giftlips-nextjs/pull/36
+
+CDG portal: Backend 50% done Need to start frontEnd But need react developer If anybody free
+Giftlips: Going good 
+WebDevotion: webdevotion Aneri cannot work
+Jemix : today aneri start working After finish your task 
+Vue2 to vue 3: I don't have tis project
+
+
+
+I have checked the issue of reload the video while calling the socket. I have tried but did not figured out the solution. So it would be great I will move the next ticket and after that I will check this issue again. 
+
+63d27e0832b59c7fefb74cf8
+63d27e0a32b59c7fefb74d0a
+
+https://svgjs.dev/docs/3.1/importing-exporting/#svg-as-getter
+
+
+
